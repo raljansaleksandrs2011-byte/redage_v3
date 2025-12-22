@@ -4,9 +4,9 @@ global.binderFunctions.open_Table = () => {
     if (global.menuCheck()) return;
 
     if (global.fractionId !== 0 && global.organizationId !== 0)
-        global.OpenCircle(translateText("Открыть планшет"), 0);
+        global.OpenCircle(translateText("Open the tablet"), 0);
     else if (global.fractionId === 15 || (global.fractionId === 6 && global.isLeader))
-        global.OpenCircle(translateText("Открыть планшет"), 0);
+        global.OpenCircle(translateText("Open the tablet"), 0);
     else if (global.fractionId !== 0) {
         mp.gui.emmit(`window.gameMenuView ("Fractions");`);
         if (!global.gamemenu)
@@ -29,7 +29,7 @@ gm.events.add('client.table.open', async (usersList, vehiclesList, boardList, se
             `window.router.setView("FractionsMenu", {usersList: '${usersList}', vehiclesList: '${vehiclesList}', boardList: '${boardList}', settings: '${settings}', defaultAccess: '${defaultAccess}', access: '${access}', updateInfo: '${updateInfo}', clothesList: '${clothesList}', isOrgTable: '${isOrgTable}'})`
         );
         isFractionMenu = true;
-        gm.discord(translateText("Изучает фракционный планшет"));
+        gm.discord(translateText("Examines the fractional tablet"));
     }
     catch (e) 
     {
