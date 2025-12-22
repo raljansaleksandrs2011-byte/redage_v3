@@ -26,9 +26,9 @@ let selectFaceAnim = 0,
 const updateInterfaceState = () => {
 
     let popupData = {
-        timeCycle: translateText("Фильтр ({0})", selectTimeCycle + 1),
+        timeCycle: translateText("Filter ({0})", selectTimeCycle + 1),
         animName: animationList[selectAnim].name,
-        emotion: translateText("Эмоция ({0})", faceAnimList[selectFaceAnim].name),
+        emotion: translateText("Emotion ({0})", faceAnimList[selectFaceAnim].name),
         isPhoneThisFrame: isPhoneThisFrame,
         isFreeMode: isFreeMode,
         isDofEnabled: isDofEnabled
