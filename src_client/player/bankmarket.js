@@ -5,26 +5,26 @@ gm.events.add('mavrshop', (json) => {
 
 gm.events.add('gangmis', () => {
     let data = [
-        translateText("Угон автотранспорта"),
-        translateText("Перевозка автотранспорта"),
+        translateText(""Vehicle Theft"),
+translateText("Vehicle Transportation"),
     ];
     global.openSM(8, JSON.stringify(data));
 });
 
 gm.events.add('mafiamis', () => {
     let data = [
-        translateText("Перевозка оружия"),
-        translateText("Перевозка денег"),
-        translateText("Перевозка трупов"),
+        translateText("Transportation of weapons"),
+        translateText("Transporting money"),
+        translateText("Transportation of corpses"),
     ];
     global.openSM(9, JSON.stringify(data));
 });
 
 gm.events.add('bikermis', () => {
     let data = [
-        translateText("Перевозка оружия"),
-        translateText("Перевозка денег"),
-        translateText("Перевозка трупов"),
+        translateText("Transportation of weapons"),
+        translateText("Transporting money"),
+        translateText("Transportation of corpses"),
     ];
     global.openSM(10, JSON.stringify(data));
 });
