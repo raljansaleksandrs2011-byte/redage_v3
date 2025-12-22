@@ -69,56 +69,56 @@ const getJobSkillsInfo = (skillsData, nextLevelsData, currentLevelsInfo) => {
 
 	let jobSkillsInfo = [
 		{
-			name: translateText("Электрик"),
+			name: translateText("Electrician"),
 			max: 15000,
 			nextLevel: 700,
 			currentLevel: 0,
 			current: 0
 		},
 		{
-			name: translateText("Газонокосильщик"),
+			name: translateText("Lawnmover"),
 			max: 40000,
 			nextLevel: 2000,
 			currentLevel: 0,
 			current: 0
 		},
 		{
-			name: translateText("Почтальон"),
+			name: translateText("Postman"),
 			max: 4000,
 			nextLevel: 200,
 			currentLevel: 0,
 			current: 0
 		},
 		{
-			name: translateText("Таксист"),
+			name: translateText("Taxi driver"),
 			max: 1000,
 			nextLevel: 25,
 			currentLevel: 0,
 			current: 0
 		},
 		{
-			name: translateText("Водитель автобуса"),
+			name: translateText("Bus driver"),
 			max: 70000,
 			nextLevel: 3000,
 			currentLevel: 0,
 			current: 0
 		},
 		{
-			name: translateText("Автомеханик"),
+			name: translateText("Auto mechanic"),
 			max: 250,
 			nextLevel: 10,
 			currentLevel: 0,
 			current: 0
 		},
 		{
-			name: translateText("Дальнобойщик"),
+			name: translateText("Truck driver"),
 			max: 700,
 			nextLevel: 30,
 			currentLevel: 0,
 			current: 0
 		},
 		{
-			name: translateText("Инкассатор"),
+			name: translateText("Collector"),
 			max: 3000,
 			nextLevel: 150,
 			currentLevel: 0,
@@ -343,7 +343,7 @@ global.binderFunctions.cruise = () => {// 6 key - cruise mode on/off
 		if(veh.isTyreBurst(4, true) || veh.isTyreBurst(5, true)) return;
 		if(veh.model == 1747439474 || veh.model == 2034235290) return;
 		if (new Date().getTime() - cruiseLastPressed < 300) {
-			mp.events.call('openInput', translateText("Круиз-контроль"), translateText("Укажите скорость в км/ч"), 3, 'setCruise');
+			mp.events.call('openInput', translateText("Cruise control"), translateText("Enter the speed in km/h"), 3, 'setCruise');
 			mp.gui.emmit(`window.vehicleState.cruiseControl (false)`);
 		} else {
 			if (cruiseSpeed == -1) {
@@ -386,7 +386,7 @@ gm.events.add('setCruiseSpeed', function (speed)
 		speed = speed / 3.6; // convert from kph to mps
 		if(speed < curSpeed) 
 		{
-			mp.events.call('notify', 4, 9, translateText("Нельзя установить скорость меньше, чем она есть на данный момент, снизьте скорость и попробуйте еще раз."), 6000);
+			mp.events.call('notify', 4, 9, translateText("You cannot set the speed lower than it is at the moment, please reduce the speed and try again."), 6000);
 			return;
 		}
 
