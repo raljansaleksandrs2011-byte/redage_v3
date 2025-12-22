@@ -9,7 +9,7 @@ gm.events.add('client.sm.open', async (title, titleIcon, json) => {
         stType = 0;
         await global.wait(50); 
         mp.gui.emmit(`window.smOpen('${title}', '${titleIcon}', 'blue', '${json}', 1);`);
-        gm.discord(translateText("Закупается"));
+        gm.discord(translateText("It is being purchased"));
     }
     catch (e) 
     {
@@ -25,8 +25,8 @@ gm.events.add('client.sm.openBlack', async (json) => {
         global.menuOpen()
         stType = 1;
         await global.wait(50); 
-        mp.gui.emmit(`window.smOpen('${translateText("Черный рынок")}', 'sm-icon-logo-gang', 'green', '${json}');`);
-        gm.discord('Изучает черный рынок');
+        mp.gui.emmit(`window.smOpen('${translateText("Black Market")}', 'sm-icon-logo-gang', 'green', '${json}');`);
+        gm.discord('Exploring the black market');
     }
     catch (e) 
     {
@@ -42,8 +42,8 @@ gm.events.add('client.sm.openShop', async (json) => {
         global.menuOpen()
         stType = 2;
         await global.wait(50); 
-        mp.gui.emmit(`window.smOpen('${translateText("Магазин")}', 'sm-icon-logo-shop', 'green', '${json}');`);
-        gm.discord('Закупается в 24/7');
+        mp.gui.emmit(`window.smOpen('${translateText("Store")}', 'sm-icon-logo-shop', 'green', '${json}');`);
+        gm.discord('Buying in 24/7');
     }
     catch (e) 
     {
@@ -59,8 +59,8 @@ gm.events.add('client.sm.openSaluteShop', async (json) => {
         global.menuOpen()
         stType = 3;
         await global.wait(50); 
-        mp.gui.emmit(`window.smOpen('${translateText("Магазин фейерверков")}', 'inv-item-Firework4', 'green', '${json}');`);
-        gm.discord('Покупает салюты');
+        mp.gui.emmit(`window.smOpen('${translateText("Firecracker store")}', 'inv-item-Firework4', 'green', '${json}');`);
+        gm.discord('Buying saultes');
     }
     catch (e) 
     {
@@ -76,8 +76,8 @@ gm.events.add('client.sm.openHuntingShop', async (json) => {
         global.menuOpen()
         stType = 4;
         await global.wait(50); 
-        mp.gui.emmit(`window.smOpen('${translateText("Охотничий магазин")}', 'inv-item-pickaxe1', 'green', '${json}');`);
-        gm.discord(translateText("В магазине охотника"));
+        mp.gui.emmit(`window.smOpen('${translateText("Huntiny store")}', 'inv-item-pickaxe1', 'green', '${json}');`);
+        gm.discord(translateText("Im hunting store"));
     }
     catch (e) 
     {
