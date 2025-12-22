@@ -112,7 +112,7 @@ gm.events.add(clientName + "bell", (number) => {
 
     isPhoneCall ();
 
-    mp.events.call('phone.notify', number, translateText("Звонит вам.."), 5);
+    mp.events.call('phone.notify', number, translateText("Calling you.."), 5);
 });
 
 rpc.register(rpcName + "getComingPhone", () => {
