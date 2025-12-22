@@ -223,7 +223,7 @@ global.IsLoadEntity = entity => new Promise(async (resolve, reject) => {
 			return resolve(true);
         let d = 0;
 		while (!entity || !entity.doesExist() || entity.handle === 0) {
-            if (d > 1000) return resolve(translateText("Ошибка IsLoadEntity."));
+            if (d > 1000) return resolve(translateText("Error IsLoadEntity."));
             d++;
             await mp.game.waitAsync(10);
         }
@@ -242,7 +242,7 @@ global.IsSeatVehicle = () => new Promise(async (resolve, reject) => {
 			return resolve(true);
 		let d = 0;
 		while (!global.localplayer.vehicle) {
-			if (d > 1000) return resolve(translateText("Ошибка IsSeatVehicle."));
+			if (d > 1000) return resolve(translateText("Error IsSeatVehicle."));
 			d++;
 			await mp.game.waitAsync(10);
 		}
