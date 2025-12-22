@@ -6,7 +6,7 @@ gm.events.add('passport', (data) => {
     {
         if (global.menuCheck() && !global.isBSearchActive || showDocs) return;
         mp.gui.emmit(`window.router.setView("PlayerPassport", ${data})`);
-        gm.discord(translateText("Смотрит паспорт"));
+        gm.discord(translateText("Looks at the passport"));
         showDocs = true;
         global.menuOpen();
     }
@@ -21,7 +21,7 @@ gm.events.add('licenses', (data) => {
     {
         if (global.menuCheck() && !global.isBSearchActive || showDocs) return;
         mp.gui.emmit(`window.router.setView("PlayerLicense", ${data})`);
-        gm.discord(translateText("Смотрит лицензии"));
+        gm.discord(translateText("Looks at licenses"));
         
         showDocs = true;
         global.menuOpen();
@@ -54,7 +54,7 @@ gm.events.add('client.docs', (pageId, data) => {
     {
         if (global.menuCheck() && !global.isBSearchActive || showDocs) return;
         mp.gui.emmit(`window.router.setView("PlayerDocumets", {page: '${pageId}', data: ${data}})`);
-        gm.discord(translateText("Смотрит документы"));
+        gm.discord(translateText("Looks at documents"));
         showDocs = true;
         global.menuOpen();
     }
