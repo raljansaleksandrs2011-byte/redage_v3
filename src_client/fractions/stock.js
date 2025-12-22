@@ -4,7 +4,7 @@ gm.events.add('openStock', (data) => {
 	{
 		if (global.menuCheck()) return;
 		mp.gui.emmit(`window.router.setView("FractionsStock", '${data}');`);
-		gm.discord(translateText("На фракционном складе"));
+		gm.discord(translateText("At the fractional warehouse"));
 		global.menuOpen();
 	}
 	catch (e) 
@@ -34,19 +34,19 @@ gm.events.add('stockTake', (index) => {
 		switch (index) {
 			case 0: //cash
 				mp.events.callRemote('setStock', "money");
-				global.input.set(translateText("Взять деньги"), translateText("Введите кол-во денег"), 10, "take_stock");
+				global.input.set(translateText("Взять деньги"), translateText("Enter the amount of money"), 10, "take_stock");
 				break;
 			case 1: //healkit
 				mp.events.callRemote('setStock', "medkits");
-				global.input.set(translateText("Взять аптечки"), translateText("Введите кол-во аптечек"), 10, "take_stock");
+				global.input.set(translateText("Take the first aid kits"), translateText("Enter the number of first aid kits"), 10, "take_stock");
 				break;
 			case 2: //weed
 				mp.events.callRemote('setStock', "drugs");
-				global.input.set(translateText("Взять наркотики"), translateText("Введите кол-во наркоты"), 10, "take_stock");
+				global.input.set(translateText("Take drugs"), translateText("Enter the amount of drugs"), 10, "take_stock");
 				break;
 			case 3: //mats
 				mp.events.callRemote('setStock', "mats");
-				global.input.set(translateText("Взять маты"), translateText("Введите кол-во матов"), 10, "take_stock");
+				global.input.set(translateText("Take mats"), translateText("Enter the number of mats"), 10, "take_stock");
 				break;
 			case 4: //weapons stock
 				mp.events.callRemote('openWeaponStock');
@@ -68,19 +68,19 @@ gm.events.add('stockPut', (index) => {
 		switch (index) {
 			case 3: //mats
 				mp.events.callRemote('setStock', "mats");
-				global.input.set(translateText("Положить маты"), translateText("Введите кол-во матов"), 10, "put_stock");
+				global.input.set(translateText("Put mats"), translateText("Enter the number of mats"), 10, "put_stock");
 				break;
 			case 0: //cash
 				mp.events.callRemote('setStock', "money");
-				global.input.set(translateText("Положить деньги"), translateText("Введите кол-во денег"), 10, "put_stock");
+				global.input.set(translateText("Deposit money"), translateText("Enter the amount of money"), 10, "put_stock");
 				break;
 			case 1: //healkit
 				mp.events.callRemote('setStock', "medkits");
-				global.input.set(translateText("Положить аптечки"), translateText("Введите кол-во аптечек"), 10, "put_stock");
+				global.input.set(translateText("Place first aid kits"), translateText("Enter the number of first aid kits"), 10, "put_stock");
 				break;
 			case 2: //weed
 				mp.events.callRemote('setStock', "drugs");
-				global.input.set(translateText("Положить наркотики"), translateText("Введите кол-во наркоты"), 10, "put_stock");
+				global.input.set(translateText("Put drugs"), translateText("Enter the amount of drugs"), 10, "put_stock");
 				break;
 			case 4: //weapons stock
 				mp.events.callRemote('openWeaponStock');
