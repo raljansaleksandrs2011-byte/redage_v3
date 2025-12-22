@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using GTANetworkAPI;
 
 namespace Redage.SDK
@@ -8,8 +8,8 @@ namespace Redage.SDK
         /// <summary>
         /// Инициализация системы логирования
         /// </summary>
-        /// <param name="_reference">Зависимость - Пространство вызова лога, своя пометка в консоли</param>
-        /// <param name="_canDebug">Включить или отключить вывод отладочных сообщений для всего пространства</param>
+        /// <param name="_reference">Dependency - Log call space, its own mark in the console</param>
+        /// <param name="_canDebug">Enable or disable debugging messages for the entire workspace.</param>
         public nLog(string _reference = null, bool _canDebug = false)
         {
             if (_reference == null) _reference = "Logger";
