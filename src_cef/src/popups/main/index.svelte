@@ -6,21 +6,21 @@
     const statuses = [
         {
             code: "kick",
-            status: "Вас кикнули",
-            text: "Вас кикнул Администратор : Dmitriy Jaguar вы можете обжаловать кик на форуме проекта https://forum.redage.net/",
+            status: "You were kicked",
+            text: "You were kicked by Administrator. You can appeal the kick on the project discord complains.",
             button: "Обжаловать"
         },
         {
             code: "ban",
-            status: "Вы забанены",
-            text: "Вас забанил Администратор : Dmitrio Jaguarchik до 21.22.2019 причина: Вылил ягуар https://forum.redage.net/",
-            button: "Обжаловать"
+            status: "You are banned",
+            text: "You were banned by Administrator. Intil 21.22.2019. Reason: ...",
+            button: "Appeal"
         },
         {
             code: "restart",
-            status: "Сервер на рестарте",
-            text: "В данный момент сервер на рестарте, ожадайте в течении 5 минут сервер запустится",
-            button: "Встать в очередь"
+            status: "Server restart",
+            text: "The server is currently being restarted. Please wait 5 minutes for the server to start.",
+            button: "Get in line"
         }
     ]
 
