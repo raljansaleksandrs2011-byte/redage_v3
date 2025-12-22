@@ -3,7 +3,7 @@ var canback = "";
 
 let isInterface = false;
 global.openDialog = () => {
-    mp.gui.emmit(`window.router.setPopUp("PopupConfirm", {title: "${translateText("Подтверждение")}", text: "${text}"});`);
+    mp.gui.emmit(`window.router.setPopUp("PopupConfirm", {title: "${translateText("Confirmation")}", text: "${text}"});`);
     mp.gui.cursor.visible = true;
     isInterface = false;    
     if (!global.menuOpened) {
@@ -44,12 +44,12 @@ gm.events.add('client:OnDialogCallback', (state) => {
 //
 
 gm.events.add('openHospitalDialog', (ctext) => {
-    mp.gui.emmit(`window.router.setPopUp("PopupDeath", {title: "${translateText("Подтверждение")}", text: "${ctext}"});`);
+    mp.gui.emmit(`window.router.setPopUp("PopupDeath", {title: "${translateText("Confirmation")}", text: "${ctext}"});`);
     mp.gui.cursor.visible = true;
     isInterface = false;    
     if (!global.menuOpened) {
         global.menuOpen(true);
-        gm.discord('Общается с врачами в больнице');
+        gm.discord('Communicates with doctors at the hospital');
         isInterface = true;
         global.isPopup = true;
     }
