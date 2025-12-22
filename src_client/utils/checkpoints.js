@@ -1,4 +1,4 @@
-﻿var markers = [];
+var markers = [];
 
 gm.events.add('createCheckpoint', function (uid, type, position, scale, dimension, r, g, b, dir) {
 	try
@@ -76,7 +76,7 @@ gm.events.add('createWorkBlip', function (position, blipColor = 49) {
 		if (workBlip != null) workBlip.destroy();
 		workBlip = mp.blips.new(0, position,
 			{
-				name: translateText("Чекпоинт"),
+				name: translateText("Checkpoint"),
 				scale: 1,
 				color: blipColor,
 				alpha: 255,
@@ -113,7 +113,7 @@ gm.events.add('createGarageBlip', function (position) {
 		if (garageBlip != null) garageBlip.destroy();
 		garageBlip = mp.blips.new(473, position,
 		{
-			name: translateText("Гараж"),
+			name: translateText("Garage"),
 			scale: 1,
 			color: 45,
 			alpha: 255,
