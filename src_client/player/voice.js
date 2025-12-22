@@ -1,4 +1,4 @@
-﻿//Рация
+//Рация
 let MaxRange = 12.0;
 let isRadio = false;
 let isVoice = false;
@@ -164,7 +164,7 @@ gm.events.add('openWalkieTalkieMenu', async (isGovFactionPlayer, walkieTalkieFre
 			mp.gui.emmit(`window.hudStore.isWalkietalkie (true)`);
 			mp.gui.emmit(`window.events.callEvent("cef.walkietalkie.updateMainInfo", '${global.Keys[global.userBinder[50].keyCode]}', ${isGovFactionPlayer}, ${walkieTalkieFrequency})`);			
 			global.menuOpen(true);
-			gm.discord(translateText("Настраивает рацию"));
+			gm.discord(translateText("Setting up radio"));
 			global.walkieTalkieMenu = true;
 		}
 	}
@@ -316,7 +316,7 @@ global.binderFunctions.voiceReload = () => {
 	{
 		if (voiceReloadTime >= new Date().getTime()) return;
 		voiceReloadTime = new Date().getTime() + 2000;
-		mp.gui.chat.push(translateText("Вы успешно перезагрузили голосовой чат для себя."));
+		mp.gui.chat.push(translateText("You have successfully reset your voice chat.."));
 		mp.voiceChat.cleanupAndReload(true, true, true);
 		global.pplMuted = [];
 		mp.events.callRemote("unmuteAll");
