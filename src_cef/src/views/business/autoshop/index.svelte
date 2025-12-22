@@ -146,55 +146,55 @@
                 <div class="box-item">
                     <div class="box-icon">
                         <span class="autoshop-money" />
-                        {translateText('business', 'Гос.стоимость')}:
+                        {translateText('business', 'State value')}:
                     </div>
                     {format("money", list [select].gosPrice)}
                 </div>
                 <div class="box-item">
                     <div class="box-icon">
                         <span class="autoshop-speed" />
-                        {translateText('business', 'Макс.скорость')}:
+                        {translateText('business', 'Max. speed')}:
                     </div>
                     {list [select].speed}
                 </div>
                 <div class="box-item">
                     <div class="box-icon">
                         <span class="autoshop-boost" />
-                        {translateText('business', 'Разгон')}:
+                        {translateText('business', 'Acceleration')}:
                     </div>
                     {list [select].boost}
                 </div>
                 <div class="box-item">
                     <div class="box-icon">
                         <span class="autoshop-seat" />
-                        {translateText('business', 'Кол-во мест')}:
+                        {translateText('business', 'Number of seats')}:
                     </div>
                     {list [select].seat}
                 </div>
                 <div class="box-item">
                     <div class="box-icon">
                         <span class="autoshop-invslots" />
-                        {translateText('business', 'Багажных мест')}:
+                        {translateText('business', 'Luggage space')}:
                     </div>
                     {list [select].invslots}
                 </div>
             </div>
-            <div class="info">{translateText('business', 'Цвет')}:</div>
+            <div class="info">{translateText('business', 'Colour')}:</div>
             <div class="box-colors">
             {#each authColors as value, index}
                 <i key={index} class={`color ${colorId !== index || "active"}`} on:click={() => setColor (index)} style="background: {value}" />
             {/each}
             </div>
-            <button class="btn-test-drive" on:click={() => startTestDrive (1)}>{translateText('business', 'Тест-драйв')} (100$)</button>
-            <button class="btn-test-drive" on:click={() => startTestDrive (2)}>{translateText('business', 'Тест-драйв FT')} (300$)</button>
+            <button class="btn-test-drive" on:click={() => startTestDrive (1)}>{translateText('business', 'Test-drive')} (100$)</button>
+            <button class="btn-test-drive" on:click={() => startTestDrive (2)}>{translateText('business', 'Test-drive FT')} (300$)</button>
         </div>
         {/if}
     </div>
     <div class="box-KeyInfo relative" on:mouseenter={() => executeClient ("client.camera.toggled", false)} on:mouseleave={() => executeClient ("client.camera.toggled", true)}>
         {#if (select !== -1 && list [select])}
-            <button class="btn-footer" on:click={() => executeClient ('buyAuto', 1)}>{translateText('business', 'Купить за')} {isDonateAutoroom === true ? `${format("money", list [select].price)}RB` : `$${format("money", list [select].price)}`}</button>
-            <button class="btn-footer" on:click={() => executeClient ('buyAuto', 2)}>{translateText('business', 'Купить для семьи за')} {isDonateAutoroom === true ? `${format("money", list [select].price)}RB` : `$${format("money", list [select].gosPrice)}`}</button>
+            <button class="btn-footer" on:click={() => executeClient ('buyAuto', 1)}>{translateText('business', 'Buy for')} {isDonateAutoroom === true ? `${format("money", list [select].price)}RB` : `$${format("money", list [select].price)}`}</button>
+            <button class="btn-footer" on:click={() => executeClient ('buyAuto', 2)}>{translateText('business', 'Buy for family for')} {isDonateAutoroom === true ? `${format("money", list [select].price)}RB` : `$${format("money", list [select].gosPrice)}`}</button>
         {/if}
-        <button class="btn-footer" on:click={() => executeClient ('closeAuto')}>{translateText('business', 'Выйти')}</button>
+        <button class="btn-footer" on:click={() => executeClient ('closeAuto')}>{translateText('business', 'Exit')}</button>
     </div>
 </div>
