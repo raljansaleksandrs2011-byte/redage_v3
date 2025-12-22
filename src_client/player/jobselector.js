@@ -8,7 +8,7 @@ gm.events.add("showJobMenu", (lvlJson) => {
             global.menuOpen();
             mp.gui.cursor.visible = true;
             jobselectorOpened = true;
-            gm.discord(translateText("Выбирает работу по душе"));
+            gm.discord(translateText("Chooses a job he likes"));
 
             mp.gui.emmit(
                 `window.router.setView("PlayerJobSelector", '${lvlJson}')`
