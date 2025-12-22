@@ -52,7 +52,7 @@ gm.events.add('client.houseinfo.open', (data) => {//+
     if (global.menuCheck()) return;
 
     global.menuOpen();
-    gm.discord(translateText("Присматривает дом"));
+    gm.discord(translateText("Looking for a house"));
     
     mp.gui.emmit(
         `window.router.setView("HouseBuy", '${data}')`
@@ -74,7 +74,7 @@ gm.events.add('client.houseinfo.action', (action) => {//+
 gm.events.add('client.furniture.open', (json) => {//+
     if (global.menuCheck()) return;
     global.menuOpen();
-    gm.discord(translateText("Присматривает мебель"));
+    gm.discord(translateText("Looking at furniture"));
     mp.gui.emmit(
         `window.router.setView("HouseFurniture", '${json}')`
     );
@@ -95,7 +95,7 @@ gm.events.add('client.furniture.close', () => {//+
 gm.events.add('client.vehicleair.open', (json) => {//+
     if (global.menuCheck()) return;
     global.menuOpen();
-    gm.discord(translateText("В магазине вертолётов"));
+    gm.discord(translateText("At the helicopter shop"));
     mp.gui.emmit(
         `window.router.setView("VehicleAir", '${json}')`
     );
