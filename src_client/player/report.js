@@ -3,7 +3,7 @@ global.reportactive = false;
 gm.events.add('addreport', (id_, author_, quest_) => {
     mp.gui.emmit(`window.reportsStore.addReport(${id_},'${author_}','${quest_}')`);
 	if(global.adminLVL <= 8) 
-        mp.events.call('notify', 0, 2, translateText("Пришел новый репорт!"), 3000);
+        mp.events.call('notify', 0, 2, translateText("A new report has arrived!"), 3000);
 })
 
 gm.events.add('setreport', (id, name) => {
