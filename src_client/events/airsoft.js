@@ -217,7 +217,7 @@ gm.events.add('airsoft_updateStats_client', async (state, value1, value2) => {
         else if (state == 1) { // 1x1, 2x2, 3x3, 5x5
             let data = [
                 {
-                    name: translateText("СЧЕТ"),
+                    name: translateText("CHECK"),
                     score: `${value1} : ${value2}`
                 }
             ];
@@ -228,7 +228,7 @@ gm.events.add('airsoft_updateStats_client', async (state, value1, value2) => {
             let players = mp.players.toArray().filter(p => p.hasVariable("killsWeapon"));
             players.sort((a, b) => b.getVariable("killsWeapon") - a.getVariable("killsWeapon"));
             players = players.slice(0, 3);
-            gm.discord(translateText("Играет в GunGame"));
+            gm.discord(translateText("Plays GunGame"));
 
             let data = [
                 {
@@ -244,7 +244,7 @@ gm.events.add('airsoft_updateStats_client', async (state, value1, value2) => {
                     score: players[2] ? players[2].getVariable("killsWeapon") : 0
                 },
                 {
-                    name: translateText("Уровень"),
+                    name: translateText("Level"),
                     score: ((global.localplayer.getVariable("weaponLevel") || 0) + 1)
                 }
             ];
@@ -260,14 +260,14 @@ gm.events.add('airsoft_updateStats_client', async (state, value1, value2) => {
 
             let start_seconds = 5;
             
-            mp.gui.emmit(`window.updateGameTime (${start_seconds}, '${translateText("Матч")}', '${translateText("Цель: убить как можно больше противников")}');`);
+            mp.gui.emmit(`window.updateGameTime (${start_seconds}, '${translateText("Матч")}', '${translateText("Goal: kill as many enemies as possible")}');`);
             
             if (start_interval)
                 clearInterval(start_interval);
 
             start_interval = setInterval(() => {
                 start_seconds -= 1;
-                mp.gui.emmit(`window.updateGameTime (${start_seconds}, '${translateText("Матч")}', '${translateText("Цель: убить как можно больше противников")}');`);
+                mp.gui.emmit(`window.updateGameTime (${start_seconds}, '${translateText("Матч")}', '${translateText("Goal: kill as many enemies as possible")}');`);
 
                 if (start_seconds <= 0) {
                     clearInterval(start_interval);
