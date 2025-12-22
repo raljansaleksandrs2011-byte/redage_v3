@@ -28,7 +28,7 @@ gm.events.add("client.note.create", (type, ItemId, nameValue, textValue) => {
         if (!NotesVisible) return;
         mp.events.call('client.note.close');
         mp.events.callRemote('server.note.create', type, ItemId, nameValue, textValue);
-        gm.discord(translateText("Пишет записку"));
+        gm.discord(translateText("Writing a note"));
     }
     catch (e) 
     {
@@ -38,5 +38,5 @@ gm.events.add("client.note.create", (type, ItemId, nameValue, textValue) => {
 
 gm.events.add("client.note.open", (json) => {
     global.OpenNotes (json);
-    gm.discord(translateText("Читает записку"));
+    gm.discord(translateText("Reading a note"));
 });
