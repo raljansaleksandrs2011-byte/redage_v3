@@ -63,8 +63,8 @@ gm.events.add(clientName + "add", (id, name, posX, posY, posZ) => {
 
     mp.gui.emmit(`window.listernEvent ('phone.mechjob.update');`);
 
-    mp.gui.chat.push(translateText("!{#00a86b}[ДИСПЕТЧЕР]: !{#ffffff}Игрок {0} вызвал автомеханика !{#ffcc00}({1}м)!{#ffffff}. Откройте телефон чтобы принять вызов", name, newItem.dist));
-    mp.events.call('phone.notify', 333, translateText("Появился новый заказ! :)"), 4);
+    mp.gui.chat.push(translateText("!{#00a86b}[DISPATCHER: !{#ffffff}Player {0} has called a mechanic !{#ffcc00}({1}m)!{#ffffff}. Open your phone to accept the call", name, newItem.dist));
+mp.events.call('phone.notify', 333, translateText("A new order has appeared"! :)"), 4);
 });
 
 gm.events.add(clientName + "dell", (id) => {
