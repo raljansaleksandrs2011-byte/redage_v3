@@ -10,7 +10,7 @@ gm.events.add('client.wedding.open', (type, price) => {
     global.menuOpen();
     weddingToggled = true;
     mp.gui.emmit(`window.router.setView("PlayerWedding", {type: ${type}, price: ${price}});`);
-    gm.discord(translateText("Общается со священником"));
+    gm.discord(translateText("Communicates with the priest"));
 });
 
 global.binderFunctions.closeWedding = () => {
