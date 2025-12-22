@@ -27,7 +27,7 @@ setInterval(function () {
     {
         const minutes = Math.trunc(afkSecondsCount / 60);
         const seconds = afkSecondsCount % 60;
-        gm.discord(translateText("Сладенько спит уже  {0}:{1}", global.formatIntZero(minutes, 2), global.formatIntZero(seconds, 2)));
+        gm.discord(translateText("He's already sleeping sweetly.  {0}:{1}", global.formatIntZero(minutes, 2), global.formatIntZero(seconds, 2)));
     }
 }, 1000);
 
