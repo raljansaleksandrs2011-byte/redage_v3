@@ -180,7 +180,7 @@ gm.events.add("syncCarryng", (player, data) => {
         player.carryngData = _carryngData;
     
         if (player === global.localplayer || _target === global.localplayer) {
-            mp.gui.emmit(`window.UpdateButtonText('hud__icon-Anim', '${translateText('Чтобы сбросить анимацию, нажмите "Пробел" дважды.')}');`);
+            mp.gui.emmit(`window.UpdateButtonText('hud__icon-Anim', '${translateText('To reset the animation, press the space bar twice..')}');`);
             //mp.api.usingSystemAnim(true);
             //if (4 != _type)
             //   mp.inventory.pocketItem();
