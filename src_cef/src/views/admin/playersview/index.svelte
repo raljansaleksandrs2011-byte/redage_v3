@@ -31,7 +31,7 @@
 <div class="plist">
     <div class="head">
         <img src={SmallLogo} alt="SmallLogo"/>
-        <h1>RedAge.net</h1>
+        <h1>Harbo Roleplay</h1>
         <span>Players: {items.length}</span>
     </div>
     <div class="list">
@@ -39,9 +39,9 @@
             <thead>
             <tr>
                 <th on:click={() => sortPlayers(0)} class={(playerssort == 0 ? "selectedSort" : "") + (sortrevert ? " reversedSort" : "")}>ID</th>
-                <th on:click={() => sortPlayers(1)} class={(playerssort == 1 ? "selectedSort" : "") + (sortrevert ? " reversedSort" : "")}>{translateText('admin', 'Никнейм')}</th>
-                <th on:click={() => sortPlayers(2)} class={(playerssort == 2 ? "selectedSort" : "") + (sortrevert ? " reversedSort" : "")}>{translateText('admin', 'Уровень')}</th>
-                <th on:click={() => sortPlayers(3)} class={(playerssort == 3 ? "selectedSort" : "") + (sortrevert ? " reversedSort" : "")}>{translateText('admin', 'Пинг')}</th>
+                <th on:click={() => sortPlayers(1)} class={(playerssort == 1 ? "selectedSort" : "") + (sortrevert ? " reversedSort" : "")}>{translateText('admin', 'Nickname')}</th>
+                <th on:click={() => sortPlayers(2)} class={(playerssort == 2 ? "selectedSort" : "") + (sortrevert ? " reversedSort" : "")}>{translateText('admin', 'Level')}</th>
+                <th on:click={() => sortPlayers(3)} class={(playerssort == 3 ? "selectedSort" : "") + (sortrevert ? " reversedSort" : "")}>{translateText('admin', 'Ping')}</th>
             </tr>
             </thead>
             <tbody>
