@@ -15,7 +15,7 @@ export default {
     'You are experiencing high packet loss. Please check back later': 'You are experiencing high packet loss. Please check back later',
 'RequestAnimDict error. Dict:': 'RequestAnimDict error. Dict: ',
 'Manages his own business': 'Manages his own business',
-'on RedAge under ID {0}': 'on RedAge under ID {0}',
+'on Harbo under ID {0}': 'on Harbo under ID {0}',
 'Studying the Winter Battle Pass': 'Studying the Winter Battle Pass',
 'Well done, you did it!': 'Well done, you did it!',
 '~g~E~s~ sit at the table': '~g~E~s~ sit at the table',
