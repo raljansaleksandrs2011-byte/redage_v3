@@ -9,9 +9,9 @@ const ClubNames = {
 
 const ClubAlcos = {
     10: ["«Martini Asti»", "«Sambuca»", "«Campari»"],
-    11: [translateText("«На корке лимона»"), translateText("«На бруснике»"), translateText("«Русский стандарт»")],
+    11: [translateText("«On a lemon peel»"), translateText("«On cranberries»"), translateText("«Russian Standard»")],
     12: ["«Asahi»", "«Midori»", "«Yamazaki»"],
-    13: [translateText("«Дживан»"), translateText("«Арарат»"), "«Noyan Tapan»"],
+    13: [translateText("«Jivan»"), translateText("«Ararat»"), "«Noyan Tapan»"],
 };
 
 const ClubDrinks = [75, 115, 150];
@@ -32,52 +32,52 @@ gm.events.add("openAlco", (club, modief, isOwner, stock) => {
 				LeftMiddle: new global.Point(0, res.y / 2 - 200),
 			};
 			alcoUI = new global.NativeMenu(translateText("Клуб"), ClubNames[club], UIPositions.LeftMiddle);
-			gm.discord(translateText("Выбирает алкоголь в клубе"));
+			gm.discord(translateText("Chooses alcohol in a club"));
 		
 			var drinks = [` ${ClubAlcos[club][0]} ${(ClubDrinks[0] * modief).toFixed()}$`,
 				` ${ClubAlcos[club][1]} ${(ClubDrinks[1] * modief).toFixed()}$`,
 				` ${ClubAlcos[club][2]} ${(ClubDrinks[2] * modief).toFixed()}$`];
 		
 			alcoUI.AddItem(new UIMenuListItem(
-				translateText("Напитки"),
-				translateText("Вы можете выбрать любой напиток"),
+				translateText("Drinks"),
+				translateText("You can choose any drink"),
 				new ItemsCollection(drinks)
 			));
 		
 			if (isOwner) {
 
-				alcoUI.AddItem(new UIMenuItem(translateText("Инфо"), translateText("Материалы: {0}\n{1} - {2}\n{3} - {4}\n{5} - {6}", stock[0], ClubAlcos[club][0], stock[1], ClubAlcos[club][1], stock[2], ClubAlcos[club][2], stock[3])));
-				alcoUI.AddItem(new UIMenuItem(translateText("Взять"), translateText("Взять выбранный напиток со склада")));
-				alcoUI.AddItem(new UIMenuItem(translateText("Скрафтить"), translateText("Скрафтить выбранный напиток")));
-				alcoUI.AddItem(new UIMenuItem(translateText("Установить цену"), translateText("Установить модификатор цены для всех продуктов (от 50% до 150%)")));
+				alcoUI.AddItem(new UIMenuItem(translateText("Info"), translateText("Materials: {0}\n{1} - {2}\n{3} - {4}\n{5} - {6}", stock[0], ClubAlcos[club][0], stock[1], ClubAlcos[club][1], stock[2], ClubAlcos[club][2], stock[3])));
+				alcoUI.AddItem(new UIMenuItem(translateText("Take"), translateText("Take the selected drink from the warehouse")));
+				alcoUI.AddItem(new UIMenuItem(translateText("Craft"), translateText("Craft the selected drink")));
+				alcoUI.AddItem(new UIMenuItem(translateText("Set price"), translateText("Set a price modifier for all products (from 50% to 150%)")));
 			}
 		
-			alcoUI.AddItem(new UIMenuItem(translateText("Купить"), translateText("Купить выбранный напиток")));
+			alcoUI.AddItem(new UIMenuItem(translateText("Buy"), translateText("Buy choosed drink")));
 		
-			var uiItem = new UIMenuItem(translateText("Закрыть"), translateText("Закрыть меню"));
+			var uiItem = new UIMenuItem(translateText("Close"), translateText("Close menu"));
 			uiItem.BackColor = new Color(255, 0, 0);
 			alcoUI.AddItem(uiItem);
 		
 			alcoUI.ItemSelect.on(item => {
 				if(new Date().getTime() - global.lastCheck < 100) return; 
 				global.lastCheck = new Date().getTime();
-				if (item.Text == translateText("Купить")) {
+				if (item.Text == translateText("Buy")) {
 					mp.events.callRemote('menu_alco', 0, selectedAlco);
 				}
 				else if (item.Text == translateText("Взять")) {
 					mp.events.callRemote('menu_alco', 1, selectedAlco);
 				}
-				else if (item.Text == translateText("Скрафтить")) {
+				else if (item.Text == translateText("Craft")) {
 					mp.events.callRemote('menu_alco', 2, selectedAlco);
 				}
-				else if (item.Text == translateText("Установить цену")) {
+				else if (item.Text == translateText("Set pricr")) {
 					global.openAlco = false;
 					global.menuClose();
 					alcoUI.Close();
 					alcoUI = null;
 					mp.events.callRemote('menu_alco', 3, 0);
 				}
-				else if (item.Text == translateText("Закрыть")) {
+				else if (item.Text == translateText("Close")) {
 					global.openAlco = false;
 					global.menuClose();
 					alcoUI.Close();
