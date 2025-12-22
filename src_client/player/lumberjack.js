@@ -62,7 +62,7 @@ gm.events.add("lumberjackJob_startProcess", () => {
 
         global.localplayer.freezePosition(true);
         global.menuOpened = true; // чтобы запретить открывать инвентарь и биндер
-        gm.discord(translateText("Рубит деревья в лесу"));
+        gm.discord(translateText("Chopping down trees in the forest"));
 
         mp.events.callRemote('Lumberjack_StartAnimCutTree');
 
@@ -202,7 +202,7 @@ function drawTreeBar(state, x, y, z, width, height, health) {
         else if (health < 45) mp.game.graphics.drawRect(pos.x - 0.0375 + delta_pos, pos.y, ((health * width) / 100), height, 215, 55, 55, 200);
     }
 
-    mp.game.graphics.drawText(state == 1 ? translateText('{0}HP\nНажмите один раз E чтобы рубить', health) : "E", [pos.x, pos.y - 0.01], {
+    mp.game.graphics.drawText(state == 1 ? translateText('{0}HP\nPress E once to chop', health) : "E", [pos.x, pos.y - 0.01], {
         font: 0,
         color: [255, 255, 255, 185],
         scale: [0.25, 0.25],
