@@ -13,7 +13,7 @@ global.binderFunctions.o_donate = () => {// F9
         global.menuOpen();
         donateOpened = true;
         mp.gui.emmit(`window.router.setView('DonateMain')`);
-        gm.discord(translateText("Изучает донат-меню"));
+        gm.discord(translateText("Exploring the donation menu"));
 	}
 };
 
@@ -73,12 +73,12 @@ gm.events.add('donbuy', (id, data, surname) => {
         if(id === 1)
         {
             if (global.checkName(data) || !global.checkName2(data) || data.length > 25 || data.length <= 2) {
-                mp.events.call('notify', 1, 9, translateText("Правильный формат имени: 3-25 символов и первая буква имени заглавная"), 3000);
+                mp.events.call('notify', 1, 9, translateText("The correct name format is 3-25 characters and the first letter of the name is capitalized."), 3000);
                 return;
             }
         
             if (global.checkName(surname) || !global.checkName2(surname) || surname.length > 25 || surname.length <= 2) {
-                mp.events.call('notify', 1, 9, translateText("Правильный формат фамилии: 3-25 символов и первая буква фамилии заглавная"), 3000);
+                mp.events.call('notify', 1, 9, translateText("The correct format for a last name is 3-25 characters and the first letter of the last name is capitalized."), 3000);
                 return;
             }
 
@@ -87,11 +87,11 @@ gm.events.add('donbuy', (id, data, surname) => {
         }
         else if(id === 999) {
             if(data.length <= 0 || data.length > 50) {
-                mp.events.call('notify', 1, 9, translateText("Неправильный формат логина"), 3000);
+                mp.events.call('notify', 1, 9, translateText("Incorrect login format"), 3000);
                 return;
             }
             if(surname < 25 || surname > 9999) {
-                mp.events.call('notify', 1, 9, translateText("За раз можно отправить от 25 до 9.999 RedBucks"), 3000);
+                mp.events.call('notify', 1, 9, translateText("You can send from 25 to 9,999 HarboBucks at a time."), 3000);
                 return;
             }
             mp.events.callRemote("giftdonate", data, surname);
@@ -118,7 +118,7 @@ gm.events.add('client.roullete.open', (caseid, count) => {
 gm.events.add('client.roullete.buy', (caseid, count) => {
     if (!global.loggedin || global.cuffed || global.isDeath == true) return;
     mp.events.callRemote('server.roullete.buy', caseid, count);
-    gm.discord(translateText("Покупает кейсы"));
+    gm.discord(translateText("Buying cases"));
 });
 
 gm.events.add('client.roullete.confirm', (type, IndexList) => {
@@ -127,7 +127,7 @@ gm.events.add('client.roullete.confirm', (type, IndexList) => {
 
 gm.events.add('client.roullete.start', (value) => {
     mp.gui.emmit(`window.events.callEvent("cef.roullete.confirm", ${value})`);
-    gm.discord(translateText("Крутит кейсы"));
+    gm.discord(translateText("Spinning cases"));
 });
 
 gm.events.add('client.sapper.bet', (value) => {
@@ -136,7 +136,7 @@ gm.events.add('client.sapper.bet', (value) => {
 
 gm.events.add('client.sapper.game', (value) => {
     mp.gui.emmit(`window.events.callEvent("cef.sapper.game", ${value})`);
-    gm.discord(translateText("Играет в сапёра"));
+    gm.discord(translateText("Playing Minesweeper"));
 });
 
 gm.events.add('client.sapper.end', (value) => {
@@ -308,77 +308,77 @@ gm.events.add('client.donate.load', () => {
 let packList = [
     {
         id: 0,
-        name: translateText("На ход ноги"),
+        name: translateText("On the move"),
         desc: "",
         price: 5000,
         list: []
     },
     {
         id: 1,
-        name: translateText("Стартовый"),
+        name: translateText("Starting"),
         desc: "",
         price: 8500,
         list: []
     },
     {
         id: 2,
-        name: translateText("Продвинутый"),
+        name: translateText("Advanced"),
         desc: "",
         price: 13000,
         list: []
     },
     {
         id: 3,
-        name: translateText("Заряженный"),
+        name: translateText("Charged"),
         desc: "",
         price: 20000,
         list: []
     },
     /*{
         id: 4,
-        name: translateText("Хорошее начало"),
+        name: translateText("A good start"),
         desc: "",
         price: 7999,
         list: []
     },
     {
         id: 5,
-        name: translateText("Большие планы"),
+        name: translateText("Big plans"),
         desc: "",
         price: 8999,
         list: []
     },*/
     {
         id: 6,
-        name: translateText("Жирный чек"),
+        name: translateText("Fat check"),
         desc: "",
         price: 36000,
         list: []
     },
     /*{
         id: 7,
-        name: translateText("Отличное начало"),
+        name: translateText("Good start"),
         desc: "",
         price: 17999,
         list: []
     },*/
     {
         id: 8,
-        name: translateText("ЛЕГЕНДА"),
+        name: translateText("LEGEND"),
         desc: "",
         price: 65000,
         list: []
     },
     /*{
         id: 9,
-        name: translateText("Прекрасное начало"),
+        name: translateText("Perfect start"),
         desc: "",
         price: 29999,
         list: []
     },*/
     {
         id: 10,
-        name: translateText("Батя"),
+        name: translateText("Dad"),
         desc: "",
         price: 100000,
         list: []
@@ -388,15 +388,15 @@ let packList = [
 let vipLists = [
     {
         id: 0,
-        name: translateText("Подписка"),
+        name: translateText("Subscription"),
         class: "reborn",
         price: 15000,
         img: "subscripte",
         list: [
-            translateText("20000$ каждый день."),
-            translateText("150 RB Каждый день."),
-            translateText("+ 1 Особенный кейс."),
-            translateText("Подписку нужно забирать самостоятельно раз в 24 часа."),
+            translateText("20000$ every fay."),
+            translateText("150 HB every day."),
+            translateText("+ 1 A special case."),
+            translateText("The subscription must be picked up in person once every 24 hours."),
         ]
     },
     {
@@ -406,8 +406,8 @@ let vipLists = [
         price: 1500,
         img: "silver",
         list: [
-            translateText("50$ прибавка к ежечасной зарплате."),
-            translateText("Скидка 10% на аренду транспорта."),
+            translateText("50$ increase in hourly wages."),
+            translateText("10% discount on vehicle rentals."),
         ]
     },
     {
@@ -417,11 +417,11 @@ let vipLists = [
         price: 3500,
         img: "gold",
         list: [
-            translateText("70$ прибавка к ежечасной зарплате."),
-            translateText("Увеличение зарплаты на начальных работах на 15%."),
-            translateText("Удвоенное XP."),
-            translateText("Возможность оплачивать налоги за недвижимость и бизнес на 15 дней вперёд."),
-            translateText("Скидка 15% на аренду транспорта."),
+            translateText("70$ increase in hourly wages."),
+            translateText("Increase in wages for entry-level jobs by 15%."),
+            translateText("Doubled XP."),
+            translateText("Possibility to pay property and business taxes 15 days in advance."),
+            translateText("15% discount on vehicle rentals."),
         ]
     },
     {
@@ -431,12 +431,12 @@ let vipLists = [
         price: 5000,
         img: "platinum",
         list: [
-            translateText("110$ прибавка к ежечасной зарплате."),
-            translateText("Увеличение зарплаты на начальных работах на 25%."),
-            translateText("Удвоенное XP."),
-            translateText("Возможность оплачивать налоги за недвижимость и бизнес на 20 дней вперёд."),
-            translateText("Скидка 20% на аренду транспорта."),
-            translateText("Каждый PayDay +2 RB на донат-счёт"),
+            translateText("110$ increase in hourly wages."),
+            translateText("Increase in salary for entry-level jobs by 25%."),
+            translateText("Doubled XP."),
+            translateText("Ability to pay property and business taxes 20 days in advance."),
+            translateText("20% discount on transport rental."),
+            translateText("Every PayDay +2 HB to your donation account"),
         ]
     },
     {
@@ -446,13 +446,13 @@ let vipLists = [
         price: 10000,
         img: "bronze",
         list: [
-            translateText("200$ прибавка к ежечасной зарплате."),
-            translateText("Увеличение зарплаты на начальных работах на 35%."),
-            translateText("Утроенное XP."),
-            translateText("Возможность оплачивать налоги за недвижимость и бизнес на 30 дней вперёд."),
-            translateText("Скидка 25% на аренду транспорта."),
-            translateText("Каждый PayDay +5 RB на донат-счёт"),
-            translateText("[NEW] Писать репорты без задержек!"),
+            translateText("200$ increase in hourly wages."),
+            translateText("Increase in salary for entry-level jobs 35%."),
+            translateText("Tripled XP."),
+            translateText("Possibility to pay property and business taxes 30 days in advance."),
+            translateText("25% discount on vehicle rentals."),
+            translateText("Every PayDay +5 HB to your donation account"),
+            translateText("[NEW] Write reports without delays!"),
         ]
     },
 ];
@@ -464,10 +464,10 @@ gm.events.add('client.donate.init', (premium, priceRb, giveMoney, jsonCategory, 
     vipLists.forEach((item) => {
         item.price = premium[item.id].Price;
         if (item.id == 0) {
-            item.list[0] = premium[item.id].GiveMoney + translateText("$ каждый день.");
-            item.list[1] = premium[item.id].GiveRb + translateText(" RB каждый день.");
+            item.list[0] = premium[item.id].GiveMoney + translateText("$ every day.");
+            item.list[1] = premium[item.id].GiveRb + translateText(" HB every day.");
         } else {
-            item.list[0] = premium[item.id].GiveMoney + translateText("$ прибавка к ежечасной зарплате.");
+            item.list[0] = premium[item.id].GiveMoney + translateText("$ increase in hourly wages.");
         }
     })
 
