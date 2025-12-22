@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\resources",
+    "\\resources\\NeptuneEvo",
+    "\\resources\\NeptuneEvo\\Database",
+    "\\resources\\NeptuneEvo\\Database\\Config",
+    "\\resources\\NeptuneEvo\\Database\\Server"
+  ],
+  "SelectedNode": "\\resources\\NeptuneEvo\\Database\\Config\\Config.tt",
+  "PreviewInSolutionExplorer": false
+}
