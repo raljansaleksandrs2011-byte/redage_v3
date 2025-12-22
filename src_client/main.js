@@ -1,4 +1,4 @@
-﻿
+
 let carshopcam = null;
 var effect = '';
 global.loggedin = false;
@@ -154,7 +154,7 @@ gm.events.add('restart', function (text = translateText("Происходит р
 	mp.events.call("client.phone.close");
 	global.menuOpen();
 	mp.gui.emmit(`window.router.setView("PlayerRestart", '${text}');`);
-	//mp.gui.emmit(`window.router.setPopUp("PopupMain", {Type: "restart", Title: translateText("Рестарт сервера"), Text: translateText("В данный момент происходит плановый рестарт сервера, обычно это занимает всего несколько минут. Не отключайтесь от сервера, вас подключит автоматически.")})`);
+	//mp.gui.emmit(`window.router.setPopUp("PopupMain", {Type: "restart", Title: translateText("Server restart"), Text: translateText("The server is currently undergoing a scheduled restart; this usually only takes a few minutes. Please remain connected to the server; you'll be reconnected automatically.")})`);
 });
 
 gm.events.add('restart.add', (message) => {
@@ -205,7 +205,7 @@ global.binderFunctions.interactionPressed = () => {// E key
 		if (global.ANTIANIM) return;
 		if (new Date().getTime() - global.lastCheckKeyToEvents < (1000 * 60)) 
 		{
-            mp.events.call('notify', 4, 9, translateText("Немного подождите... на вас действует минутное ограничение, вы очень быстрый."), 10000);
+            mp.events.call('notify', 4, 9, translateText("Please wait a moment... you are under a minute limit, you are very fast."), 10000);
             return;
         }
         mp.events.callRemote('server.events.collect', global.selectFestive.fId);
@@ -305,7 +305,7 @@ global.binderFunctions.onAutoPilot = () => {
 					global.localplayer.taskVehicleDriveToCoordLongrange(global.localplayer.vehicle.handle, coord.x, coord.y, coord.z, 40.0, 831, 50.0);
 					global.ap = true;
 	
-					mp.events.call('notify', 2, 9, translateText("Вы включили автопилот. Обратите внимание, что данная функция не освобождает Вас от RP ситуаций."), 5000);
+					mp.events.call('notify', 2, 9, translateText("You've enabled autopilot. Please note that this feature does not exempt you from RP situations."), 5000);
 					mp.gui.emmit(`window.vehicleState.autoPilot (true)`);
 	
 					if (apinterval == null) {
@@ -324,7 +324,7 @@ global.binderFunctions.onAutoPilot = () => {
 										global.localplayer.vehicle.setEngineOn(false, true, false);
 	
 									global.localplayer.clearTasks();
-									mp.events.call('notify', 2, 9, translateText("Автопилот отключён."), 1500);
+									mp.events.call('notify', 2, 9, translateText("Autopilot off."), 1500);
 								}
 	
 								global.ap = false;
@@ -381,11 +381,11 @@ global.binderFunctions.onSirenSync = () => {
 gm.events.add('syncWP', function (bX, bY, type) {
     if(!Natives.IS_WAYPOINT_ACTIVE ()) {
 		mp.game.ui.setNewWaypoint(bX, bY);
-		if(type == 0) mp.events.call('notify', 2, 9, translateText("Пассажир передал Вам информацию о своём маршруте!"), 3000);
-		else if(type == 1) mp.events.call('notify', 2, 9, translateText("Человек из списка контактов Вашего телефона передал Вам метку его местоположения!"), 3000);
+		if(type == 0) mp.events.call('notify', 2, 9, translateText("The passenger has given you information about his route!"), 3000);
+		else if(type == 1) mp.events.call('notify', 2, 9, translateText("A person from your phone's contact list has sent you their location tag!"), 3000);
 	} else {
-		if(type == 0) mp.events.call('notify', 4, 9, translateText("Пассажир попытался передать Вам информацию о маршруте, но у Вас уже установлен другой маршрут."), 5000);
-		else if(type == 1) mp.events.call('notify', 4, 9, translateText("Человек из списка контактов Вашего телефона попытался передать Вам метку его местоположения, но у Вас уже установлена другая метка."), 5000);
+		if(type == 0) mp.events.call('notify', 4, 9, translateText("The passenger attempted to give you route information, but you already have a different route set up."), 5000);
+		else if(type == 1) mp.events.call('notify', 4, 9, translateText("Someone in your phone's contact list tried to share their location with you, but you already have a different location set.."), 5000);
 	}
 });
 
@@ -399,11 +399,11 @@ var lastPos = new mp.Vector3(0, 0, 0);
 gm.events.add("playerRuleTriggered", (rule, counter) => 
 {
     if (rule === 'ping' && counter > 5) {
-        mp.events.call('notify', 4, 2, translateText("Ваш ping слишком большой. Зайдите позже"), 5000);
+        mp.events.call('notify', 4, 2, translateText("Your ping is too high. Please check back later."), 5000);
         mp.events.callRemote("kickclient");
     }
     /*if (rule === 'packetLoss' && counter => 10) {
-        mp.events.call('notify', 4, 2, translateText("У Вас большая потеря пакетов. Зайдите позже"), 5000);
+        mp.events.call('notify', 4, 2, translateText("You are experiencing significant packet loss. Please check back later."), 5000);
         mp.events.callRemote("kickclient");
     }*/
 });
