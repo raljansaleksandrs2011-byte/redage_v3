@@ -1,4 +1,4 @@
-﻿/*const colorHudIds = [
+/*const colorHudIds = [
     9,
     18,
     143,
@@ -63,7 +63,7 @@ global.setStartCam = async () => {
 
 setTimeout(() => {
     global.setStartCam ();
-    gm.discord(translateText("Восхищается окном логина"));
+    gm.discord(translateText("Admiring the login window"));
 }, 150)
 
 gm.events.add('client.auth', async (login) => {
@@ -81,7 +81,7 @@ gm.events.add('client:OnSignInv2', function (username, password) {
     try
     {
         if (new Date().getTime() - lastButAuth < 500) {
-            mp.events.call('notify', 4, 9, translateText("Слишком быстро"), 3000);
+            mp.events.call('notify', 4, 9, translateText("Too fast"), 3000);
             return;
         }
         lastButAuth = new Date().getTime();
@@ -97,7 +97,7 @@ gm.events.add('restorepass', function (state, authData) {
     try
     {
         if (new Date().getTime() - lastButAuth < 1000) {
-            mp.events.call('notify', 4, 9, translateText("Слишком быстро"), 3000);
+            mp.events.call('notify', 4, 9, translateText("Too fast"), 3000);
             return;
         }
         lastButAuth = new Date().getTime();
@@ -119,28 +119,28 @@ gm.events.add('client:OnSignUpv2', function (username, email, promo, pass1, pass
     try
     {
         if (new Date().getTime() - lastButAuth < 500) {
-            mp.events.call('notify', 4, 9, translateText("Слишком быстро"), 3000);
+            mp.events.call('notify', 4, 9, translateText("Too fast"), 3000);
             return;
         }
         lastButAuth = new Date().getTime();
 
         if (global.isInvalidLogin(username)) {
-            mp.events.call('notify', 1, 9, translateText("Логин не соответствует формату или слишком длинный!"), 3000);
+            mp.events.call('notify', 1, 9, translateText("The login does not match the format or is too long!"), 3000);
             return;
         }
 
         if (global.isInvalidEmail(email)) {
-            mp.events.call('notify', 1, 9, translateText("Электронная почта не соответствует формату!"), 3000);
+            mp.events.call('notify', 1, 9, translateText("The email is not in the correct format.!"), 3000);
             return;
         }
 
         if(pass1 != pass2) {
-            mp.events.call('notify', 1, 9, translateText("Пароли не совпадают!"), 3000);
+            mp.events.call('notify', 1, 9, translateText("The passwords don't match!"), 3000);
             return;
         }
         
         if(pass1.length < 3) {
-            mp.events.call('notify', 1, 9, translateText("Слишком короткий пароль!"), 3000);
+            mp.events.call('notify', 1, 9, translateText("The password is too short!"), 3000);
             return;
         }
 
@@ -165,7 +165,7 @@ gm.events.add('client:OnSelectCharacterv2', function (uuid, spawnid) {
     try
     {
         if (new Date().getTime() - lastButSlots < 500) {
-            mp.events.call('notify', 4, 9, translateText("Слишком быстро"), 3000);
+            mp.events.call('notify', 4, 9, translateText("Too fast"), 3000);
             return;
         }
         lastButSlots = new Date().getTime();
@@ -186,17 +186,17 @@ gm.events.add('client:OnCreateCharacterv2', function (slot, name, lastname) {
     try
     {
         if (global.checkName(name) || !global.checkName2(name) || name.length > 25 || name.length <= 2) {
-            mp.events.call('notify', 1, 9, translateText("Правильный формат имени: 3-25 символов и первая буква имени заглавная"), 3000);
+            mp.events.call('notify', 1, 9, translateText("The correct name format is 3-25 characters and the first letter of the name is capitalized."), 3000);
             return;
         }
 
         if (global.checkName(lastname) || !global.checkName2(lastname) || lastname.length > 25 || lastname.length <= 2) {
-            mp.events.call('notify', 1, 9, translateText("Правильный формат фамилии: 3-25 символов и первая буква фамилии заглавная"), 3000);
+            mp.events.call('notify', 1, 9, translateText("The correct format for a last name is 3-25 characters and the first letter of the last name is capitalized."), 3000);
             return;
         }
 
         if (new Date().getTime() - lastButSlots < 500) {
-            mp.events.call('notify', 4, 9, translateText("Слишком быстро"), 3000);
+            mp.events.call('notify', 4, 9, translateText("Too fast"), 3000);
             return;
         }
         lastButSlots = new Date().getTime();
@@ -213,7 +213,7 @@ gm.events.add('buyNewSlot', function (slotId) {
     try
     {
         if (new Date().getTime() - lastButSlots < 500) {
-            mp.events.call('notify', 4, 9, translateText("Слишком быстро"), 3000);
+            mp.events.call('notify', 4, 9, translateText("Too fast"), 3000);
             return;
         }
         lastButSlots = new Date().getTime();
@@ -335,7 +335,7 @@ gm.events.add('client.merger.auntification', function (password, serverId) {
     {
         if (new Date().getTime() - lastButAuth < 3000) {
             mp.gui.emmit(`window.events.callEvent("cef.merger.progress", -2)`);
-            mp.events.call('notify', 4, 9, translateText("Слишком быстро"), 3000);
+            mp.events.call('notify', 4, 9, translateText("Too fast"), 3000);
             return;
         }
         lastButAuth = new Date().getTime();
@@ -365,7 +365,7 @@ gm.events.add('client.session.update', function () {
 
 gm.events.add('client.email.confirm', function (email) {
     if (global.isInvalidEmail(email)) {
-        mp.events.call('notify', 1, 9, translateText("Электронная почта не соответствует формату!"), 3000);
+        mp.events.call('notify', 1, 9, translateText("The email is not in the correct format.!"), 3000);
         return;
     }
 
