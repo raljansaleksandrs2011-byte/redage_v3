@@ -30,7 +30,7 @@ const OpenGameMenu = () => {
 		global.gamemenu = true;
 		global.menuOpen(true);
 		mp.events.call("sounds.playInterface", "inventory/open_inv", 0.005);
-		gm.discord(translateText("Исследует инвентарь"));
+		gm.discord(translateText("Explores inventory"));
 		mp.gui.emmit(`window.events.callEvent("cef.inventory.UpdateSpecialVars", ${global.localplayer.vehicle ? true : false})`);
 	}
 	catch (e) 
