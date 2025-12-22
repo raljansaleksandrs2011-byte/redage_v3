@@ -135,7 +135,7 @@ gm.events.add("render", () => {
             const distance = mp.game.system.vdist(PlayeInitPos.x, PlayeInitPos.y, PlayeInitPos.z, playerLoc.x, playerLoc.y, playerLoc.z);
             if (distance > maxDist) {
                 exitTime = new Date().getTime() + 1000;
-                mp.gui.chat.push(translateText("Вы слишком далеко от места запуска коптера. Вернитесь ближе, иначе связь оборвётся через {0} секунд.", exitCount));
+                mp.gui.chat.push(translateText("You re too far from the copter's launch site. Return closer, or the connection will be lost in {0} seconds.", exitCount));
                 exitCount--;
                 if (exitCount < 0) {
                     drone.exit ();
