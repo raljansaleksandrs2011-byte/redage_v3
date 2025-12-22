@@ -37,7 +37,7 @@ global.binderFunctions.o_animation = (isCef = false) => {// Animations selector
 
 gm.events.add('client.animation.open', () => {
 	global.binderFunctions.o_animation(true);
-    gm.discord(translateText("Изучает список анимаций"));
+    gm.discord(translateText("Examines the list of animations"));
 });
 
 gm.events.add('client.animation.play', (item) => {
@@ -56,9 +56,9 @@ gm.events.add('client.animation.play', (item) => {
             return;
 
         mp.events.callRemote("server.animation.play", item, true);
-        mp.gui.emmit(`window.UpdateButtonText('hud__icon-Anim', '${translateText('Чтобы сбросить анимацию, нажмите "Пробел" дважды.')}');`);
+        mp.gui.emmit(`window.UpdateButtonText('hud__icon-Anim', '${translateText('To reset the animation, press the space bar twice..')}');`);
         global.binderFunctions.c_animation ();
-        gm.discord('ФЛЕКСИТ');
+        gm.discord('Flexing');
     }
     catch (e) 
     {
