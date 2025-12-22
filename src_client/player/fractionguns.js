@@ -1,16 +1,16 @@
 gm.events.add('policeg', () => {
     let data = [
-        translateText("Дубинка"),
-        translateText("Пистолет"),
+        translateText("Baton"),
+        translateText("Pistol"),
         "SMG",
-        translateText("Дробовик"),
+        translateText("Shotgun"),
         "Tazer",
-        translateText("Бронежилет"),
-        translateText("Аптечка"),
-        translateText("Пистолетный калибр x12"),
-        translateText("Малый калибр x30"),
-        translateText("Дробь x6"),
-        translateText("Сдать бронежилет")
+        translateText("Buletproof vedt"),
+        translateText("Aidkit"),
+        translateText("Pistol calibr x12"),
+        translateText("Little calibr x30"),
+        translateText("Fraction x6"),
+        translateText("Hand over the bulletproof vest")
     ];
     global.openSM(4, JSON.stringify(data));
 });
@@ -18,18 +18,18 @@ gm.events.add('policeg', () => {
 gm.events.add('fbiguns', () => {
     let data = [
         "Tazer",
-        translateText("Пистолет"),
-        translateText("ПОС"),
-        translateText("Карабин"),
-        translateText("Снайперская винтовка"),
-        translateText("Бронежилет"),
-        translateText("Аптечка"),
-        translateText("Пистолетный калибр x12"),
-        translateText("Малый калибр x30"),
-        translateText("Автоматный калибр x30"),
-        translateText("Снайперский калибр x5"),
-        "Бейдж",
-        translateText("Сдать бронежилет")
+        translateText("Pistol"),
+        translateText("POS"),
+        translateText("Carbine"),
+        translateText("Sniper rifle"),
+        translateText("Buletproof vest"),
+        translateText("Aidkit"),
+        translateText("Pistol calibr x12"),
+        translateText("Little calibr x30"),
+        translateText("Auto calibr x30"),
+        translateText("Sniper riflr x5"),
+        "Badge",
+        translateText("Hand over the bulletproof vest")
     ];
     global.openSM(3, JSON.stringify(data));
 });
@@ -37,30 +37,30 @@ gm.events.add('fbiguns', () => {
 gm.events.add('govguns', () => {
     let data = [
         "Tazer",
-        translateText("Пистолет"),
+        translateText("Pistol"),
         "Advanced Rifle",
         "Gusenberg Sweeper",
-        translateText("Бронежилет"),
-        translateText("Аптечка"),
-        translateText("Пистолетный калибр x12"),
-        translateText("Малый калибр x30"),
-        translateText("Автоматный калибр x30"),
-        translateText("Сдать бронежилет")
+        translateText("Buletproof vest"),
+        translateText("Aidkit"),
+        translateText("Pistol caliber x12"),
+        translateText("Little caliber x30"),
+        translateText("Auto caliber x30"),
+        translateText("Hand over the bulletproof vest")
     ];
     global.openSM(6, JSON.stringify(data));
 });
 
 gm.events.add('armyguns', () => {
     let data = [
-        translateText("Пистолет"),
-        translateText("Карабин"),
-		translateText("Боевой пулемет"),
-        translateText("Бронежилет"),
-        translateText("Аптечка"),
-        translateText("Пистолетный калибр x12"),
-        translateText("Автоматный калибр x30"),
-		translateText("Малый калибр x100"),
-        translateText("Сдать бронежилет")
+        translateText("Pistol"),
+        translateText("Carbine"),
+		translateText("Combat machine gun"),
+        translateText("Buletproof vest"),
+        translateText("Aidkit"),
+        translateText("Pistol caliber x12"),
+        translateText("Auto caliber x30"),
+		translateText("Little caliber x100"),
+        translateText("Hand over the bulletproof vest")
     ];
     global.openSM(7, JSON.stringify(data));
 });
