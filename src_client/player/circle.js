@@ -1,4 +1,4 @@
-﻿
+
 global.circleOpen = false;
 
 let selectCategory = "";
@@ -6,17 +6,17 @@ let selectCategory = "";
 const categoryData = {
 	//[translateText("Я")]: ["inv", "phone", "fraction_table", "org_table", "anim", "battlepass", "donate"],
 	//
-	[translateText("Игрок")]: ["sell", "offer", "fraction", "documents", "healMenu", "house", "paired_animations", "family"],
-	[translateText("Документы")]: ["passport", "licenses", "idcard", "badge", "lspdbadge", "fibbadge"],
-	[translateText("Взаимодействия")]: [ "handshake", "tinter", "givemoney"/*, "tradehouse", "tradebiz", "tradecar"*/, "vmuted"/*, "whisper"*/ ],
-	[translateText("Парные анимации")]: [ "embrace", "kiss", "paired_five", "paired_slap", "carry_0", "carry_1", "carry_2", "carry_3" ],
-	[translateText("Вылечить")]: [ "heal", "epinephrine" ],
+	[translateText("Player")]: ["sell", "offer", "fraction", "documents", "healMenu", "house", "paired_animations", "family"],
+	[translateText("Documents")]: ["passport", "licenses", "idcard", "badge", "lspdbadge", "fibbadge"],
+	[translateText("Interaction")]: [ "handshake", "tinter", "givemoney"/*, "tradehouse", "tradebiz", "tradecar"*/, "vmuted"/*, "whisper"*/ ],
+	[translateText("Paired animations")]: [ "embrace", "kiss", "paired_five", "paired_slap", "carry_0", "carry_1", "carry_2", "carry_3" ],
+	[translateText("Revive")]: [ "heal", "epinephrine" ],
 	//
-	[translateText("Машина")]: ["hood", "trunk", "doors", "carinv", "trunkAction", "ticketveh", "breaking_trunk", "veh_fix"],
-	[translateText("Взаимодействие с багажником")]: [ "intrunk", "fromtrunk", "newnumber" ],
-	[translateText("В машине")]: ["belt", "hood", "trunk", "doors", "streetrace"],
-	[translateText("Недвижимость")]: ["sellcar", "sellhouse", "roommate", "invitehouse"],
-	[translateText("Фракция")]:
+	[translateText("Car")]: ["hood", "trunk", "doors", "carinv", "trunkAction", "ticketveh", "breaking_trunk", "veh_fix"],
+	[translateText("Interaction with the trunk")]: [ "intrunk", "fromtrunk", "newnumber" ],
+	[translateText("In car")]: ["belt", "hood", "trunk", "doors", "streetrace"],
+	[translateText("Real estate")]: ["sellcar", "sellhouse", "roommate", "invitehouse"],
+	[translateText("Faction")]:
 	[
 		[],
 		["leadaway", "handsup", "rob", "robguns", "pocket"],
@@ -38,129 +38,129 @@ const categoryData = {
 		["leadaway", "search", "pocket", "takemask"],
 		["leadaway", "search", "takegun", "takeillegal", "takemask", "ticket"],
 	],
-	[translateText("Семья")]: ["handsup", "rob", "robguns", "pocket", "leadaway"],
-	[translateText("Кальян")]: ["use_hookah", "take_hookah"],
-	[translateText("Лифт 1")]: ["f_lift_0", "f_lift_1", "f_lift_2", "f_lift_3"],
-	[translateText("Лифт 2")]: ["s_lift_0", "s_lift_1", "s_lift_2", "s_lift_3", "s_lift_4"],
-	[translateText("Лифт")]: ["c_lift_0", "c_lift_1"],
-	[translateText("Лифт FIB")]: ["gov_lift_1", "gov_lift_3", "gov_lift_4"],
-	[translateText("Лифт News 1")]: ["news_f_lift_1", "news_f_lift_2", "news_f_lift_3"],
-	[translateText("Лифт News 2")]: ["news_s_lift_1", "news_s_lift_2", "news_s_lift_3"],
-	[translateText("Открыть планшет")]: ["fraction_table", "fraction_news", "org_table", "fraction_mayormenu"],
-	[translateText("Покинуть фракцию/семью")]: ["leave_fraction", "leave_org"]
+	[translateText("Family")]: ["handsup", "rob", "robguns", "pocket", "leadaway"],
+	[translateText("Hookah")]: ["use_hookah", "take_hookah"],
+	[translateText("Lift 1")]: ["f_lift_0", "f_lift_1", "f_lift_2", "f_lift_3"],
+	[translateText("Lift 2")]: ["s_lift_0", "s_lift_1", "s_lift_2", "s_lift_3", "s_lift_4"],
+	[translateText("Lift")]: ["c_lift_0", "c_lift_1"],
+	[translateText("Lift FIB")]: ["gov_lift_1", "gov_lift_3", "gov_lift_4"],
+	[translateText("Lift News 1")]: ["news_f_lift_1", "news_f_lift_2", "news_f_lift_3"],
+	[translateText("Lift News 2")]: ["news_s_lift_1", "news_s_lift_2", "news_s_lift_3"],
+	[translateText("Open the tablet")]: ["fraction_table", "fraction_news", "org_table", "fraction_mayormenu"],
+	[translateText("Leave a faction/family")]: ["leave_fraction", "leave_org"]
 };
 
 const categoryDesc = {
-	"inv": translateText("Инвентарь"),
-	"phone": translateText("Телефон"),
-	"anim": translateText("Анимации"),
-	"awards": translateText("Награды"),
-	"house_table": translateText("Меню дома"),
-	"donate": translateText("Донат"),
-	"battlepass": translateText("Боевой пропуск"),
+	"inv": translateText("Inventory"),
+	"phone": translateText("Phone"),
+	"anim": translateText("Animations"),
+	"awards": translateText("Awards"),
+	"house_table": translateText("Home menu"),
+	"donate": translateText("Donate"),
+	"battlepass": translateText("Battle Pass"),
 
-	"fraction_mayormenu": translateText("Управление казной"),
+	"fraction_mayormenu": translateText("Treasury management"),
 
-	"veh_fix": translateText("Починить транспорт"),
-	"breaking_trunk": translateText("Взломать транспорт"),
-	"belt": translateText("Ремень безопасности"),
-	"sell": translateText("Взаимодействия"),
-	"paired_animations": translateText("Парные анимации"),
-	"whisper": translateText("Шептаться"),
-	"intrunk": translateText("Залезть в багажник"),
-	"trunkAction": translateText("Взаимодействие с багажником"),
-	"fromtrunk": translateText("Выкинуть из багажника"),
-	"newnumber": translateText("Установить номер"),
-	"tradehouse": translateText("Обмен недвижимостью"),
-	"tradebiz": translateText("Обмен бизнесами"),
-	"tradecar": translateText("Обмен машинами"),
-	"streetrace": translateText("Уличная гонка"),
+	"veh_fix": translateText("Vehicle Repair"),
+	"breaking_trunk": translateText("Hack a vehicle"),
+	"belt": translateText("Seat belt"),
+	"sell": translateText("Interactions"),
+	"paired_animations": translateText("Paired animations"),
+	"whisper": translateText("Whisper"),
+	"intrunk": translateText("Get into the trunk"),
+	"trunkAction": translateText("Interaction with the trunk"),
+	"fromtrunk": translateText("Throw it out of the trunk"),
+	"newnumber": translateText("Set number"),
+	"tradehouse": translateText("Real estate exchange"),
+	"tradebiz": translateText("Business exchange"),
+	"tradecar": translateText("Car exchange"),
+	"streetrace": translateText("Street race"),
 
-	"handshake": translateText("Пожать руку"),
-	"licenses": translateText("Показать лицензии"),
-	"documents": translateText("Документы"),
-	"idcard": translateText("Показать ID-карту"),
-	"badge": translateText("Показать удостоверение"),
-	"lspdbadge": translateText("Посмотреть значок"),
-	"fibbadge": translateText("Посмотреть бейджик"),
-	"carinv":translateText("Инвентарь"),
-	"doors":translateText("Открыть/Закрыть двери"),
-	"fraction":translateText("Фракция"),
-	"family":translateText("Семья"),
-	"offer":translateText("Предложить обмен"),
-	"givemoney":translateText("Передать деньги"),
-	"healMenu":translateText("Вылечить"),
-	"heal":translateText("Аптечкой"),
-	"epinephrine":translateText("Адреналином"),
-	"hood":translateText("Открыть/Закрыть капот"),
-	"leadaway":translateText("Вести за собой"),
-	"offerheal":translateText("Предложить лечение"),
-	"passport":translateText("Показать паспорт"),
-	"search":translateText("Обыскать"),
-	"sellkit":translateText("Продать аптечку"),
-	"takegun":translateText("Изъять оружие"),
-	"takeillegal":translateText("Изъять нелегал"),
-	"trunk":translateText("Открыть/Закрыть багажник"),
-	"pocket": translateText("Надеть/снять мешок"),
-	"takemask": translateText("Сорвать маску/мешок"),
-	"handsup": translateText("Заставить поднять руки"),
-	"rob": translateText("Ограбить"),
-	"robguns": translateText("Украсть оружие"),
-	"house": translateText("Недвижимость"),
-	"ticket": translateText("Выписать штраф"),
-	"ticketveh": translateText("Выписать штраф"),
+	"handshake": translateText("Handshake"),
+	"licenses": translateText("Show licenses"),
+	"documents": translateText("Documents"),
+	"idcard": translateText("Show ID-card"),
+	"badge": translateText("Show certificate"),
+	"lspdbadge": translateText("View icon"),
+	"fibbadge": translateText("View badge"),
+	"carinv":translateText("Inventory"),
+	"doors":translateText("Open/Close doors"),
+	"fraction":translateText("Faction"),
+	"family":translateText("Family"),
+	"offer":translateText("Suggest an exchange"),
+	"givemoney":translateText("Transfer money"),
+	"healMenu":translateText("Heal"),
+	"heal":translateText("Aidkit"),
+	"epinephrine":translateText("Adrenaline"),
+	"hood":translateText("Open/Close the hood"),
+	"leadaway":translateText("Drag"),
+	"offerheal":translateText("Offer cure"),
+	"passport":translateText("Show passport"),
+	"search":translateText("Search"),
+	"sellkit":translateText("Sell aidkit"),
+	"takegun":translateText("Confiscate"),
+	"takeillegal":translateText("Confiscate illegal"),
+	"trunk":translateText("Open/Close the trunk"),
+	"pocket": translateText("Put on/take off the bag"),
+	"takemask": translateText("Tear off the mask/bag"),
+	"handsup": translateText("Make them raise their hands"),
+	"rob": translateText("Rob"),
+	"robguns": translateText("Steal weapon"),
+	"house": translateText("Real estate"),
+	"ticket": translateText("Write fine"),
+	"ticketveh": translateText("Write fine"),
 
-	"sellcar": translateText("Продать машину"),
-	"sellhouse": translateText("Продать недвижимость"),
-	"roommate": translateText("Заселить в дом"),
-	"invitehouse": translateText("Пригласить в дом"),
+	"sellcar": translateText("Sell car"),
+	"sellhouse": translateText("Sell real estate"),
+	"roommate": translateText("Move into the house"),
+	"invitehouse": translateText("Invite to house"),
 
-	"embrace" : translateText("Обнять"),
-	"kiss" : translateText("Поцеловать"),
-	"paired_five" : translateText("Дать пять"),
-	"paired_slap" : translateText("Дать пощечину"),
-	"carry_0" : translateText("Взять на руки"),
-	"carry_1" : translateText("Закинуть на шею"),
-	"carry_2" : translateText("Закинуть на плечо"),
-	"carry_3" : translateText("Взять в заложники"),
+	"embrace" : translateText("Hug"),
+	"kiss" : translateText("Kiss"),
+	"paired_five" : translateText("Give high five"),
+	"paired_slap" : translateText("Slap"),
+	"carry_0" : translateText("Pick up"),
+	"carry_1" : translateText("Throw it around your neck"),
+	"carry_2" : translateText("Throw it over your shoulder"),
+	"carry_3" : translateText("Take hostage"),
 
-	"tinter": translateText("Повторить анимацию"),
+	"tinter": translateText("Repeat animation"),
 
-	"use_hookah": translateText("Использовать кальян"),
-	"take_hookah": translateText("Убрать кальян"),
+	"use_hookah": translateText("Use hookah"),
+	"take_hookah": translateText("Take hookah"),
 
-	"f_lift_0": translateText("0 этаж"),
-	"f_lift_1": translateText("1 этаж"),
-	"f_lift_2": translateText("2 этаж"),
-	"f_lift_3": translateText("3 этаж"),
+	"f_lift_0": translateText("0 floor"),
+	"f_lift_1": translateText("1 floor"),
+	"f_lift_2": translateText("2 floor"),
+	"f_lift_3": translateText("3 floor"),
 
-	"s_lift_0": translateText("0 этаж"),
-	"s_lift_1": translateText("1 этаж"),
-	"s_lift_2": translateText("2 этаж"),
-	"s_lift_3": translateText("3 этаж"),
-	"s_lift_4": translateText("4 этаж"),
+	"s_lift_0": translateText("0 floor"),
+	"s_lift_1": translateText("1 floor"),
+	"s_lift_2": translateText("2 floor"),
+	"s_lift_3": translateText("3 floor"),
+	"s_lift_4": translateText("4 floor"),
 	
-	"c_lift_0": translateText("1 этаж"),
-	"c_lift_1": translateText("2 этаж"),
+	"c_lift_0": translateText("1 floor"),
+	"c_lift_1": translateText("2 floor"),
 
-	"gov_lift_1": translateText("1 этаж"),
-	"gov_lift_3": translateText("3 этаж"),
+	"gov_lift_1": translateText("1 floor"),
+	"gov_lift_3": translateText("3 floor"),
 	"gov_lift_4": translateText("4 этаж"),
 
-	"news_f_lift_1": translateText("1 этаж"),
-	"news_f_lift_2": translateText("2 этаж"),
-	"news_f_lift_3": translateText("3 этаж"),
+	"news_f_lift_1": translateText("1 floor"),
+	"news_f_lift_2": translateText("2 floor"),
+	"news_f_lift_3": translateText("3 floor"),
 
-	"news_s_lift_1": translateText("1 этаж"),
-	"news_s_lift_2": translateText("2 этаж"),
-	"news_s_lift_3": translateText("3 этаж"),
+	"news_s_lift_1": translateText("1 floor"),
+	"news_s_lift_2": translateText("2 floor"),
+	"news_s_lift_3": translateText("3 floor"),
 
-	"fraction_table": translateText("Планшет фракции"),
-	"fraction_news": translateText("Планшет новостей"),
-	"org_table": translateText("Планшет семьи"),
+	"fraction_table": translateText("Fraction tablet"),
+	"fraction_news": translateText("News tablet"),
+	"org_table": translateText("Family tablet"),
 
-	"leave_fraction": translateText("Покинуть фракцию"),
-	"leave_org": translateText("Покинуть семью")
+	"leave_fraction": translateText("Leave fraction"),
+	"leave_org": translateText("Leave family")
 }
 
 const getCircleName = (func, title) => {
@@ -193,10 +193,10 @@ const getCircleName = (func, title) => {
 		return false;
 
 	if (func === "belt")
-		return isBelt ? translateText("Отстегнуть ремень") : translateText("Пристегнуть ремень");
+		return isBelt ? translateText("Unfasten your belt") : translateText("Fasten your seat belt");
 
 	if (func === "doors" && selectEntity !== null && selectEntity.doesExist())
-		return selectEntity.getVariable("vLock") ? translateText("Открыть дверной замок") : translateText("Закрыть дверной замок");
+		return selectEntity.getVariable("vLock") ? translateText("Open the door lock") : translateText("Close the door lock");
 
 	if (func === "fraction" && (global.fractionId == 0 || global.fractionId == 15))
 		return false;
@@ -295,12 +295,12 @@ global.UpdateCircle = (entity) => {
 	if (selectCategory === translateText("В машине") && selectEntity === global.localplayer.vehicle)
 		return;
 
-	if ([translateText("Кальян"), translateText("Лифт 1"), translateText("Лифт 2"), translateText("Лифт"), translateText("Лифт FIB"), translateText("Лифт News 1"), translateText("Лифт News 2"), translateText("Открыть планшет"), translateText("Покинуть фракцию/семью")].includes (selectCategory))
+	if ([translateText("Hookah"), translateText("Lift 1"), translateText("Lift 2"), translateText("Lift"), translateText("Lift FIB"), translateText("Lift News 1"), translateText("Lift News 2"), translateText("Open tablet"), translateText("Leave fraction/family")].includes (selectCategory))
 		return;
 	
 
-	if ([translateText("Взаимодействие с багажником"), translateText("Машина")/*, translateText("Я")*/].includes (selectCategory) && global.localplayer.vehicle) 
-		return global.OpenCircle(translateText("В машине"), 0, global.localplayer.vehicle);
+	if ([translateText("Interaction with the trunk"), translateText("Car")/*, translateText("Me")*/].includes (selectCategory) && global.localplayer.vehicle) 
+		return global.OpenCircle(translateText("In car"), 0, global.localplayer.vehicle);
 
 
 	if (/*selectCategory === translateText("Я") &&*/ entity === null && selectEntity === null)
@@ -312,11 +312,11 @@ global.UpdateCircle = (entity) => {
 		return;
 	}
 
-	const isUpdateEntity = !!(selectEntity !== entity || (selectCategory === translateText("В машине") && !global.localplayer.vehicle));
+	const isUpdateEntity = !!(selectEntity !== entity || (selectCategory === translateText("In car") && !global.localplayer.vehicle));
 	
 	selectEntity = entity;
 
-	if ([translateText("Игрок"), translateText("Документы"), translateText("Взаимодействия"), translateText("Парные анимации"), translateText("Машина"), translateText("Взаимодействие с багажником"), translateText("В машине"), translateText("Фракция"), translateText("Семья"), translateText("Недвижимость")/*, translateText("Я")*/].includes (selectCategory)) {
+	if ([translateText("Player"), translateText("Documents"), translateText("Interaction"), translateText("Paired animations"), translateText("Car"), translateText("Interaction with the trunk"), translateText("In car"), translateText("Fraction"), translateText("Family"), translateText("Real estate")/*, translateText("Me")*/].includes (selectCategory)) {
 		
 		const ePosition = entity.position;
 		const pPosition = global.localplayer.position;
@@ -331,13 +331,13 @@ global.UpdateCircle = (entity) => {
 		if (isUpdateEntity) {
 			switch (entity.type) {
 				case "player":
-					global.OpenCircle(translateText("Игрок"), 0, entity);
+					global.OpenCircle(translateText("Player"), 0, entity);
 					break;
 				case "vehicle":
-					if (translateText("Взаимодействие с багажником") === selectCategory)
+					if (translateText("Interaction with the trunk") === selectCategory)
 						global.OpenCircle(selectCategory, 0, entity);
 					else
-						global.OpenCircle(translateText("Машина"), 0, entity);
+						global.OpenCircle(translateText("Car"), 0, entity);
 					break;
 				default:
 					selectEntity = null;
@@ -426,31 +426,31 @@ gm.events.add('client.circle.select', (funcName, index) => {
 			}
 			break;
 		case 'trunkAction':
-			global.OpenCircle (translateText("Взаимодействие с багажником"), 0, -1);
+			global.OpenCircle (translateText("Interaction with the trunk"), 0, -1);
 			break;
 		case 'sell':
 			mp.events.call ("client.circle.events", Number(index));
-			global.OpenCircle (translateText("Взаимодействия"), 0, -1)
+			global.OpenCircle (translateText("Interactions"), 0, -1)
 			break;
 		case 'paired_animations':
-			global.OpenCircle (translateText("Парные анимации"), 0, -1);
+			global.OpenCircle (translateText("Paired animations"), 0, -1);
 			break;
 		case 'fraction':
 			if (global.fractionId == 0 || global.fractionId == 15) return;
-			global.OpenCircle (translateText("Фракция"), global.fractionId, -1);
+			global.OpenCircle (translateText("Fraction"), global.fractionId, -1);
 			break;
 		case 'family':
 			if (global.organizationId == 0) return;
-			global.OpenCircle (translateText("Семья"), 0, -1);
+			global.OpenCircle (translateText("Family"), 0, -1);
 			break;
 		case 'documents': 
-			global.OpenCircle (translateText("Документы"), 0, -1);
+			global.OpenCircle (translateText("Documents"), 0, -1);
 			break;
 		case 'house': 
-			global.OpenCircle (translateText("Недвижимость"), 0, -1);
+			global.OpenCircle (translateText("Real estate"), 0, -1);
 			break;
 		case 'healMenu':
-			global.OpenCircle (translateText("Вылечить"), 0, -1);
+			global.OpenCircle (translateText("Heal"), 0, -1);
 			break;
 		default:
 			mp.events.call ("client.circle.events", funcName, Number(index));
@@ -464,11 +464,11 @@ gm.events.add('client.circle.events', (func, index) => {
 	try
 	{
 		const category = selectCategory;
-		if (category !== translateText("Игрок") || (category === translateText("Игрок") && (index === 1 || index === 4))) global.CloseCircle(false);
+		if (category !== translateText("Player") || (category === translateText("Player") && (index === 1 || index === 4))) global.CloseCircle(false);
 
 		switch (category) {
 			/*
-			case translateText("Я"):
+			case translateText("Me"):
 				switch (index) {
 					case 0:
 						global.binderFunctions.GameMenuOpen ();
@@ -502,7 +502,7 @@ gm.events.add('client.circle.events', (func, index) => {
 				}
 				return;
 				*/
-			case translateText("В машине"):
+			case translateText("In car"):
 				const veh = global.localplayer.vehicle;
 				if (!veh || global.localplayer.isInAnyPlane()) return;
 				switch (index) {
@@ -510,7 +510,7 @@ gm.events.add('client.circle.events', (func, index) => {
 						let vehclass = veh.getClass();
 						if(vehclass == 8 || vehclass == 13 || vehclass == 14)
 						{
-							mp.events.call('notify', 4, 9, translateText("В этом типе транспортных средств нет ремней безопасности."), 3000);
+							mp.events.call('notify', 4, 9, translateText("This type of vehicle does not have seat belts.."), 3000);
 							return;
 						}
 						if (!isBelt) global.localplayer.setConfigFlag (32, false);
@@ -523,21 +523,21 @@ gm.events.add('client.circle.events', (func, index) => {
 					case 2:
 					case 3:
 						if(veh.getPedInSeat(-1) != global.localplayer.handle) {
-							mp.events.call('notify', 4, 9, translateText("Вы должны быть на водительском месте"), 3000);
+							mp.events.call('notify', 4, 9, translateText("You must be in the driver's seat."), 3000);
 							return;
 						}
 						mp.events.callRemote('vehicleSelected', veh, index - 1);
 						return;
 					case 4:
 						if(veh.getPedInSeat(-1) != global.localplayer.handle) {
-							mp.events.call('notify', 4, 9, translateText("Вы должны быть на водительском месте"), 3000);
+							mp.events.call('notify', 4, 9, translateText("You must be in the driver's seat."), 3000);
 							return;
 						}
 						mp.events.callRemote('server.streetrace.open');
 						return;
 				}
 				return;
-			case translateText("Взаимодействие с багажником"):
+			case translateText("Interaction with the trunk"):
 				if (global.entity == null) return;
 				switch (index) {
 					case 0:
@@ -545,7 +545,7 @@ gm.events.add('client.circle.events', (func, index) => {
 						const vehclass = global.entity.getClass();
 						if (vehclass != 1 && vehclass != 2 && vehclass != 3 && vehclass != 4 && vehclass != 5 && vehclass != 6)
 						{
-							mp.events.call('notify', 4, 9, translateText("В багажник этого т/с нельзя залезть."), 3000);
+							mp.events.call('notify', 4, 9, translateText("You can't get into the trunk of this vehicle."), 3000);
 							return;
 						}
 						mp.events.callRemote('vehicleSelected', global.entity, index + 10);
@@ -555,7 +555,7 @@ gm.events.add('client.circle.events', (func, index) => {
 						return;
 				}
 				return;
-			case translateText("Машина"):
+			case translateText("Car"):
 				if (global.entity == null) return;
 				switch (index) {
 					case 0:
@@ -569,11 +569,11 @@ gm.events.add('client.circle.events', (func, index) => {
 						return;
 				}
 				return;
-			case translateText("Вылечить"):
+			case translateText("Heal"):
 				if (global.entity == null) return;
 				mp.events.callRemote('pSelected', global.entity, func);
 				return;
-			case translateText("Игрок"):
+			case translateText("Player"):
 				if (global.entity == null) return;
 				switch (index) {
 					/*case 0:
@@ -588,7 +588,7 @@ gm.events.add('client.circle.events', (func, index) => {
 						return;
 				}
 				return;
-			case translateText("Документы"):
+			case translateText("Documents"):
 				if (global.entity == null) return;
 				switch (index) {
 					case 0:
@@ -605,25 +605,25 @@ gm.events.add('client.circle.events', (func, index) => {
 						return;
 					case 4:
 						if (new Date().getTime() - circleEventRefresh[0] < 15000) {
-							mp.events.call('notify', 4, 9, translateText("Попробуйте через 15 секунд"), 3000);
+							mp.events.call('notify', 4, 9, translateText("Try after 15 seconds"), 3000);
 							return;
 						}
 
 						circleEventRefresh[0] = new Date().getTime();
-						mp.events.callRemote('viewBadge', global.entity, translateText("Посмотреть значок"));
+						mp.events.callRemote('viewBadge', global.entity, translateText("View icon"));
 						return;
 					case 5:
 						if (new Date().getTime() - circleEventRefresh[1] < 15000) {
-							mp.events.call('notify', 4, 9, translateText("Попробуйте через 15 секунд"), 3000);
+							mp.events.call('notify', 4, 9, translateText("Try after 15 seconds"), 3000);
 							return;
 						}
 
 						circleEventRefresh[1] = new Date().getTime();
-						mp.events.callRemote('viewBadge', global.entity, translateText("Посмотреть бейджик"));
+						mp.events.callRemote('viewBadge', global.entity, translateText("View badge"));
 						return;
 				}
 				return;
-			case translateText("Недвижимость"):
+			case translateText("Real estate"):
 				switch (index) {
 					case 0:
 						mp.events.callRemote('pSelected', global.entity, "sellcar");
@@ -639,7 +639,7 @@ gm.events.add('client.circle.events', (func, index) => {
 						return;
 				}
 				return;
-			case translateText("Взаимодействия"):
+			case translateText("Interaction"):
 				if (global.entity == null) return;
 				switch (index)
 				{
@@ -664,14 +664,14 @@ gm.events.add('client.circle.events', (func, index) => {
 					case 6:
 						if(global.pplMuted.length >= 10)
 						{
-							mp.events.call('notify', 4, 9, translateText("За одну сессию можно отключить микрофон только 10 игрокам."), 3000);
+							mp.events.call('notify', 4, 9, translateText("You can only mute 10 players in a single session.."), 3000);
 							return;
 						}
 						mp.events.callRemote('pSelected', global.entity, "vmuted");
 						return;
 				}
 				return;
-			case translateText("Парные анимации"):
+			case translateText("Paired animations"):
 				if (global.entity == null) return;
 				switch (index)
 				{
@@ -695,16 +695,16 @@ gm.events.add('client.circle.events', (func, index) => {
 						break;
 				}
 				return;
-			case translateText("Фракция"):
+			case translateText("Fraction"):
 				if (global.entity == null) return;
-				if (categoryData[translateText("Фракция")][global.fractionId] == undefined) return;
-				mp.events.callRemote('pSelected', global.entity, categoryData[translateText("Фракция")][global.fractionId][index]);
+				if (categoryData[translateText("Fraction")][global.fractionId] == undefined) return;
+				mp.events.callRemote('pSelected', global.entity, categoryData[translateText("Fraction")][global.fractionId][index]);
 				return;
 			case translateText("Семья"):
 				if (global.entity == null) return;
 				mp.events.callRemote('pOrgSelected', global.entity, index);
 				return;
-			case translateText("Кальян"):
+			case translateText("Hookah"):
 				switch (index) {
 					case 0:
 						mp.events.callRemote('server.hookahManage', global.entity);
@@ -714,25 +714,25 @@ gm.events.add('client.circle.events', (func, index) => {
 						break;
 				}
 				return;
-			case translateText("Лифт 1"):
+			case translateText("Lift 1"):
 				mp.events.callRemote('server.useCityhallLift', 1, index);
 				return;
-			case translateText("Лифт 2"):
+			case translateText("Lift 2"):
 				mp.events.callRemote('server.useCityhallLift', 2, index);
 				return;
-			case translateText("Лифт"):
+			case translateText("Lift"):
 				mp.events.callRemote('server.useCityhallLift', 3, index);
 				return;
-			case translateText("Лифт FIB"):
+			case translateText("Lift FIB"):
 				mp.events.callRemote('server.useCityhallLift', 4, index);
 				return;
-			case translateText("Лифт News 1"):
+			case translateText("Lift News 1"):
 				mp.events.callRemote('server.useNewsLift', 1, index);
 				return;
-			case translateText("Лифт News 2"):
+			case translateText("Lift News 2"):
 				mp.events.callRemote('server.useNewsLift', 2, index);
 				return;
-			case translateText("Открыть планшет"):
+			case translateText("Open the tablet"):
 				switch (func) {
 					case "fraction_table":
 						if (global.fractionId !== 0) {
@@ -756,7 +756,7 @@ gm.events.add('client.circle.events', (func, index) => {
 						break;
 				}
 				return;
-			case translateText("Покинуть фракцию/семью"):
+			case translateText("Leave a faction/family"):
 				mp.events.callRemote('server.LeaveFractionOrg', index);
 				return;
 		}
@@ -849,10 +849,10 @@ gm.events.add("openCityhallLiftMenu", (index) => {
 			return;
 		}
 		
-		if (index == 10) global.OpenCircle(translateText("Лифт 1"), 0);
-		else if (index == 11) global.OpenCircle(translateText("Лифт 2"), 0);
-		else if (index == 12) global.OpenCircle(translateText("Лифт"), 0);
-		else if (index == 13) global.OpenCircle(translateText("Лифт FIB"), 0);
+		if (index == 10) global.OpenCircle(translateText("Lift 1"), 0);
+		else if (index == 11) global.OpenCircle(translateText("Lift 2"), 0);
+		else if (index == 12) global.OpenCircle(translateText("Lift"), 0);
+		else if (index == 13) global.OpenCircle(translateText("Lift FIB"), 0);
 	}
 	catch (e) 
 	{
@@ -868,8 +868,8 @@ gm.events.add("openNewsLiftMenu", (index) => {
 			return;
 		}
 		
-		if (index == 2) global.OpenCircle(translateText("Лифт News 1"), 0);
-		else if (index == 3) global.OpenCircle(translateText("Лифт News 2"), 0);
+		if (index == 2) global.OpenCircle(translateText("Lift News 1"), 0);
+		else if (index == 3) global.OpenCircle(translateText("Lift News 2"), 0);
 	}
 	catch (e) 
 	{
@@ -885,8 +885,8 @@ gm.events.add("openSpecialChooseMenu", (index) => {
 			return;
 		}
 		
-		if (index == 0) global.OpenCircle(translateText("Открыть планшет"), 0);
-		else if (index == 1) global.OpenCircle(translateText("Покинуть фракцию/семью"), 0);
+		if (index == 0) global.OpenCircle(translateText("Open tablet"), 0);
+		else if (index == 1) global.OpenCircle(translateText("Leave fraction/family"), 0);
 	}
 	catch (e) 
 	{
@@ -911,7 +911,7 @@ gm.events.add("render", () => {
 		if (!global.loggedin) return;
 		if (global.attachedtotrunk == true) 
 		{
-			mp.game.graphics.drawText(translateText("Нажмите 'F', чтобы вылезти из багажника."), [0.5, 0.8], {
+			mp.game.graphics.drawText(translateText("Press 'F' to get out of the trunk."), [0.5, 0.8], {
 				font: 0,
 				color: [255, 255, 255, 185],
 				scale: [0.35, 0.35],
@@ -961,7 +961,7 @@ global.binderFunctions.onBelt = () => {
 		let vehclass = veh.getClass();
 		if(vehclass == 8 || vehclass == 13 || vehclass == 14) 
 		{
-			mp.events.call('notify', 4, 9, translateText("В этом типе транспортных средств нет ремней безопасности."), 3000);
+			mp.events.call('notify', 4, 9, translateText("This type of vehicle does not have seat belts."), 3000);
 			return;
 		}
 		if (!isBelt) global.localplayer.setConfigFlag (32, false);
