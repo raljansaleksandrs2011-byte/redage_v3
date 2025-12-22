@@ -220,7 +220,7 @@ gm.events.add("client.airdropZone.create", (position, radius, color, airdrop_min
             nativeInvoke ("SET_BLIP_COLOUR", airdrop.blipId, color);
         }
 
-        mp.events.call("hud.event", "AirDrop", "Внимание!", `AirDrop будет сброшен через ${airdrop_minutes} мин`, "png", 30 * 1000);
+        mp.events.call("hud.event", "AirDrop", "Attention!", `AirDrop will be reset in ${airdrop_minutes} min`, "png", 30 * 1000);
 
         //_subTitle, _title, _desc, _image, timeWait
     }
