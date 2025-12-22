@@ -36,7 +36,7 @@ gm.events.add("openPc", () => {
 		if (global.menuCheck()) return;
 		policepcOpened = true;
 		mp.gui.emmit(`window.router.setView("FractionsPolicecomputer");`);
-		gm.discord(translateText("Использует бортовой компьютер"));
+		gm.discord(translateText("Uses an on-board computer"));
 		global.menuOpen();
 	}
 	catch (e) 
