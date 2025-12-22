@@ -46,7 +46,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.admin//+
     },
     {//2
-        title: translateText("Телепорт по WayPoint"),
+        title: translateText("WayPoint Teleport"),
         keyCode: global.Keys.VK_F4,
         keyCodeDefault: global.Keys.VK_F4,
         function: "markerteleport",
@@ -55,7 +55,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.admin//+
     },
     {//3
-        title: translateText("Рабочее пространство"),
+        title: translateText("Workspace"),
         keyCode: global.Keys.VK_F7,
         keyCodeDefault: global.Keys.VK_F7,
         function: "open_Table",
@@ -64,7 +64,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.fraction//+
     },
     {//4
-        title: translateText("Бортовой компьютер полиции"),
+        title: translateText("Police on-board computer"),
         keyCode: global.Keys.VK_U,
         keyCodeDefault: global.Keys.VK_U,
         function: "o_policepc",
@@ -82,7 +82,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//6
-        title: translateText("Принятие предложений"),
+        title: translateText("Acceptance of proposals"),
         keyCode: global.Keys.VK_Y,
         keyCodeDefault: global.Keys.VK_Y,
         function: "acceptPressed",
@@ -91,7 +91,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//7
-        title: translateText("Отклонение предложений"),
+        title: translateText("Rejection of proposals"),
         keyCode: global.Keys.VK_N,
         keyCodeDefault: global.Keys.VK_N,
         function: "cancelPressed",
@@ -100,7 +100,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//8
-        title: translateText("Анимации"),
+        title: translateText("Animations"),
         keyCode: global.Keys.VK_U,
         keyCodeDefault: global.Keys.VK_U,
         function: "o_animation",
@@ -109,7 +109,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//9
-        title: translateText("Взаимодействие"),
+        title: translateText("Interaction"),
         keyCode: global.Keys.VK_E,
         keyCodeDefault: global.Keys.VK_E,
         function: "interactionPressed",
@@ -118,7 +118,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.other//+
     },
     {//10
-        title: translateText("Надеть наручники/стяжки"),
+        title: translateText("Put on handcuffs/clamps"),
         keyCode: global.Keys.VK_X,
         keyCodeDefault: global.Keys.VK_X,
         function: "playerPressCuffBut",
@@ -127,7 +127,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.fraction//+
     },
     {//11
-        title: translateText("Вести за собой"),
+        title: translateText("Lead the way"),
         keyCode: global.Keys.VK_Z,
         keyCodeDefault: global.Keys.VK_Z,
         function: "playerPressFollowBut",
@@ -136,7 +136,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.fraction//+
     },
     {//12
-        title: translateText("Инвентарь"),
+        title: translateText("Inventory"),
         keyCode: global.Keys.VK_I,
         keyCodeDefault: global.Keys.VK_I,
         function: "GameMenuOpen",
@@ -154,7 +154,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all*/
     },
     {//14
-        title: translateText("Перезарядка оружия"),
+        title: translateText("Reloading weapons"),
         keyCode: global.Keys.VK_R,
         keyCodeDefault: global.Keys.VK_R,
         function: "playerReload",
@@ -163,7 +163,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//15
-        title: translateText("Быстрый доступ (Слот 1)"),
+        title: translateText("Quick Access (Slot 1)"),
         keyCode: global.Keys.VK_1,
         keyCodeDefault: global.Keys.VK_1,
         function: "changeweap_1",
@@ -172,7 +172,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.fast//+
     },
     {//16
-        title: translateText("Быстрый доступ (Слот 2)"),
+        title: translateText("Quick Access (Slot 2)"),
         keyCode: global.Keys.VK_2,
         keyCodeDefault: global.Keys.VK_2,
         function: "changeweap_2",
@@ -181,7 +181,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.fast//+
     },
     {//17
-        title: translateText("Быстрый доступ (Слот 3)"),
+        title: translateText("Quick Access (Slot 3)"),
         keyCode: global.Keys.VK_3,
         keyCodeDefault: global.Keys.VK_3,
         function: "changeweap_3",
@@ -190,7 +190,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.fast//+
     },
     {//18
-        title: translateText("Быстрый доступ (Слот 4)"),
+        title: translateText("Quick Access (Slot 4)"),
         keyCode: global.Keys.VK_4,
         keyCodeDefault: global.Keys.VK_4,
         function: "changeweap_4",
@@ -199,7 +199,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.fast//+
     },
     {//19
-        title: translateText("Чат"),
+        title: translateText("Chat"),
         keyCode: global.Keys.VK_T,
         keyCodeDefault: global.Keys.VK_T,
         function: "o_chat",
@@ -217,7 +217,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//21
-        title: translateText("Меню доната"),
+        title: translateText("Donate menu"),
         keyCode: global.Keys.VK_F9,
         keyCodeDefault: global.Keys.VK_F9,
         function: "o_donate",
@@ -244,7 +244,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//24
-        title: translateText("Отображание имён"),
+        title: translateText("Displaying names"),
         keyCode: global.Keys.VK_5,
         keyCodeDefault: global.Keys.VK_5,
         function: "showGamertags",
@@ -253,7 +253,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.other//+
     },
     {//25
-        title: translateText("Меню помощи"),
+        title: translateText("Help Menu"),
         keyCode: global.Keys.VK_F10,
         keyCodeDefault: global.Keys.VK_F10,
         function: "o_help",
@@ -271,7 +271,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//27
-        title: translateText("Состояние HUD"),
+        title: translateText("State HUD"),
         keyCode: global.Keys.VK_F5,
         keyCodeDefault: global.Keys.VK_F5,
         function: "o_hud",
@@ -280,7 +280,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.other//+
     },
     {//28
-        title: translateText("Круиз контроль"),
+        title: translateText("Cruise Control"),
         keyCode: global.Keys.VK_6,
         keyCodeDefault: global.Keys.VK_6,
         function: "cruise",
@@ -298,7 +298,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//30
-        title: translateText("Телефон"),
+        title: translateText("Phone"),
         keyCode: global.Keys.VK_M,
         keyCodeDefault: global.Keys.VK_M,
         function: "openPlayerMenu",
@@ -307,7 +307,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//31
-        title: translateText("Взаимодействие с игроками"),
+        title: translateText("Interacting with players"),
         keyCode: global.Keys.VK_G,
         keyCodeDefault: global.Keys.VK_G,
         function: "openCircleMenu",
@@ -316,7 +316,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//32
-        title: translateText("Взаимодействие с предметами"),
+        title: translateText("Interaction with objects"),
         keyCode: global.Keys.VK_F2,
         keyCodeDefault: global.Keys.VK_F2,
         function: "dropObject",
@@ -325,7 +325,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//33
-        title: translateText("Меню репортов"),
+        title: translateText("Report Menu"),
         keyCode: global.Keys.VK_F6,
         keyCodeDefault: global.Keys.VK_F6,
         function: "o_reports",
@@ -334,7 +334,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.admin//+
     },
     {//34
-        title: translateText("Присесть"),
+        title: translateText("Sit down"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "SitWalkSyle",
@@ -352,7 +352,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.admin
     },
     {//36
-        title: translateText("Микрофон"),
+        title: translateText("Microphone"),
         keyCode: global.Keys.VK_N,
         keyCodeDefault: global.Keys.VK_N,
         function: "enableVoice",
@@ -372,7 +372,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },    
     {//38
-        title: translateText("Двигатель транспорта"),
+        title: translateText("Transport Engine"),
         keyCode: global.Keys.VK_B,
         keyCodeDefault: global.Keys.VK_B,
         function: "engineCarPressed",
@@ -381,7 +381,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.vehicle//+
     },
     {//39
-        title: translateText("Закрыть/открыть транспорт"),
+        title: translateText("Close/open transport"),
         keyCode: global.Keys.VK_L,
         keyCodeDefault: global.Keys.VK_L,
         function: "lockCarPressed",
@@ -390,7 +390,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//40
-        title: translateText("Левый поворотник"),
+        title: translateText("Left turn signal"),
         keyCode: global.Keys.VK_LEFT,
         keyCodeDefault: global.Keys.VK_LEFT,
         function: "lightleft",
@@ -399,7 +399,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.vehicle//+
     },
     {//41
-        title: translateText("Правый поворотник"),
+        title: translateText("Right turn signal"),
         keyCode: global.Keys.VK_RIGHT,
         keyCodeDefault: global.Keys.VK_RIGHT,
         function: "lightright",
@@ -408,7 +408,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.vehicle//+
     },
     {//42
-        title: translateText("Аварийная сигнализация"),
+        title: translateText("Alarm"),
         keyCode: global.Keys.VK_DOWN,
         keyCodeDefault: global.Keys.VK_DOWN,
         function: "signaling",
@@ -417,7 +417,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.vehicle//+
     },
     {//43
-        title: translateText("Меню биндера"),
+        title: translateText("Binder Menu"),
         keyCode: global.Keys.VK_TAB,
         keyCodeDefault: global.Keys.VK_TAB,
         function: "openBinder",
@@ -435,7 +435,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//45
-        title: translateText("Указать пальцем"),
+        title: translateText("Show with finger"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "down_fingerpointing",
@@ -455,7 +455,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//47
-        title: translateText("Перезагрузить микрофон"),
+        title: translateText("Reset Microphone"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "voiceReload",
@@ -464,7 +464,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all //+
     },
 	{//48
-        title: translateText("Быстрый доступ (Слот 5)"),
+        title: translateText("Quick Access (Slot 5)"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "changeweap_5",
@@ -473,7 +473,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.fast//+
     },
     {//49
-        title: translateText("Удаление уведомления"),
+        title: translateText("Removing a notification"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "dellNotification",
@@ -482,7 +482,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//50
-        title: translateText("Рация"),
+        title: translateText("Radio"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "enableRadioVoice",
@@ -502,7 +502,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//52
-        title: translateText("Достать/убрать рацию"),
+        title: translateText(""Get/put away the radio"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "takeWalkieTalkie",
@@ -511,7 +511,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//53
-        title: translateText("Пристегнуть/отстегнуть ремень безопасности"),
+        title: translateText("Fasten/unfasten seat belt"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "onBelt",
@@ -520,7 +520,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.vehicle//+
     },
     {//54
-        title: translateText("Включить/отключить автопилот"),
+        title: translateText("Enable/Disable Autopilot"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "onAutoPilot",
@@ -529,7 +529,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.vehicle//+
     },
     {//55
-        title: translateText("Открыть взаимодействие с животным"),
+        title: translateText("Open interaction with the animal"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "onAnimal",
@@ -538,7 +538,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all
     },
     {//56
-        title: translateText("Отменить анимацию"),
+        title: translateText("Cancel animation"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "",
@@ -547,7 +547,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//57
-        title: translateText("Передать метку водителю"),
+        title: translateText("Give the tag to the driver"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "onSendWaypoint",
@@ -556,7 +556,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.vehicle//+
     },
     {//58
-        title: translateText("Включить/отключить сирену"),
+        title: translateText("Turn the siren on/off"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "onSirenSync",
@@ -565,7 +565,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.vehicle//+
     },
     {//59
-        title: translateText("Отправить репорт"),
+        title: translateText("Send report"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "openReportInput",
@@ -574,7 +574,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//60
-        title: translateText("Запись экрана"),
+        title: translateText("Screen record"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "onRecorder",
@@ -583,7 +583,7 @@ global.userBinder = [ //Тут нужно переписать все досту
         menu: menuType.all//+
     },
     {//61
-        title: translateText("Ползти"),
+        title: translateText("Crawl"),
         keyCode: 0,
         keyCodeDefault: 0,
         function: "Snake",
@@ -600,7 +600,7 @@ gm.events.add('escape', () => {
 });
 
 global.binderFunctions.openReportInput = () => {
-    mp.events.call('openInput', translateText("Репорт"), translateText("Введите ваше сообщение"), 150, 'sendReportFromClientInput');
+    mp.events.call('openInput', translateText("Report"), translateText("Enter your message"), 150, 'sendReportFromClientInput');
 }
 //Закрытие интерфейса при ESC
 global.binderFunctions.c_globalEscape = (isDeath = false) => {
@@ -682,7 +682,7 @@ class BinderActions {
             const selectBinder = global.userBinder [index];
             if (parseInt (keyCode) === parseInt (selectBinder.keyCode)) {
 				if(index == 43) {
-					mp.events.call('notify', 4, 9, translateText("Невозможно снять привязку с меню биндера"), 3000);
+					mp.events.call('notify', 4, 9, translateText("Unable to unlink from binder menu"), 3000);
                     return;
 				}
                 binder.destroy (keyCode, index);
@@ -710,11 +710,11 @@ class BinderActions {
                     global.userBinder.forEach((item) => {
                         if (success && parseInt (keyCode) === parseInt (item.keyCode) && (item.type === binderType.all || selectBinder.type === binderType.all)) {
                             success = false;
-                            mp.events.call('notify', 4, 9, translateText("Данная клавиша уже занята"), 3000);
+                            mp.events.call('notify', 4, 9, translateText("This key is already taken"), 3000);
                             return;
                         } else if (success && parseInt (keyCode) === parseInt (item.keyCode) && item.type === binderType.onFoot && selectBinder.type === binderType.onFoot) {
                             success = false;
-                            mp.events.call('notify', 4, 9, translateText("Данная клавиша уже занята"), 3000);            
+                            mp.events.call('notify', 4, 9, translateText("This key is already taken"), 3000);            
                             return;
                         } else if (success && parseInt (keyCode) === parseInt (item.keyCode) && item.type === binderType.inVehicle && selectBinder.type === binderType.inVehicle) {
                             success = false;
@@ -845,10 +845,10 @@ gm.events.add("client:OnBrowserInit", () => {
         global.help =
         {
             global: [
-                translateText("{0} - Скрыть HUD", global.Keys[global.userBinder[27].keyCode]),
-                translateText("{0} - Биндер", global.Keys[global.userBinder[43].keyCode]),
-                translateText("{0} - Указать пальцем", global.Keys[global.userBinder[45].keyCode]),
-                "Ё(~) - Курсор",
+                translateText("{0} - Hide HUD", global.Keys[global.userBinder[27].keyCode]),
+                translateText("{0} - Binder", global.Keys[global.userBinder[43].keyCode]),
+                translateText("{0} - Show finger", global.Keys[global.userBinder[45].keyCode]),
+                "Ё(~) - Cursor",
             ],
             player: [
                 translateText("{0} - Анимации", global.Keys[global.userBinder[8].keyCode]),
