@@ -6,7 +6,7 @@ gm.events.add("client.everydayawards", async (isInit, RealDay, json, WeekTime, d
 		if (global.menuCheck() && !global.gamemenu) return;
         IsCompensation = isInit;
         mp.gui.emmit(`window.gameMenuView ("EverydayReward");`);
-        gm.discord(translateText("Изучает ежедневные награды"));
+        gm.discord(translateText("Exploring daily rewards"));
         await global.wait(50);       
 		mp.gui.emmit(`window.events.callEvent("cef.everydayreward.init", ${RealDay}, '${json}', ${WeekTime}, ${donate})`);
         if (!global.gamemenu) global.binderFunctions.GameMenuOpen ();
