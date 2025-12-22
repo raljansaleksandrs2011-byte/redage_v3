@@ -126,12 +126,12 @@ gm.events.add("render", () => {
 		if (secondsLeft >= 0)
 		{
 			mp.game.cam.doScreenFadeIn(500);
-			gm.discord(translateText("Ждёт медиков..."));
+			gm.discord(translateText("Waiting for doctors..."));
 
 			const minutes = Math.trunc(secondsLeft / 60);
 			const seconds = secondsLeft % 60;
 
-			mp.game.graphics.drawText(translateText("До попадания в больницу: {0}:{1}", global.formatIntZero(minutes, 2), global.formatIntZero(seconds, 2)), [0.5, 0.8], {
+			mp.game.graphics.drawText(translateText("Before getting to the hospital: {0}:{1}", global.formatIntZero(minutes, 2), global.formatIntZero(seconds, 2)), [0.5, 0.8], {
 				font: 0,
 				color: [255, 255, 255, 200],
 				scale: [0.35, 0.35],
