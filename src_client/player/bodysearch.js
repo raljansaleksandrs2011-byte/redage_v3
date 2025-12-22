@@ -5,10 +5,10 @@ gm.events.add('bsearch', (act) => {
 
     switch (act) {
         case 1:
-            mp.events.callRemote('pSelected', global.entity, translateText("Посмотреть лицензии"));
+            mp.events.callRemote('pSelected', global.entity, translateText("View licenses"));
             break;
         case 2:
-            mp.events.callRemote('pSelected', global.entity, translateText("Посмотреть паспорт"));
+            mp.events.callRemote('pSelected', global.entity, translateText("View passport"));
             break;
         default:
             global.isBSearchActive = false;
