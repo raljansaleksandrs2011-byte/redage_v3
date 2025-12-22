@@ -18,7 +18,7 @@ gm.events.add('tanks_joinPrivateLobby_client', (state, value) => {
             mp.gui.emmit(`window.router.setHud();`);
             global.lobbyMenuActive = false;
             
-            global.input.set(translateText("Пароль для входа в лобби"), translateText("Введите пароль"), 4, "tanks_join_private_lobby");
+            global.input.set(translateText("Password to enter the lobby"), translateText("Enter your password"), 4, "tanks_join_private_lobby");
         }
         else if (state == 2) {
             mp.events.callRemote('tanks_joinLobby_server', tanksJoinLobbyIndex, value);
