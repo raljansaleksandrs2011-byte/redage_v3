@@ -4,8 +4,8 @@ var liftcBack = "";
 function openLift(type, cBack) {
     if (global.menuCheck()) return;
     let floors = [
-        [translateText("Гараж"), translateText("1 этаж"), translateText("49 этаж"), translateText("Крыша")],
-        [translateText("Гараж"), translateText("Бункер"), translateText("Крыша"), translateText("Склад")]
+        [translateText("Garage"), translateText("1 floor"), translateText("49 этаж"), translateText("Roof")],
+        [translateText("Garage"), translateText("Bunker"), translateText("Roof"), translateText("Warehouse")]
     ];
     mp.gui.emmit(`window.router.setView("PlayerLift", ${JSON.stringify (floors[type])})`);
     global.menuOpen();
