@@ -20,7 +20,7 @@ export default [
         "category":"General"
     },
     {
-        "cmd":"/sellbiz [id] [цена]",
+        "cmd":"/sellbiz [id] [price]",
         "descr":"Sell buisness to player.",
         "category":"General"
     },
