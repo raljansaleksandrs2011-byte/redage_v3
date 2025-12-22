@@ -13,7 +13,7 @@ gm.events.add(clientName + "open", async () => {
 	mp.gui.emmit(
 		`window.router.setView("FractionsWeazelNews")`
 	);
-	gm.discord(translateText("Изучает фракционный планшет"));
+	gm.discord(translateText("Examines the fractional tablet"));
 	isOpenAdvert = true;
 });
 
@@ -78,7 +78,7 @@ rpc.register(rpcName + "isAddByID", (addID) => {
 });
 
 gm.events.add(clientName + "add", (json) => {
-	mp.events.call('notify', 0, 2, translateText("Пришло новое объявление!"), 3000);
+	mp.events.call('notify', 0, 2, translateText("A new announcement has arrived!"), 3000);
 	json = JSON.parse(json)
 	adsArray.unshift(json);
 	if (isList)
