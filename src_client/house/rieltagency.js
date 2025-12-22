@@ -5,7 +5,7 @@ gm.events.add('client.rieltagency.open', (buyPrice, houseData, allHouse, busines
     if (global.menuCheck()) return;
     isOpenRieltagency = true;
     global.menuOpen();
-    gm.discord(translateText("В риэлторском агентстве"));
+    gm.discord(translateText("At a real estate agency"));
     mp.gui.emmit(
         `window.router.setView("HouseRielt", {buyPrice: ${buyPrice}, houseData: '${houseData}', allHouse: ${allHouse}, businessData: '${businessData}', allBusiness: ${allBusiness}})`
     );
