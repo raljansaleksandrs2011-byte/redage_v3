@@ -6,7 +6,7 @@ let ATMTemp = "";
 gm.events.add('openatm', () => {
     if (global.menuCheck()) return;
     global.menuOpen();
-	gm.discord(translateText("Взаимодействует с банкоматом"));
+	gm.discord(translateText("Interacts with the ATM"));
 });
 
 gm.events.add('closeatm', () => {
@@ -39,7 +39,7 @@ gm.events.add('atmVal', (data) => {
 		} 
 		else if(data === 0) {
 			LTPressed = 0;
-			mp.events.call('notify', 1, 9, translateText("Введите корректное значение."), 3000);
+			mp.events.call('notify', 1, 9, translateText("Please enter a valid value.."), 3000);
 		}
 		else {
 			LTPressed = 0;
