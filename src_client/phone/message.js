@@ -298,9 +298,9 @@ gm.events.add(clientName + "msgAdd", (number, text, date, type) => {
         let notifyText = text;
 
         if (type === messageType.map)
-            notifyText = translateText("Вложение: геопозиция");
+            notifyText = translateText("Attachment: geolocation");
         else if (type === messageType.img)
-            notifyText = translateText("Вложение: фотография");
+            notifyText = translateText("Attachment: photo");
 
         mp.events.call('phone.notify', number, notifyText, 5);
     }
