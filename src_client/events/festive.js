@@ -169,10 +169,10 @@ gm.events.add('client.events.confirming', async (count, countItems, countMaxFest
         let prefix = "";
         if (count === 2 || count === 3 || count === 4) prefix = translateText("а");
         else if (count > 4) prefix = translateText("ов");
-        mp.gui.chat.push(translateText("!{#FFA500}Вы собрали {0} подарков из {1} возможных. Вы на верном пути!", countItems, countMaxFestive));
-        mp.events.call('hud.event.cool', "Мероприятие", "Ого!", translateText("Вы собрали секретный подарок и получили {0} коин{1}!", count, prefix), "png", 10000);
-        if (countItems !== countMaxFestive) mp.events.call('hud.event.cool', "Мероприятие", "Ого!", translateText("Отлично! Вам осталось собрать {0} подарков. Продолжайте поиски!", countMaxFestive - countItems), "png", 10000);
-        else mp.events.call('hud.event.cool', "Мероприятие", "Ого!", translateText("Поздравляем, вы собрали абсолютно все существующие подарков на карте. Вы действительно чемпион с сильными нервами!"), "png", 10000);
+        mp.gui.chat.push(translateText("!{#FFA500}You've collected {0} gifts out of {1} possible. You're on the right track.!", countItems, countMaxFestive));
+        mp.events.call('hud.event.cool', "Event", "Wow!", translateText("You have collected a secret gift and received {0} coins.{1}!", count, prefix), "png", 10000);
+        if (countItems !== countMaxFestive) mp.events.call('hud.event.cool', "Event", "Wow!", translateText("Great! You still have {0} gifts to collect. Keep searching.!", countMaxFestive - countItems), "png", 10000);
+        else mp.events.call('hud.event.cool', "Event", "Wow!", translateText("Congratulations, you've collected every single gift on the map. You're truly a champion with nerves of steel!"), "png", 10000);
         global.StopSound ("cloud/sound/festive/put.ogg");
         mp.events.call("sounds.playInterface", "cloud/sound/festive/bring2.ogg", 50);
         if (global.selectFestive !== -1) {
@@ -203,7 +203,7 @@ gm.events.add('client.events.buyItem', (index) => {
 	try
 	{
 		if (new Date().getTime() - eventsRefresh < 1000) {
-			mp.events.call('notify', 4, 9, translateText("Слишком быстро"), 3000);
+			mp.events.call('notify', 4, 9, translateText("Too fast"), 3000);
 			return;
 		}
 		eventsRefresh = new Date().getTime();
