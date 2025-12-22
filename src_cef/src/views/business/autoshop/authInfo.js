@@ -1,1010 +1,1011 @@
 export default {
     "Sultan": {
-        desc: "Полноприводный спортивный автомобиль, очень подходит для тех у кого пока не много денег, но хочется иметь качественный автомобиль.",
+        desc: "An all-wheel drive sports car, very suitable for those who don’t have a lot of money yet, but want to have a quality car.",
         seats: 4,
         acceleration: 6.3,
         maxSpeed: 0
     },
     "SultanRS": {
-        desc: "Полноприводный суперкар, имеет небольшие изменения со своей первой версией, но из за своего класса и доступных модификаций цена у него немного больше.",
+        desc: "An all-wheel drive supercar, it has minor changes from its first version, but due to its class and available modifications, its price is slightly higher.",
         seats: 2,
         acceleration: 4.3,
         maxSpeed: 0
     },
     "Kuruma": {
-        desc: "Четырёхдверный спортивный седан, имеет среднюю цену на рынке и хорошие опции тюнинга.",
+        desc: "A four-door sports sedan, has an average market price and good tuning options.",
         seats: 4,
         acceleration: 5.7,
         maxSpeed: 0
     },
     "Fugitive": {
-        desc: "Четырёхместный седан, подходит для тех, кто ищет красивый автомобиль за небольшие деньги.",
+        desc: "A four-seat sedan, suitable for those looking for a beautiful car for little money.",
         seats: 4,
         acceleration: 8.3,
         maxSpeed: 0
     },
     "Tailgater": {
-        desc: "Высокопроизводительный, четырёхдверный седан, является одним из самых дешевых автомобилей в премиум классе.",
+        desc: "A high-performance, four-door sedan, one of the cheapest cars in the premium class.",
         seats: 4,
         acceleration: 8.8,
         maxSpeed: 0
     },
     "Sentinel": {
-        desc: "Это двухдверный спортивный автомобиль с типом кузова 'купе', имеет красивый внешний вид и небольшую цену. ",
+        desc: "This is a two-door sports car with a 'coupe' body type, has a beautiful appearance and a small price.",
         seats: 2,
         acceleration: 8.3,
         maxSpeed: 0
     },
     "F620": {
-        desc: "Красивое двухдверное купе. Подходит для людей, которые подобные автомобили, находится в средней ценовой категории.",
+        desc: "A beautiful two-door coupe. Suitable for people who like such cars, falls into the mid-price category.",
         seats: 2,
         acceleration: 6.7,
         maxSpeed: 0
     },
     "Schwarzer": {
-        desc: "Двухместное спортивное купе. Данный автомобиль подойдет для тех, кто любит погонять ночью. ",
+        desc: "A two-seat sports coupe. This car is suitable for those who love to race at night.",
         seats: 2,
         acceleration: 6.7,
         maxSpeed: 0
     },
     "Exemplar": {
-        desc: "Это четырёхдверный автомобиль премиум класса с кузовом типа 'купе', имеет не очень большой выбор в тюнинг-ателье, но его внешний вид сам по себе является достойным за свои деньги.",
+        desc: "This is a four-door premium class car with a 'coupe' body type, has a not very large selection in tuning ateliers, but its appearance itself is worthy for its money.",
         seats: 4,
         acceleration: 6.8,
         maxSpeed: 0
     },
     "Felon": {
-        desc: "Четырёхдверный автомобиль премиум класса, производится компанией Lampadati, а также имеет привлекательный внешний вид.",
+        desc: "A four-door premium class car, manufactured by Lampadati, and also has an attractive appearance.",
         seats: 4,
         acceleration: 0,
         maxSpeed: 0
     },
     "Schafter2": {
-        desc: "Седан бизнес класса, имеет очень красивый внешний вид, подходит для поездок на деловые встречи. ",
+        desc: "A business class sedan, has a very beautiful appearance, suitable for trips to business meetings.",
         seats: 4,
         acceleration: 7.1,
         maxSpeed: 0
     },
     "Jackal": {
-        desc: "Четырёхдверный седан, имеет роскошный внешний вид, является не самым дорогим автомобилем данного класса, что является его преимуществом.",
+        desc: "A four-door sedan, has a luxurious appearance, is not the most expensive car in its class, which is its advantage.",
         seats: 4,
         acceleration: 8.8,
         maxSpeed: 0
     },
     "Oracle2": {
-        desc: "Четырёхдверный седан, имеет заманчивый внешний вид, а также не очень большую цену для такого автомобиля.",
+        desc: "A four-door sedan, has an enticing appearance, as well as a not very high price for such a car.",
         seats: 4,
         acceleration: 6.4,
         maxSpeed: 0
     },
     "Surano": {
-        desc: "Двухдверный спорткар, имеет среднюю цену на рынке, подходит для тех, кто любит удивлять окружающих.",
+        desc: "A two-door sports car, has an average market price, suitable for those who like to surprise others.",
         seats: 2,
         acceleration: 5.4,
         maxSpeed: 0
     },
     "Zion": {
-        desc: "Двухдверное купе, очень похож на некоторые автомобили из данного автосалона, имеет неплохой внешний вид.",
+        desc: "A two-door coupe, very similar to some cars from this dealership, has a decent appearance.",
         seats: 2,
         acceleration: 0,
         maxSpeed: 0
     },
     "Dominator": {
-        desc: "Двухдверный маслкар, подходит для тех, кто любит уличные гонки или погони от полиции, славится агрессивным внешним видом.",
+        desc: "A two-door muscle car, suitable for those who love street racing or police chases, famous for its aggressive appearance.",
         seats: 2,
         acceleration: 7.3,
         maxSpeed: 0
     },
     "FQ2": {
-        desc: "Среднеразмерный кроссовер, имеет не очень большую цену, а также красивый внешний вид для данного класса авто.",
+        desc: "A mid-size crossover, has a not very high price, as well as a beautiful appearance for this class of car.",
         seats: 4,
         acceleration: 10.3,
         maxSpeed: 0
     },
     "Gresley": {
-        desc: "Четырёхдверный внедорожник. Подходит для людей, которые любят покорять вершины или ездить по пустыне.",
+        desc: "A four-door SUV. Suitable for people who love to conquer peaks or drive through the desert.",
         seats: 4,
         acceleration: 9.5,
         maxSpeed: 0
     },
     "Serrano": {
-        desc: "Четырёхдверный кроссовер, имеет неплохой внешний вид и небольшую цену.",
+        desc: "A four-door crossover, has a decent appearance and a low price.",
         seats: 4,
         acceleration: 9.1,
         maxSpeed: 0
     },
     "Dubsta": {
-        desc: "Четырёхдверный внедорожник премиум класса, подходит для людей которые любят показать свой престиж или похвастаться своими достижениями.",
+        desc: "A four-door premium class SUV, suitable for people who like to show their prestige or boast about their achievements.",
         seats: 4,
         acceleration: 10,
         maxSpeed: 0
     },
     "Rocoto": {
-        desc: "Четырёхдверный компактный кроссовер, подходит для людей, которые не любят большие машины, а также является отличным универсалом.",
+        desc: "A four-door compact crossover, suitable for people who do not like big cars, and is also an excellent universal car.",
         seats: 4,
         acceleration: 9.1,
         maxSpeed: 0
     },
     "Cavalcade2": {
-        desc: "Спортивный полноприводный внедорожник, очень удобен для поездок за город и на природу. ",
+        desc: "A sporty all-wheel drive SUV, very convenient for trips out of town and into nature.",
         seats: 4,
         acceleration: 9.2,
         maxSpeed: 0
     },
     "XLS": {
-        desc: "Роскошный внедорожник премиум класса, выполнен в современном стиле, сразу видно, что за рулём сидит Босс!",
+        desc: "A luxury premium class SUV, made in a modern style, it's immediately clear that a Boss is behind the wheel!",
         seats: 4,
         acceleration: 7,
         maxSpeed: 0
     },
     "Baller2": {
-        desc: "Четырёхдверный внедорожник премиум класса, внедорожник данного поколения славится своей надёжностью и проходимостью по бездорожью.",
+        desc: "A four-door premium class SUV, this generation SUV is famous for its reliability and off-road capability.",
         seats: 4,
         acceleration: 7.3,
         maxSpeed: 0
     },
     "Elegy": {
-        desc: "Данный автомобиль предоставлен в виде двухдверного купе, подходит для тех людей, которые любят скорость и езду по ночному городу.",
+        desc: "This car is presented as a two-door coupe, suitable for those people who love speed and driving through the night city.",
         seats: 2,
         acceleration: 4.5,
         maxSpeed: 0
     },
     "Banshee": {
-        desc: "Мощный спортивный автомобиль премиум класса, если Вы любитель быстрой езды и рёва мощного двигателя, то данный автомобиль создан для вас.",
+        desc: "A powerful premium class sports car, if you are a lover of fast driving and the roar of a powerful engine, then this car is made for you.",
         seats: 2,
         acceleration: 5.6,
         maxSpeed: 0
     },
     "Massacro2": {
-        desc: "Двухдверный гоночный автомобиль, продается сразу с интересным винилом и имеет большую вариацию тюнинга.",
+        desc: "A two-door racing car, sold immediately with an interesting vinyl and has a large variation of tuning.",
         seats: 2,
         acceleration: 4.6,
         maxSpeed: 0
     },
     "GP1": {
-        desc: "Двухдверный суперкар, имеет привлекательную цену для автомобиля премиум класса. ",
+        desc: "A two-door supercar, has an attractive price for a premium class car.",
         seats: 2,
         acceleration: 4,
         maxSpeed: 0
     },
     "Revolter": {
-        desc: "Четырёхдверный роскошный спортивный автомобиль. Если вы хотите впечатлить свою вторую половинку, то данный автомобиль точно для вас. ",
+        desc: "A four-door luxury sports car. If you want to impress your significant other, then this car is definitely for you.",
         seats: 4,
         acceleration: 3.9,
         maxSpeed: 0
     },
     "Brawler": {
-        desc: "Двухместный внедорожник. Данный автомобиль предпочитают люди которые любят гонки по бездорожью.",
+        desc: "A two-seat SUV. This car is preferred by people who love off-road racing.",
         seats: 2,
         acceleration: 5.2,
         maxSpeed: 0
     },
     "Sandking": {
-        desc: "Один из самых мощных внедорожников. Настоящий пикап для настоящего мужчины.",
+        desc: "One of the most powerful SUVs. A real pickup for a real man.",
         seats: 4,
         acceleration: 9.3,
         maxSpeed: 0
     },
     "Sandking2": {
-        desc: "Двухдверная версия Sandking'a, благодаря этому он легче и мощнее предыдущей версии. Всё еще для настоящего мужчины!",
+        desc: "A two-door version of the Sandking, thanks to which it is lighter and more powerful than the previous version. Still for a real man!",
         seats: 4,
         acceleration: 9.5,
         maxSpeed: 0
     },
     "Feltzer2": {
-        desc: "Двухдверный спорткар. Имеет неплохой внешний внешний вид, а также подходит для уличных гонок.",
+        desc: "A two-door sports car. Has a decent appearance, and is also suitable for street racing.",
         seats: 2,
         acceleration: 5.4,
         maxSpeed: 0
     },
     "Massacro": {
-        desc: "Двухдверный роскошный спортивный автомобиль, в отличие от его второй версии, выполнен в более спокойном стиле.",
+        desc: "A two-door luxury sports car, unlike its second version, is made in a calmer style.",
         seats: 2,
         acceleration: 4.7,
         maxSpeed: 0
     },
     "Casco": {
-        desc: "Классический спортивный автомобиль, подходит для настоящих ценителей классики.",
+        desc: "A classic sports car, suitable for true connoisseurs of classics.",
         seats: 2,
         acceleration: 5.8,
         maxSpeed: 0
     },
     "Bifta": {
-        desc: "Песчанынй багги, очень хорошо подходит под пляжные вечеринки. Обладает хорошим ускорением и управляемостью.",
+        desc: "A sand buggy, very suitable for beach parties. Has good acceleration and handling.",
         seats: 2,
         acceleration: 6.3,
         maxSpeed: 0
     },
     "Cogcabrio": {
-        desc: "Двухдверное купе-кабриолет, является автомобилем премиум класса, а так же, как понятно из описания, обладает съемной крышей.",
+        desc: "A two-door coupe-convertible, is a premium class car, and also, as clear from the description, has a removable roof.",
         seats: 2,
         acceleration: 6.8,
         maxSpeed: 0
     },
     "Dominator2": {
-        desc: "Двухдверный гоночный маслкар, отличается от своей первой версии улучшенными характеристиками а также уникальным винилом. ",
+        desc: "A two-door racing muscle car, differs from its first version with improved characteristics and a unique vinyl.",
         seats: 2,
         acceleration: 4.7,
         maxSpeed: 0
     },
     "Nightshade": {
-        desc: "Мощный двухдверный маслкар, обладает хорошим ускорением, а также неплохой для своего класса максимальной скоростью.",
+        desc: "A powerful two-door muscle car, has good acceleration, as well as decent top speed for its class.",
         seats: 2,
         acceleration: 7.8,
         maxSpeed: 0
     },
     "Contender": {
-        desc: "Спортивный внедорожник, имеет неплохую максимальную скорость, а также хорошую проходимость по бездорожью.",
+        desc: "A sporty SUV, has decent top speed, as well as good off-road capability.",
         seats: 4,
         acceleration: 5.9,
         maxSpeed: 0
     },
     "Cog55": {
-        desc: "Роскошный четырёхдверный седан, данный автомобиль показывает ваш достаток и престиж.",
+        desc: "A luxurious four-door sedan, this car shows your wealth and prestige.",
         seats: 4,
         acceleration: 6.8,
         maxSpeed: 0
     },
     "Cognoscenti": {
-        desc: "Престижный четырёхдверный седан, подходит для поездки на деловые встречи и другие официальные мероприятия.",
+        desc: "A prestigious four-door sedan, suitable for trips to business meetings and other official events.",
         seats: 4,
         acceleration: 7.4,
         maxSpeed: 0
     },
     "Alpha": {
-        desc: "Спортивное двухдверное купе, подходит для людей, которые любят стиль и простоту в автомобиле.",
+        desc: "A sporty two-door coupe, suitable for people who love style and simplicity in a car.",
         seats: 2,
         acceleration: 5.5,
         maxSpeed: 0
     },
     "Furoregt": {
-        desc: "Двухдверный спортивный автомобиль, имеет красивый внешний вид, а также приличную скорость на дороге.",
+        desc: "A two-door sports car, has a beautiful appearance, as well as decent speed on the road.",
         seats: 2,
         acceleration: 5.6,
         maxSpeed: 0
     },
     "Lynx": {
-        desc: "Двухдверное спортивное купе, обладает средними характеристиками для своего класса, не очень легок в управлении. ",
+        desc: "A two-door sports coupe, has average characteristics for its class, not very easy to handle.",
         seats: 2,
         acceleration: 5.4,
         maxSpeed: 0
     },
     "Pariah": {
-        desc: "Любимый многими спортивный двухдверный автомобиль, имеет красивый внешний вид и хорошую максимальную скорость.",
+        desc: "A beloved-by-many two-door sports car, has a beautiful appearance and good top speed.",
         seats: 2,
         acceleration: 5.4,
         maxSpeed: 0
     },
     "Tampa2": {
-        desc: "Двухдверный ширококузовный дрифткар, отлично подходит для тех, кто не любит обычную езду.",
+        desc: "A two-door widebody drift car, excellent for those who don't like ordinary driving.",
         seats: 2,
         acceleration: 4.7,
         maxSpeed: 0
     },
     "Tropos": {
-        desc: "Двухдверный раллийный автомобиль, не является самым лучшим автомобилем в данном классе, но отлично чувствует себя на бездорожье.",
+        desc: "A two-door rally car, is not the best car in this class, but feels great off-road.",
         seats: 2,
         acceleration: 6.1,
         maxSpeed: 0
     },
     "Felon2": {
-        desc: "Двухдверный премиум автомобиль, от своей первой версии отличается тем, что имеет съемную крышу, а также всего два посадочных места.",
+        desc: "A two-door premium car, differs from its first version in that it has a removable roof, and also only two seats.",
         seats: 4,
         acceleration: 7.2,
         maxSpeed: 0
     },
     "Sentinel2": {
-        desc: "Это двухдверный спортивный автомобиль с типом кузова 'кабриолет', имеет красивый внешний вид, а так же небольшую цену.",
+        desc: "This is a two-door sports car with a 'convertible' body type, has a beautiful appearance, as well as a low price.",
         seats: 2,
         acceleration: 8.5,
         maxSpeed: 0
     },
     "Zion2": {
-        desc: "Двухдверное купе, в отличии от своей первой версии, имеет откидную крышу и небольшие изменения по внешнему виду.",
+        desc: "A two-door coupe, unlike its first version, has a folding roof and minor appearance changes.",
         seats: 2,
         acceleration: 7.4,
         maxSpeed: 0
     },
     "Fusilade": {
-        desc: "Двухдверный спортивный автомобиль, обладает хорошими характеристиками для автомобиля своего класса. ",
+        desc: "A two-door sports car, has good characteristics for a car of its class.",
         seats: 2,
         acceleration: 6,
         maxSpeed: 0
     },
     "Penumbra": {
-        desc: "Двухдверное спорт-купе, пусть и красивое, но не обладает такими выдающимися характеристиками, как остальные автомобили из данного класса.",
+        desc: "A two-door sports coupe, although beautiful, does not have such outstanding characteristics as other cars in this class.",
         seats: 2,
         acceleration: 8.6,
         maxSpeed: 0
     },
     "Rapidgt": {
-        desc: "Двухместное купе премиум класса, имеет достойную динамику разгона, а так же отличается от других хорошей управляемостью.",
+        desc: "A two-seat premium class coupe, has worthy acceleration dynamics, and also differs from others with good handling.",
         seats: 2,
         acceleration: 4.6,
         maxSpeed: 0
     },
     "Rapidgt2": {
-        desc: "Полностью схожий автомобиль со своей первой версией, но имеет складную крышу, благодаря чему вы сможете прокатиться по городу на большой скорости, наслаждаясь солнцем и свежим воздухом.",
+        desc: "A fully similar car to its first version, but has a folding roof, thanks to which you can ride through the city at high speed, enjoying the sun and fresh air.",
         seats: 2,
         acceleration: 5,
         maxSpeed: 0
     },
     "Schafter3": {
-        desc: "Автомобиль премиум класса, подходит для поездок на официальные встречи, а так же для перевозки важных людей.",
+        desc: "A premium class car, suitable for trips to official meetings, as well as for transporting important people.",
         seats: 4,
         acceleration: 5.5,
         maxSpeed: 0
     },
     "Sentinel3": {
-        desc: "Классическое спортивное купе, подходит для гонок между автомобилями такого же класса как и у данной модели, имеет довольно хорошую скорость и разгон для классического автомобиля. ",
+        desc: "A classic sports coupe, suitable for racing between cars of the same class as this model, has quite good speed and acceleration for a classic car.",
         seats: 2,
         acceleration: 5.3,
         maxSpeed: 0
     },
     "Voltic": {
-        desc: "Компактный двухдверный родстер, имеет электрический двигатель, благодаря чему у данного автомобиля довольно быстрое ускорение.",
+        desc: "A compact two-door roadster, has an electric engine, thanks to which this car has fairly fast acceleration.",
         seats: 2,
         acceleration: 4,
         maxSpeed: 0
     },
     "Gauntlet4": {
-        desc: "Двухдверный маслкар, является современной версией автомобиля Gauntlet.",
+        desc: "A two-door muscle car, is a modern version of the Gauntlet car.",
         seats: 2,
         acceleration: 5.2,
         maxSpeed: 0
     },
     "Caracara2": {
-        desc: "Очень огромный пикап, который пройдет по любому бездорожью, размеры данного автомобиля могут напугать любого человека в штате.",
+        desc: "A very huge pickup truck that will go through any off-road, the dimensions of this car can scare anyone in the state.",
         seats: 4,
         acceleration: 5.6,
         maxSpeed: 0
     },
     "Issi7": {
-        desc: "Является компактным спортивным автомобилем, отличается от других версий своими характеристиками и внешним видом.",
+        desc: "Is a compact sports car, differs from other versions in its characteristics and appearance.",
         seats: 2,
         acceleration: 4.3,
         maxSpeed: 0
     },
     "Schafter4": {
-        desc: "Четырёхдверный автомобиль премиум класса, так же как и другие версии данного авто, подходит для перевозок важных людей и поездок на официальные мероприятия.",
+        desc: "A four-door premium class car, just like other versions of this car, is suitable for transporting important people and trips to official events.",
         seats: 4,
         acceleration: 8.5,
         maxSpeed: 0
     },
     "Novak": {
-        desc: "Является внедорожником премиум класса, от других внедорожников он отличается своим изящным видом.",
+        desc: "Is a premium class SUV, differs from other SUVs with its elegant look.",
         seats: 4,
         acceleration: 4.9,
         maxSpeed: 0
     },
     "Z190": {
-        desc: "Классический спортивный автомобиль, среди своего класса выделяется своим необычным внешним видом, а также простотой в управлении.",
+        desc: "A classic sports car, among its class stands out with its unusual appearance, as well as simplicity in handling.",
         seats: 2,
         acceleration: 2,
         maxSpeed: 0
     },
     "Gb200": {
-        desc: "Двухдверный спортивный автомобиль, очень хорошо подходит под гонки по внедорожью или ночному городу.",
+        desc: "A two-door sports car, very suitable for off-road or night city racing.",
         seats: 0,
         acceleration: 4.7,
         maxSpeed: 0
     },
     "Sultan2": {
-        desc: "Четырёхдверный классический спортивный седан, данный автомобиль не сильно дешёвый, но за эту цену он имеет большой выбор визуального и внутреннего тюнинга.",
+        desc: "A four-door classic sports sedan, this car is not very cheap, but for this price it has a large selection of visual and performance tuning.",
         seats: 4,
         acceleration: 5.3,
         maxSpeed: 0
     },
     "Rebla": {
-        desc: "Четырёхдверный премиум внедорожник, выделяется среди остальных автомобилей данного класса своим внешним видом, а также хорошей управляемостью и скоростью.",
+        desc: "A four-door premium SUV, stands out among other cars of this class with its appearance, as well as good handling and speed.",
         seats: 4,
         acceleration: 4.5,
         maxSpeed: 0
     },
     "Komoda": {
-        desc: "Является четырёхдверным спортивным автомобилем, имеет очень красивый внешний вид, а также большую вариацию визуального и внутреннего тюнинга.",
+        desc: "Is a four-door sports car, has a very beautiful appearance, as well as a large variation of visual and performance tuning.",
         seats: 4,
         acceleration: 4.4,
         maxSpeed: 0
     },
     "Comet2": {
-        desc: "Двухдверный спортивный автомобиль, имеет очень хорошую скорость а так же красивый внешний вид.",
+        desc: "A two-door sports car, has very good speed as well as a beautiful appearance.",
         seats: 2,
         acceleration: 5.3,
         maxSpeed: 0
     },
     "Coquette": {
-        desc: "Двухдверный спорткар, данный автомобиль прекрасно приспособлен для гонок, обладает отличной максимальной скоростью и хорошим разгоном.",
+        desc: "A two-door sports car, this car is perfectly adapted for racing, has excellent top speed and good acceleration.",
         seats: 2,
         acceleration: 5.7,
         maxSpeed: 0
     },
     "Ninef": {
-        desc: "Двухместный спорткар, обладает привлекательным внешним видом, данный автомобиль способен за мгновение достичь большой скорости. ",
+        desc: "A two-seat sports car, has an attractive appearance, this car is capable of reaching high speed in an instant.",
         seats: 2,
         acceleration: 5,
         maxSpeed: 0
     },
     "Ninef2": {
-        desc: "С технической стороны полностью похож на свою первую версию, различие заключается только в том, что у данной версии имеется откидывающаяся крыша.",
+        desc: "Technically completely similar to its first version, the difference lies only in the fact that this version has a folding roof.",
         seats: 2,
         acceleration: 5,
         maxSpeed: 0
     },
     "Jester": {
-        desc: "Гибридный спорткар, имеет неплохой внешний вид, а так же хорошую максимальную скорость и динамику разгона.",
+        desc: "A hybrid sports car, has a decent appearance, as well as good top speed and acceleration dynamics.",
         seats: 2,
         acceleration: 4.7,
         maxSpeed: 0
     },
     "Elegy2": {
-        desc: "Мощный двухместный спорткар, данный автомобиль является одним из самых управляемых.",
+        desc: "A powerful two-seat sports car, this car is one of the most manageable.",
         seats: 2,
         acceleration: 5.3,
         maxSpeed: 0
     },
     "Infernus": {
-        desc: "Роскошный двухместный суперкар, данный автомобиль имеет неплохой внешний вид и чем-то похож на классичекую машину.",
+        desc: "A luxurious two-seat supercar, this car has a decent appearance and somewhat resembles a classic car.",
         seats: 2,
         acceleration: 4,
         maxSpeed: 0
     },
     "Carbonizzare": {
-        desc: "Один из мощных спорткаров, имеет неплохую максимальную скорость и динамику разгона, но сложен в управлении.",
+        desc: "One of the powerful sports cars, has decent top speed and acceleration dynamics, but difficult to handle.",
         seats: 2,
         acceleration: 4.5,
         maxSpeed: 0
     },
     "Dubsta2": {
-        desc: "По сравнению с первой версией, имеет больше опций тюнинга в Los Santos Customs.",
+        desc: "Compared to the first version, has more tuning options in Los Santos Customs.",
         seats: 0,
         acceleration: 10,
         maxSpeed: 0
     },
     "Baller3": {
-        desc: "Данная версия автомобиля, обладает чуть более серьезными характеристиками, чем его первая версия.",
+        desc: "This version of the car has slightly more serious characteristics than its first version.",
         seats: 4,
         acceleration: 7.3,
         maxSpeed: 0
     },
     "Huntley": {
-        desc: "Роскошный городской джип, является одной из самых быстрых машин в своём классе.",
+        desc: "A luxury urban jeep, is one of the fastest cars in its class.",
         seats: 4,
         acceleration: 7.1,
         maxSpeed: 0
     },
     "Superd": {
-        desc: "Четырёхместный седан люкс класса, является одним из самых быстрых автомобилей в своем классе, отлично подходит под поездки на деловые встречи.",
+        desc: "A four-seat luxury class sedan, is one of the fastest cars in its class, excellent for trips to business meetings.",
         seats: 4,
         acceleration: 7.6,
         maxSpeed: 0
     },
     "Windsor": {
-        desc: "Двухдверный купе, имеет очень хорошие характеристики для своего класса авто.",
+        desc: "A two-door coupe, has very good characteristics for its class of car.",
         seats: 2,
         acceleration: 7,
         maxSpeed: 0
     },
     "BestiaGTS": {
-        desc: "Двухдверный спорткар, обладает средними ускорением и максимальной скоростью, если сравнивать с автомобилями своего класса.",
+        desc: "A two-door sports car, has average acceleration and top speed compared to cars of its class.",
         seats: 2,
         acceleration: 4.6,
         maxSpeed: 0
     },
     "Banshee2": {
-        desc: "Данный автомобиль очень сильно отличается от своей первой версии. Помимо улучшенных характеристик, производители даровали ему обновленный внешний вид!",
+        desc: "This car is very different from its first version. In addition to improved characteristics, the manufacturers gave it an updated appearance!",
         seats: 2,
         acceleration: 4.7,
         maxSpeed: 0
     },
     "EntityXF": {
-        desc: "Двухдверный суперкар, имеет очень хорошую максимальную скорость и динамику ускорения, всем в штате точно понравится его необычный дизайн.",
+        desc: "A two-door supercar, has very good top speed and acceleration dynamics, everyone in the state will definitely like its unusual design.",
         seats: 2,
         acceleration: 4.3,
         maxSpeed: 0
     },
     "Neon": {
-        desc: "Мощный и компактный спортивный автомобиль, имеет очень большую скорость и маленькое время разгона, за что и любим тысячами людей!",
+        desc: "A powerful and compact sports car, has very high speed and short acceleration time, which is why it is loved by thousands of people!",
         seats: 4,
         acceleration: 2.6,
         maxSpeed: 0
     },
     "Jester2": {
-        desc: "Гоночная версия гибридного спорткара, имеет немного улучшенные характеристики по сравнению с первой версией, а также уникальный винил.",
+        desc: "A racing version of the hybrid sports car, has slightly improved characteristics compared to the first version, as well as a unique vinyl.",
         seats: 2,
         acceleration: 5,
         maxSpeed: 0
     },
     "Turismor": {
-        desc: "Двухместный суперкар, обладает очень хорошей максимальной скоростью, именно на этом автомобиле вы сможете посоревноваться почти на трассе с кем угодно.",
+        desc: "A two-seat supercar, has very good top speed, it is on this car that you can compete on the track with almost anyone.",
         seats: 2,
         acceleration: 4.6,
         maxSpeed: 0
     },
     "Penetrator": {
-        desc: "Двухместный спортивный автомобиль, обладает очень хорошей манёвренностью на дорогах.",
+        desc: "A two-seat sports car, has very good maneuverability on the roads.",
         seats: 2,
         acceleration: 4.6,
         maxSpeed: 0
     },
     "Omnis": {
-        desc: "Двухместный раллийный автомобиль, данный автомобиль отлично чувствует себя на бездорожье, а так же имеет отличную управляемость.",
+        desc: "A two-seat rally car, this car feels great off-road, and also has excellent handling.",
         seats: 2,
         acceleration: 4.5,
         maxSpeed: 0
     },
     "Reaper": {
-        desc: "Роскошный двухместный суперкар, имеет великолепную динамику ускорения и неплохую управляемость.",
+        desc: "A luxurious two-seat supercar, has magnificent acceleration dynamics and decent handling.",
         seats: 2,
         acceleration: 4.5,
         maxSpeed: 0
     },
     "Italigtb2": {
-        desc: "Двухместный суперкар, отличается от своей первой версией внешним видом и немного улучшенными характеристиками.",
+        desc: "A two-seat supercar, differs from its first version in appearance and slightly improved characteristics.",
         seats: 2,
         acceleration: 4,
         maxSpeed: 0
     },
     "Xa21": {
-        desc: "Двухместный гибридный суперкар, имеет неплохой двигатель, лёгок и приятен в управлении.",
+        desc: "A two-seat hybrid supercar, has a decent engine, light and pleasant to handle.",
         seats: 2,
         acceleration: 4.1,
         maxSpeed: 0
     },
     "Osiris": {
-        desc: "Двухместный суперкар, является одним из лучших для гонок по ночному городу, имеет отличную скорость и хорошую тормозную систему.",
+        desc: "A two-seat supercar, is one of the best for racing through the night city, has excellent speed and a good braking system.",
         seats: 2,
         acceleration: 4,
         maxSpeed: 0
     },
     "Nero": {
-        desc: "Двухместный гиперкар, внешне данный автомобиль выглядит необычно, а внутри него вы сможете найти отличную начинку, которая поможет вам в уличных гонках ;)",
+        desc: "A two-seat hypercar, externally this car looks unusual, and inside you can find excellent features that will help you in street races ;)",
         seats: 2,
         acceleration: 4.5,
         maxSpeed: 0
     },
     "Zentorno": {
-        desc: "Двухместный суперкар, является одной из самых мощных и роскошных машин, имеет неплохую управляемость.",
+        desc: "A two-seat supercar, is one of the most powerful and luxurious cars, has decent handling.",
         seats: 2,
         acceleration: 3.7,
         maxSpeed: 0
     },
     "Infernus2": {
-        desc: "Представляет из себя двухместный спортивный автомобиль, является классической версией первого Infernus.",
+        desc: "A two-seat sports car, is the classic version of the first Infernus.",
         seats: 2,
         acceleration: 5.1,
         maxSpeed: 0
     },
     "Cheetah2": {
-        desc: "Двухместный спорткар, является классической версией первого Cheetah.",
+        desc: "A two-seat sports car, is the classic version of the first Cheetah.",
         seats: 2,
         acceleration: 5.4,
         maxSpeed: 0
     },
     "Feltzer3": {
-        desc: "Является представителем спортивной классики, имеет два посадочных места, а так же необычный внешний вид.",
+        desc: "Is a representative of sports classics, has two seats, as well as an unusual appearance.",
         seats: 2,
         acceleration: 6,
         maxSpeed: 0
     },
     "Mamba": {
-        desc: "Двухместная спортивная классика, не смотря на внешний вид, имеет хороший двигатель и не очень чувствительные тормоза.",
+        desc: "A two-seat sports classic, despite its appearance, has a good engine and not very sensitive brakes.",
         seats: 2,
         acceleration: 6.2,
         maxSpeed: 0
     },
     "Monroe": {
-        desc: "Классический двухместный спорткар, является одним из самых быстрых классических спорткаров в штате.",
+        desc: "A classic two-seat sports car, is one of the fastest classic sports cars in the state.",
         seats: 2,
         acceleration: 6.5,
         maxSpeed: 0
     },
     "Rapidgt3": {
-        desc: "Двухдверный классический спортивный автомобиль, имеет симпатичный внешний вид, а также неплохую управляемость. ",
+        desc: "A two-door classic sports car, has a nice appearance, as well as decent handling.",
         seats: 2,
         acceleration: 5.8,
         maxSpeed: 0
     },
     "Swinger": {
-        desc: "Спортивный двухместный автомобиль, очень компактный и быстрый, имеет открытый верх, благодаря чему получится прочувствовать всю его скорость.",
+        desc: "A sports two-seat car, very compact and fast, has an open top, thanks to which you can feel all its speed.",
         seats: 2,
         acceleration: 5.5,
         maxSpeed: 0
     },
     "Torero": {
-        desc: "Классический спортивный автомобиль, имеет очень необычный внешний вид, производительность данного автомобиля стоит в ряду с другими классическими споткарами.",
+        desc: "A classic sports car, has a very unusual appearance, the performance of this car is on par with other classic sports cars.",
         seats: 2,
         acceleration: 5.5,
         maxSpeed: 0
     },
     "Turismo2": {
-        desc: "Классическая версия обычного Turismo, имеет более аэродинамический и легкий кузов, благодаря чему данный автомобиль получает дополнительные бонусы к ускорению. ",
+        desc: "The classic version of the regular Turismo, has a more aerodynamic and lighter body, thanks to which this car receives additional bonuses to acceleration.",
         seats: 2,
         acceleration: 5.1,
         maxSpeed: 0
     },
     "Viseris": {
-        desc: "Один из представителей спортивной классики, данный автомобиль может подойти как просто для езды по городу, так и для гоночных соревнований. Имеет хорошую управляемость.",
+        desc: "One of the representatives of sports classics, this car can be suitable both for simply driving around the city and for racing competitions. Has good handling.",
         seats: 2,
         acceleration: 6.1,
         maxSpeed: 0
     },
     "Coquette3": {
-        desc: "Является одним из лучших автомобилей в своем классе, у него очень хорошее ускорение, а также высокая максимальная скорость.",
+        desc: "Is one of the best cars in its class, it has very good acceleration, as well as high top speed.",
         seats: 2,
         acceleration: 6.3,
         maxSpeed: 0
     },
     "Dubsta3": {
-        desc: "Четырёхдверный вездеход, имеет хорошую максимальную скорость и ускорение, однако управляемость данного автомобиля оставляет желать лучшего.",
+        desc: "A four-door off-road vehicle, has good top speed and acceleration, however the handling of this car leaves much to be desired.",
         seats: 4,
         acceleration: 6.3,
         maxSpeed: 0
     },
     "Comet3": {
-        desc: "Отличается от своей первой версии внешним видом и уникальными дисками, в технической части данные автомобили похожи.",
+        desc: "Differs from its first version in appearance and unique wheels, technically these cars are similar.",
         seats: 0,
         acceleration: 5,
         maxSpeed: 0
     },
     "Khamelion": {
-        desc: "Гибридный двухместный спортивный автомобиль, оснащен неплохим двигателем, управляется... неплохо! ",
+        desc: "A hybrid two-seat sports car, equipped with a decent engine, handles... not bad!",
         seats: 2,
         acceleration: 4.8,
         maxSpeed: 0
     },
     "Seven70": {
-        desc: "Роскошный двухместный спортивный автомобиль, обладает отличными характеристиками, которые лишь немного уступают другим спорткарам. Пойдёт.",
+        desc: "A luxurious two-seat sports car, possesses excellent characteristics that are only slightly inferior to other sports cars. It'll do.",
         seats: 2,
         acceleration: 5.2,
         maxSpeed: 0
     },
     "Specter": {
-        desc: "Двухместный спортивный автомобиль, имеет неплохой разгон и хорошую управляемость.",
+        desc: "A two-seat sports car, has decent acceleration and good handling.",
         seats: 2,
         acceleration: 5.6,
         maxSpeed: 0
     },
     "Specter2": {
-        desc: "Схож со своей первой версией, но имеет уникальный цвет дисков и окраску.",
+        desc: "Similar to its first version, but has a unique wheel color and paint job.",
         seats: 2,
         acceleration: 5.2,
         maxSpeed: 0
     },
     "Verlierer2": {
-        desc: "Мощный двухместный спортивный автомобиль, имеет довольно неплохую максимальную скорость и хорошее ускорение.",
+        desc: "A powerful two-seat sports car, has quite decent top speed and good acceleration.",
         seats: 2,
         acceleration: 5.1,
         maxSpeed: 0
     },
     "Adder": {
-        desc: "Двухместный суперкар, является одним из самых быстрых автомобилей в своём классе, благодаря полному приводу данный автомобиль имеет хорошую управляемость и чувствительность на дороге. ",
+        desc: "A two-seat supercar, is one of the fastest cars in its class, thanks to all-wheel drive this car has good handling and sensitivity on the road.",
         seats: 2,
         acceleration: 5.2,
         maxSpeed: 0
     },
     "Bullet": {
-        desc: "Двухместный суперкар, на фоне с остальными суперкарами особо не выделяется. ",
+        desc: "A two-seat supercar, against the backdrop of other supercars does not particularly stand out.",
         seats: 2,
         acceleration: 6,
         maxSpeed: 0
     },
     "Cheetah": {
-        desc: "Роскошный двухместный суперкар, является одной из самых быстрых машин, разъезжая на нём, вы сможете почувствовать себя королём на ночных дорогах.",
+        desc: "A luxurious two-seat supercar, is one of the fastest cars, driving it, you can feel like a king on the night roads.",
         seats: 2,
         acceleration: 4.9,
         maxSpeed: 0
     },
     "Cyclone": {
-        desc: "Двухместный электрический суперкар, данный электромобиль способен развивать такую скорость, на которую не способны другие автомобили данной категории.",
+        desc: "A two-seat electric supercar, this electric car is capable of reaching speeds that other cars in this category are not capable of.",
         seats: 2,
         acceleration: 2.6,
         maxSpeed: 0
     },
     "Fmj": {
-        desc: "Двухместный суперкар, данный автомобиль имеет отличную управляемость, прекрасное сцепление с дорогой, а так же высокую максимальную скорость.",
+        desc: "A two-seat supercar, this car has excellent handling, wonderful road grip, as well as high top speed.",
         seats: 2,
         acceleration: 4.3,
         maxSpeed: 0
     },
     "Pfister811": {
-        desc: "Мощный двухместный суперкар, общие характеристики данного автомобиля весьма не плохи, также он имеет хорошую динамику ускорения.",
+        desc: "A powerful two-seat supercar, the overall characteristics of this car are quite good, it also has good acceleration dynamics.",
         seats: 2,
         acceleration: 3.7,
         maxSpeed: 0
     },
     "Sc1": {
-        desc: "Двухместный суперкар, имеет необычный внешний вид, а так же неплохие характеристики.",
+        desc: "A two-seat supercar, has an unusual appearance, as well as decent characteristics.",
         seats: 2,
         acceleration: 5,
         maxSpeed: 0
     },
     "T20": {
-        desc: "Двухместный суперкар, является одним из лучших в своей категории, а так же обладает отличными характеристиками и хорошей управляемостью.",
+        desc: "A two-seat supercar, is one of the best in its category, and also possesses excellent characteristics and good handling.",
         seats: 2,
         acceleration: 3.3,
         maxSpeed: 0
     },
     "Tempesta": {
-        desc: "Двухместный суперкар, данный автомобиль отлично подойдет для гонок по ночному городу.",
+        desc: "A two-seat supercar, this car is excellent for racing through the night city.",
         seats: 2,
         acceleration: 4.1,
         maxSpeed: 0
     },
     "Vacca": {
-        desc: "Двухместный суперкар, если вы опытный водитель, то вы точно найдете применение данному автомобилю, ведь он обладает неплохими характеристиками.",
+        desc: "A two-seat supercar, if you are an experienced driver, then you will definitely find a use for this car, as it has decent characteristics.",
         seats: 2,
         acceleration: 5.6,
         maxSpeed: 0
     },
     "Vagner": {
-        desc: "Двухместный гиперкар, является одним из самых быстрых автомобилей и имеет необычный внешний вид.",
+        desc: "A two-seat hypercar, is one of the fastest cars and has an unusual appearance.",
         seats: 2,
         acceleration: 3.1,
         maxSpeed: 0
     },
     "Visione": {
-        desc: "Двухместный суперкар, имеет необычный внешний вид и неплохие характеристики.",
+        desc: "A two-seat supercar, has an unusual appearance and decent characteristics.",
         seats: 2,
         acceleration: 4.1,
         maxSpeed: 0
     },
     "Baller4": {
-        desc: "Данный четырёхдверный роскошный внедорожник, имеет схожий внешний вид со своими другими версиями и немного улучшенные характеристики. ",
+        desc: "This four-door luxury SUV, has a similar appearance to its other versions and slightly improved characteristics.",
         seats: 4,
         acceleration: 7.3,
         maxSpeed: 0
     },
     "Jester3": {
-        desc: "Классический двухместный спортивный автомобиль, обладает довольно неплохими характеристиками, а так же отлично подходит для различных спортивных состязаний.",
+        desc: "A classic two-seat sports car, has quite decent characteristics, and is also excellent for various sports competitions.",
         seats: 2,
         acceleration: 5.3,
         maxSpeed: 0
     },
     "Coquette2": {
-        desc: "Двухместный классический спортивный автомобиль, управляемость оставляет желать лучшего, но его корпус выделяется великолепной прочностью.",
+        desc: "A two-seat classic sports car, handling leaves much to be desired, but its body stands out with magnificent durability.",
         seats: 2,
         acceleration: 5.4,
         maxSpeed: 0
     },
     "Gt500": {
-        desc: "Классический спортивный автомобиль, оснащен довольно мощным двигателем, благодаря чему способен развивать высокую максимальную скорость.",
+        desc: "A classic sports car, equipped with a rather powerful engine, thanks to which it is capable of developing high top speed.",
         seats: 2,
         acceleration: 6.5,
         maxSpeed: 0
     },
     "Stinger": {
-        desc: "Двухместный классический спортивный автомобиль, обладает отличной максимальной скоростью и ускорением.",
+        desc: "A two-seat classic sports car, possesses excellent top speed and acceleration.",
         seats: 2,
         acceleration: 7.3,
         maxSpeed: 0
     },
     "Stingergt": {
-        desc: "Классический двухместный спортивный автомобиль, разница между первой версией автомобиля видна лишь в управлении.",
+        desc: "A classic two-seat sports car, the difference from the first version of the car is visible only in handling.",
         seats: 2,
         acceleration: 7.3,
         maxSpeed: 0
     },
     "Italigtb": {
-        desc: "Двухместный спортивный автомобиль, отличается от другой своей версии внешним видом и чуть изменёнными характеристиками.",
+        desc: "A two-seat sports car, differs from its other version in appearance and slightly changed characteristics.",
         seats: 2,
         acceleration: 4.3,
         maxSpeed: 0
     },
     "Windsor2": {
-        desc: "Роскошный четырёхместный кабриолет, обладает великолепной максимальной скоростью и ускорением.",
+        desc: "A luxurious four-seat convertible, possesses magnificent top speed and acceleration.",
         seats: 4,
         acceleration: 7.3,
         maxSpeed: 0
     },
     "Deviant": {
-        desc: "Роскошный двухместный маслкар, обладает необычным внешним видом и неплохими характеристиками для автомобиля своей категории.",
+        desc: "A luxurious two-seat muscle car, possesses an unusual appearance and decent characteristics for a car of its category.",
         seats: 2,
         acceleration: 7.8,
         maxSpeed: 0
     },
     "Dominator3": {
-        desc: "Двухместный современный маслкар, вполне современная машина, оснащённая всеми необходимыми системами.",
+        desc: "A two-seat modern muscle car, a quite modern car, equipped with all necessary systems.",
         seats: 2,
         acceleration: 6.8,
         maxSpeed: 0
     },
     "Toros": {
-        desc: "Роскошный внедорожник, обладает очень красивым дизайном и превосходными характеристиками на дороге. Ррр!",
+        desc: "A luxury SUV, possesses a very beautiful design and excellent road characteristics. Grrr!",
         seats: 4,
         acceleration: 4.8,
         maxSpeed: 0
     },
     "Italigto": {
-        desc: "Двухместный спортивный автомобиль, обладает очень хорошим ускорением, а так же хорошей максимальной скоростью и торможением.",
+        desc: "A two-seat sports car, possesses very good acceleration, as well as good top speed and braking.",
         seats: 2,
         acceleration: 3.6,
         maxSpeed: 0
     },
     "Jugular": {
-        desc: "Четырёхместный спортивный автомобиль, имеет неплохой внешний вид и хорошие характеристики для езды.",
+        desc: "A four-seat sports car, has a decent appearance and good characteristics for driving.",
         seats: 4,
         acceleration: 3.6,
         maxSpeed: 0
     },
     "Locust": {
-        desc: "Данный двухместный спортивный автомобиль выделяется среди остальных своим открытым верхом, он отлично подойдет для гонок по ночному городу.",
+        desc: "This two-seat sports car stands out among others with its open top, it is excellent for racing through the night city.",
         seats: 2,
         acceleration: 4.6,
         maxSpeed: 0
     },
     "Neo": {
-        desc: "Двухместный спортивный автомобиль, выполненный в необычном дизайне. Имеет неплохие характеристики.",
+        desc: "A two-seat sports car, made in an unusual design. Has decent characteristics.",
         seats: 2,
         acceleration: 3.6,
         maxSpeed: 0
     },
     "Paragon": {
-        desc: "Двухместный спортивный автомобиль люкс класса, имеет конструкцию, аналогичную кабриолету Cognoscenti.",
+        desc: "A two-seat luxury class sports car, has a design similar to the Cognoscenti convertible.",
         seats: 2,
         acceleration: 4.4,
         maxSpeed: 0
     },
     "Schlagen": {
-        desc: "Двухместный спортивный автомобиль, имеет очень красивый внешний вид и неплохую производительность на дороге.",
+        desc: "A two-seat sports car, has a very beautiful appearance and decent performance on the road.",
         seats: 2,
         acceleration: 4.6,
         maxSpeed: 0
     },
     "Thrax": {
-        desc: "Двухместный гиперкар, имеет очень вызывающий внешний вид и безупречное сцепление с дорогой, а так же выделяется невероятным ускорением и максимальной скоростью. Раньше он стоял в казино :)",
+        desc: "A two-seat hypercar, has a very provocative appearance and impeccable road grip, as well as stands out with incredible acceleration and top speed. It used to be in the casino :)",
         seats: 2,
         acceleration: 4.5,
         maxSpeed: 0
     },
     "Drafter": {
-        desc: "Cпортивное двухместное купе, имеет неплохие характеристики и интересный внешний вид.",
+        desc: "A sporty two-seat coupe, has decent characteristics and an interesting appearance.",
         seats: 2,
         acceleration: 4.6,
         maxSpeed: 0
     },
     "Emerus": {
-        desc: "Двухместный гиперкар, имеет необычный внешний вид и хорошие ездовые характеристики.",
+        desc: "A two-seat hypercar, has an unusual appearance and good driving characteristics.",
         seats: 2,
         acceleration: 4.4,
         maxSpeed: 0
     },
     "Zorrusso": {
-        desc: "Данный автомобиль является двухместным гиперкаром. Как и все автомобили от данного производителя, он имеет очень необычный внешний вид.",
+        desc: "This car is a two-seat hypercar. Like all cars from this manufacturer, it has a very unusual appearance.",
         seats: 2,
         acceleration: 4,
         maxSpeed: 0
     },
     "Comet5": {
-        desc: "Модифицированный вариант обычного Comet, от оригинальной машины отличается уникальными фарами и обновлённым кузовом. ",
+        desc: "A modified version of the regular Comet, differs from the original car with unique headlights and an updated body.",
         seats: 2,
         acceleration: 3.9,
         maxSpeed: 0
     },
     "Furia": {
-        desc: "Двухместный суперкар, имеет функциональный аэродинамический спойлер, а также неплохую максимальную скорость. ",
+        desc: "A two-seat supercar, has a functional aerodynamic spoiler, as well as decent top speed.",
         seats: 2,
         acceleration: 3.4,
         maxSpeed: 0
     },
     "Taipan": {
-        desc: "Двухместный суперкар, обладает средними характеристиками в плане производительности в своем классе, но при этом способен уверенно чувствовать себя на дороге. ",
+        desc: "A two-seat supercar, possesses average performance characteristics in its class, but at the same time is capable of feeling confident on the road.",
         seats: 2,
         acceleration: 4.8,
         maxSpeed: 0
     },
     "Entity2": {
-        desc: "Двухместный суперкар, если вам нужен по-настоящему быстрый и надежный автомобиль, то Entity2 создан специально для вас.",
+        desc: "A two-seat supercar, if you need a truly fast and reliable car, then Entity2 is made specifically for you.",
         seats: 2,
         acceleration: 4.2,
         maxSpeed: 0
     },
     "Imorgon": {
-        desc: "Двухместный электрический спортивный автомобиль, обладает очень высокой скоростью разона и неплохой максимальной скоростью, а так же пачку крутых винилов в тюнинге.",
+        desc: "A two-seat electric sports car, possesses very high acceleration speed and decent top speed, as well as a bunch of cool vinyls in tuning.",
         seats: 2,
         acceleration: 3,
         maxSpeed: 0
     },
     "Caddy": {
-        desc: "Небольшая машинка, используемая для передвижения по гольф-полям",
+        desc: "A small car used for moving around golf courses",
         seats: 2,
         acceleration: 17.5,
         maxSpeed: 0
     },
     "Romero": {
-        desc: "Четырёхдверный катафалк, имеет очень вместительный багажник.",
+        desc: "A four-door hearse, has a very spacious trunk.",
         seats: 4,
         acceleration: 15.2,
         maxSpeed: 0
     },
     "Hotknife": {
-        desc: "Двухдверный хот-род с весьма неплохой управляемостью.",
+        desc: "A two-door hot rod with quite decent handling.",
         seats: 2,
         acceleration: 6.6,
         maxSpeed: 0
     },
     "Ruston": {
-        desc: "Двухдверный редкий спортивный автомобиль имеет хороший разгон и плавно управляется. ",
+        desc: "A two-door rare sports car has good acceleration and handles smoothly.",
         seats: 2,
         acceleration: 4.9,
         maxSpeed: 0
     },
     "Outlaw": {
-        desc: "Этот спортивный вездеход может проехать абсолютно по любой дороге.",
+        desc: "This sporty off-road vehicle can drive on absolutely any road.",
         seats: 2,
         acceleration: 4.4,
         maxSpeed: 0
     },
     "Stafford": {
-        desc: "Классический четырёхдверный седан, не очень хорош в плане скорости, но отлично подойдет для коллекции.",
+        desc: "A classic four-door sedan, not very good in terms of speed, but excellent for a collection.",
         seats: 4,
         acceleration: 11.4,
         maxSpeed: 0
     },
     "Shotaro": {
-        desc: "Очень редкий спортивный мотоцикл выполненный в уникальном стиле, обладает отличным сцеплением с любой поверхностью, что позволяет быстро стартовать. Невероятно красиво светится.",
+        desc: "A very rare sports motorcycle made in a unique style, possesses excellent grip on any surface, which allows for quick starts. Incredibly beautifully illuminated.",
         seats: 1,
         acceleration: 4,
         maxSpeed: 0
     },
     "ZType": {
-        desc: "Когда это был самый быстрый автомобиль, сегодня ZType - мечта всех коллекционеров.",
+        desc: "When it was the fastest car, today ZType is the dream of all collectors.",
         seats: 2,
         acceleration: 6.7,
         maxSpeed: 0
     },
     "RRSVR": {
-        desc: "Четырёхдверный полноприводный универсал, предназначен для любого типа дорог. Очень мощный и красивый.",
+        desc: "A four-door all-wheel drive station wagon, designed for any type of road. Very powerful and beautiful.",
         seats: 4,
         acceleration: 10,
         maxSpeed: 0
     },
     "BmwM3": {
-        desc: "Двухдверное купе с усовершенствованным укреплённым и более аэродинамическим кузовом.",
+        desc: "A two-door coupe with an improved reinforced and more aerodynamic body.",
         seats: 4,
         acceleration: 4.1,
         maxSpeed: 0
     },
     "BmwM5": {
-        desc: "Четырёхдверный седан, обеспечивает уровень динамики, точности и мощности, соответствующий самым высоким стандартам. Можно флексить с друзьями, ведь тут аж 4 посадочных места!",
+        desc: "A four-door sedan, provides a level of dynamics, precision, and power that meets the highest standards. You can flex with friends, because there are as many as 4 seats!",
         seats: 4,
         acceleration: 4.5,
         maxSpeed: 0
     },
     "BmwM8": {
-        desc: "Элитное двухдверное купе, его превосходный внешний вид и ходовые характеристики не оставят равнодушным НИКОГО!",
+        desc: "An elite two-door coupe, its superb appearance and driving characteristics will leave NO ONE indifferent!",
         seats: 2,
         acceleration: 4.3,
         maxSpeed: 0
     },
     "MBC63S": {
-        desc: "Двухдверное купе, выполненный в компактном стиле. Выглядит отпадно, едет так же. Честно.",
+        desc: "A two-door coupe, made in a compact style. Looks awesome, drives the same. Honestly.",
         seats: 2,
         acceleration: 4.5,
         maxSpeed: 0
     },
     "MBG63": {
-        desc: "Четырёхдверный внедорожник с повышенной проходимостью, отлично подойдет для того, чтобы \"валить\" на нём. А ещё для деловых встреч, если вы понимаете, о чём я ;)",
+        desc: "A four-door SUV with increased off-road capability, excellent for 'hauling' in it. And also for business meetings, if you know what I mean ;)",
         seats: 4,
         acceleration: 9,
         maxSpeed: 0
     },
     "AudiR8": {
-        desc: "Полноприводный немецкий спортивный автомобиль, способный быстро набрать скорость и поразить окружающих своим невероятным внешним видом.",
+        desc: "An all-wheel drive German sports car, capable of quickly gaining speed and impressing others with its incredible appearance.",
         seats: 2,
         acceleration: 4.6,
         maxSpeed: 0
     },
     "BmwI8": {
-        desc: "Полноприводное двухдверное купе с хорошим аэродинамическим сопротивлением. Окружающие будут завидовать.",
+        desc: "An all-wheel drive two-door coupe with good aerodynamic resistance. Others will be envious.",
         seats: 2,
         acceleration: 4.6,
         maxSpeed: 0
     },
     "DodgeViper": {
-        desc: "Классический американский спортивный автомобиль, на борту у него мощный двигатель, который позволит почувствовать форсаж ;)",
+        desc: "A classic American sports car, on board it has a powerful engine that will let you feel the Fast & Furious ;)",
         seats: 2,
         acceleration: 4,
         maxSpeed: 0
     },
 };
+```
