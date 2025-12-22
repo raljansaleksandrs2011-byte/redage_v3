@@ -174,7 +174,7 @@ gm.events.add('mineJob_startMining', () => {
 
         global.localplayer.freezePosition(true);
         global.menuOpened = true; // чтобы запретить открывать инвентарь и биндер
-        gm.discord(translateText("Копает руду на шахте"));
+        gm.discord(translateText("Digging ore in a mine"));
         
         mp.gui.emmit(`window.events.callEvent("cef.hud.game.close")`);
         mp.gui.emmit(`window.events.callEvent("cef.hud.game.open", 69, 1, 8, false)`);
@@ -231,7 +231,7 @@ mp.keys.bind(0x45, true, () => {
         if (mine_job.can_press > -1 && !global.startedMining && !mine_job.ore_carry_status && !global.menuCheck ()) {
             if (global.localplayer.vehicle) {
                 if (!global.anti_flood || global.anti_flood && new Date().getTime() - global.anti_flood >= 3000) {
-                    mp.events.call('notify', 1, 9, translateText("Вы должны выйти из транспорта."), 3000);
+                    mp.events.call('notify', 1, 9, translateText("You must exit the vehicle.."), 3000);
                 }
                 
                 global.anti_flood = new Date().getTime();
@@ -286,7 +286,7 @@ gm.events.add("render", () => {
     /*if (mine_job.can_press > -1 && mp.game.controls.isControlJustPressed(0, 38) && !mine_job.ore_carry_status && !global.menuCheck ()) {
         if (global.localplayer.vehicle) {
             if (!global.anti_flood || global.anti_flood && new Date().getTime() - global.anti_flood >= 3000) {
-                mp.events.call('notify', 1, 9, translateText("Вы должны выйти из транспорта."), 3000);
+                mp.events.call('notify', 1, 9, translateText("You must exit the vehicle.."), 3000);
             }
 
             global.anti_flood = new Date().getTime();
@@ -308,7 +308,7 @@ gm.events.add("render", () => {
     if (mine_job.ore_carry_status === true) {
         if (global.localplayer.isFalling() || global.localplayer.isCuffed() || global.localplayer.isFatallyInjured() || global.localplayer.isShooting() || global.localplayer.isSwimming() || global.localplayer.isClimbing()) {
             if (!global.anti_flood || global.anti_flood && new Date().getTime() - global.anti_flood >= 3000) {
-                mp.events.call('notify', 1, 9, translateText("Вы уронили добытый ресурс."), 3000);
+                mp.events.call('notify', 1, 9, translateText("You dropped the mined resource."), 3000);
                 mp.events.callRemote('PlayerStopCarryOre');
             }
 
@@ -340,12 +340,12 @@ gm.events.add('client.inventory.GetItem', (rItemId, toggled) => {
                 mine_job.mining_needful_time = 15;
             }
             else {
-                return mp.events.call('notify', 1, 9, translateText("У Вас нет кирки."), 3000);
+                return mp.events.call('notify', 1, 9, translateText("You don't have a pickaxe."), 3000);
             }
             mp.events.callRemote('PlayerStartedMining');
         }
         else {
-            mp.events.call('notify', 1, 9, translateText("У Вас нет кирки."), 3000);
+            mp.events.call('notify', 1, 9, translateText("You don't have a pickaxe.."), 3000);
         }
     }
 	catch (e) 
@@ -371,7 +371,7 @@ gm.events.add('resourceSell_openMenu', (state, json) => {
     }
 
     mp.gui.emmit(`window.router.setView("PlayerOresSale", [${state}, '${json}']);`);
-    gm.discord(translateText("Продаёт руду"));
+    gm.discord(translateText("Sells ore"));
 });
 
 gm.events.add('resourceSell_closeMenu', () => {
