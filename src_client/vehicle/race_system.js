@@ -39,7 +39,7 @@ const getBlipPosition = (callback) => {
 					clearInterval (intervalId);
 					callback (returnPosition);
 				} else {		
-					mp.events.call('notify', 3, 9, translateText("Вы не молжете поставить так близко к себе!"), 3000);
+					mp.events.call('notify', 3, 9, translateText("You can't put it so close to you!"), 3000);
 					clearInterval (intervalId);
 				}
 			}
@@ -83,13 +83,13 @@ gm.events.add('client.streetrace.start', (sr_X, sr_Y, sr_Z, isCreated) => {
 
 		race_system.start_seconds = 5;
 		
-		mp.gui.emmit(`window.updateGameTime (${race_system.start_seconds}, '${translateText("Гонка")}', '${translateText("Цель: Доберитесь до финиша")}');`);
+		mp.gui.emmit(`window.updateGameTime (${race_system.start_seconds}, '${translateText("Race")}', '${translateText("Goal: Get to finnish")}');`);
 
-		gm.discord('Участвует в уличной гонке');
+		gm.discord('Participates in a street race');
 
 		let start_interval = setInterval(() => {
 			race_system.start_seconds -= 1;
-			mp.gui.emmit(`window.updateGameTime (${race_system.start_seconds}, '${translateText("Гонка")}', '${translateText("Цель: Доберитесь до финиша")}');`);
+			mp.gui.emmit(`window.updateGameTime (${race_system.start_seconds}, '${translateText("Race")}', '${translateText("Goal: Get to finnish")}');`);
 
 			if (race_system.start_seconds <= 0) {
 				clearInterval(start_interval);
