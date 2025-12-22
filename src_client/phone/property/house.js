@@ -76,7 +76,7 @@ gm.events.add(clientName + "fUse", (id, type) => {//+
         mp.events.call('client.phone.close');
 
     mp.events.callRemote('server.house.furniture.use', id, type);
-    gm.discord(translateText("Пользуется мебелью"));
+    gm.discord(translateText("Uses furniture"));
 });
 
 gm.events.add(clientName + "action", (action) => {//+
@@ -95,7 +95,7 @@ gm.events.add(clientName + "openPark", () => {//+
 gm.events.add(clientName + "fBuy", (name) => {//+
     mp.events.call('client.phone.close');
     mp.events.callRemote('server.house.furniture.buy', name);
-    gm.discord(translateText("Покупает мебель в дом"));
+    gm.discord(translateText("Buys furniture for the house"));
 });
 
 gm.events.add(clientName + "rAccess", (name, action) => {//+
