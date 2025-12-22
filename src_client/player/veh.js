@@ -251,11 +251,11 @@ class PutToPlayerInVehicle {
 				if(myanim != undefined && myanim != "null") 
 				{
 					this.clear ();
-					mp.events.call('notify', 1, 9, translateText("Чтобы сесть в транспортное средство Вам нужно отменить анимацию."), 3000);
+					mp.events.call('notify', 1, 9, translateText("To get into a vehicle you need to cancel the animation."), 3000);
 				}
 				else if (2 == this.inVehicle.getDoorLockStatus()) {
 					this.clear ();
-					mp.events.call('notify', 1, 9, translateText("Двери закрыты"), 1000);
+					mp.events.call('notify', 1, 9, translateText("Doors locked"), 1000);
 				}
 				else if (inDrive && (this.inVehicle.isSeatFree(-1) || this.inVehicle.getPedInSeat(-1) == global.localplayer.handle || 0 == this.inVehicle.getPedInSeat(-1))) {
 					this.SitToggle = false;
