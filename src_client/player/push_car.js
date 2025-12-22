@@ -33,7 +33,7 @@ global.binderFunctions.pushVehicleToggle = () => {
             if (config.AllowVehicleClass !== null && config.AllowVehicleClass !== false && config.AllowVehicleClass.indexOf(vehClass) === -1)
                 return false;
             else if (new Date().getTime() - eventsRefresh < 1000) {
-                mp.events.call('notify', 4, 9, translateText("Слишком быстро."), 1500);
+                mp.events.call('notify', 4, 9, translateText("Too fast."), 1500);
                 return;
             }
             mp.gui.chat.push("pushVehicleToggle 3");
@@ -220,14 +220,14 @@ gm.events.add("render", () => {
                 PlayerPushingVehicle.setForwardSpeed(-1);
             }
 
-            mp.game.graphics.drawText(translateText("Чтобы менять направление движения, используйте A и D."), [0.5, 0.9], {
+            mp.game.graphics.drawText(translateText("To change direction, use A and D."), [0.5, 0.9], {
                 font: 4,
                 color: [255, 255, 255, 255],
                 scale: [0.4, 0.4],
                 centre: true,
             });
 
-            mp.game.graphics.drawText(`\nЧтобы перестать толкать транспорт, нажмите ${global.Keys[global.userBinder[53].keyCode]}.`, [0.5, 0.9], {
+            mp.game.graphics.drawText(`\nTo stop pushing the vehicle, press ${global.Keys[global.userBinder[53].keyCode]}.`, [0.5, 0.9], {
                 font: 4,
                 color: [255, 255, 255, 255],
                 scale: [0.4, 0.4],
