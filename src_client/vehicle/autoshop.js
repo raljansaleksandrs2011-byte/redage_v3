@@ -1,19 +1,19 @@
 // AUTO SHOP //
-let autoColors = [translateText("Черный"), translateText("Белый"), translateText("Красный"), translateText("Оранжевый"), translateText("Желтый"), translateText("Зеленый"), translateText("Голубой"), "Синий", translateText("Фиолетовый")];
+let autoColors = [translateText("Black"), translateText("White"), translateText("Red"), translateText("Orange"), translateText("Yellow"), translateText("Green"), translateText("Light blue"), "Blue", translateText("Violet")];
 let autoModels = null;
 
 let buyMetodName = "";
 
 let colors = {};
-colors[translateText("Черный")] = [0, 0, 0];
-colors[translateText("Белый")] = [225, 225, 225];
-colors[translateText("Красный")] = [230, 0, 0];
-colors[translateText("Оранжевый")] = [255, 115, 0];
-colors[translateText("Желтый")] = [240, 240, 0];
-colors[translateText("Зеленый")] = [0, 230, 0];
-colors[translateText("Голубой")] = [0, 205, 255];
-colors["Синий"] = [0, 0, 230];
-colors[translateText("Фиолетовый")] = [190, 60, 165];
+colors[translateText("Black")] = [0, 0, 0];
+colors[translateText("White")] = [225, 225, 225];
+colors[translateText("Red")] = [230, 0, 0];
+colors[translateText("Orange")] = [255, 115, 0];
+colors[translateText("Yellow")] = [240, 240, 0];
+colors[translateText("Green")] = [0, 230, 0];
+colors[translateText("Light blue")] = [0, 205, 255];
+colors["Blue"] = [0, 0, 230];
+colors[translateText("Violet")] = [190, 60, 165];
 
 let auto = {
     model: null,
@@ -161,7 +161,7 @@ gm.events.add('startTestDrive', async (vehicle) => {
 	{
 		if (!vehicle) return;
 		await global.IsLoadEntity (vehicle);//TODO
-		mp.events.call('notify', 1, 9, translateText("Вы получили транспортное средство на тест-драйв. Тест-драйв будет окончен через 2 минуты или при выходе из транспортного средства."), 10000);
+		mp.events.call('notify', 1, 9, translateText("You have received a vehicle for a test drive. The test drive will end in 2 minutes or when you exit the vehicle.."), 10000);
 		if (vehicle && vehicle.handle !== 0)
 			global.localplayer.setIntoVehicle(vehicle.handle, -1);
 		//global.FadeScreen (false, 1500);
