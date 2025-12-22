@@ -100,7 +100,7 @@ global.binderFunctions.openCircleMenu = () => {// G key
 					
 					switch (global.entity['dropData'].ItemId) {
 						case 249: 
-							global.OpenCircle(translateText("Кальян"), 0, global.entity);
+							global.OpenCircle(translateText("Hookah"), 0, global.entity);
 							break;
 						default:
 							mp.gui.cursor.visible = true;
@@ -111,12 +111,12 @@ global.binderFunctions.openCircleMenu = () => {// G key
 			case "player":
 				if(global.GetGender (global.entity) !== -1) {
 					mp.gui.cursor.visible = true;
-					global.OpenCircle(translateText("Игрок"), 0, global.entity);
+					global.OpenCircle(translateText("Player"), 0, global.entity);
 				}
 				return;
 			case "vehicle":
 				mp.gui.cursor.visible = true;
-				global.OpenCircle(translateText("Машина"), 0, global.entity);
+				global.OpenCircle(translateText("Car"), 0, global.entity);
 				return;
 			default:
 				//global.OpenCircle(translateText("Я"), 0);
