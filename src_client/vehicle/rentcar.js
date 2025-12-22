@@ -15,7 +15,7 @@ gm.events.add('client.rentcar.open', (json) => {
 
     cars = JSON.stringify(cars);
     mp.gui.emmit(`window.router.setView("PlayerRentCar", '${cars}');`);
-    gm.discord(translateText("Хочет арендовать транспорт"));
+    gm.discord(translateText("Wants to rent a vehicle"));
 })
 
 gm.events.add('client.rentcar.exit', () => {
@@ -61,7 +61,7 @@ gm.events.add("vehicleStreamIn", (entity) => {
         selectRentData.zDefault = getVehicleHeight (entity) + 1;
 
         mp.events.call("createBlip", "rentcar", translateText("Аренда"), 225, entity.position, 1.25, 4);
-        //mp.events.call("client.showWithPicture", translateText("Арендодатель"), "Mors Mutual Insurance", translateText("Спасибо за использование наших услуг. Транспортное средство можно найти на парковке. Хорошего дня!"), "CHAR_MP_MORS_MUTUAL");
+        //mp.events.call("client.showWithPicture", translateText("Арендодатель"), "Mors Mutual Insurance", translateText("Thank you for using our services. Your vehicle can be found in the parking lot. Have a nice day.!"), "CHAR_MP_MORS_MUTUAL");
         mp.game.audio.playSoundFrontend(-1, "Boss_Message_Orange", "GTAO_Boss_Goons_FM_Soundset", true);
 
         if (!global.localplayer["NewUser"])
