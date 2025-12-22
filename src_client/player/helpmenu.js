@@ -28,13 +28,13 @@ gm.events.add('client:OnOpenHelpMenu', () => {
 gm.events.add('client:OnOpenHelpMenu', () => {
     try
     {
-        mp.events.call('notify', 3, 9, translateText("Не забудь подойти к NPC Виталий ЗДебич, чтобы начать стартовую линейку квестов, которая познакомит тебя с нашим чудесным штатом!"), 3000);
+        mp.events.call('notify', 3, 9, translateText("Don't forget to visit NPC Vitaly Debich to begin the starting quest line, which will introduce you to our wonderful state!"), 3000);
         if (questNameToPeds [startActorName] && mp.peds.exists (questNameToPeds [startActorName])) {
             global.createCamera ("peds", questNameToPeds [startActorName]);
             global.localplayer.freezePosition(true);
 
             setTimeout(function() {
-                mp.gui.chat.push(translateText("Не забудь подойти к !{#ff3333}NPC Виталий ЗДебич!{#FFF}, чтобы начать стартовую линейку квестов, которая познакомит тебя с нашим чудесным штатом!"));
+                mp.gui.chat.push(translateText("Don't forget to visit NPC Vitaly Debich! to begin the starting quest line that will introduce you to our wonderful state!"));
 
                 global.cameraManager.deleteCamera ('peds', true, 500);
                 global.localplayer.freezePosition(false);
@@ -61,7 +61,7 @@ global.binderFunctions.o_help = () => {
     {
         global.menuOpen();
         mp.gui.emmit(`window.router.setView("PlayerHelp")`);
-        gm.discord(translateText("Изучает меню помощи"));
+        gm.discord(translateText("Explores the help menu"));
         helpMenuState = true;
         mp.gui.cursor.visible = true;
     }
