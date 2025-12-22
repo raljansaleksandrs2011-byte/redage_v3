@@ -1,367 +1,367 @@
 export default [
     {
         "cmd":"/report",
-        "descr":"Подать жалобу администрации.",
-        "category":"Общие"
+        "descr":"Report about something.",
+        "category":"General"
     },  
     {
         "cmd":"/password",
-        "descr":"Сменить пароль.",
-        "category":"Общие"
+        "descr":"Change password.",
+        "category":"General"
     },
     {
         "cmd":"/myguest",
-        "descr":"Зайти в личный дом без открытия дверей.",
-        "category":"Общие"
+        "descr":"Enter a private home without opening the doors.",
+        "category":"General"
     },
     {
         "cmd":"/buybiz",
-        "descr":"Купить бизнес.",
-        "category":"Общие"
+        "descr":"Buy buisness.",
+        "category":"General"
     },
     {
         "cmd":"/sellbiz [id] [цена]",
-        "descr":"Продать бизнес игроку.",
-        "category":"Общие"
+        "descr":"Sell buisness to player.",
+        "category":"General"
     },
     {
         "cmd":"/time",
-        "descr":" Узнать срок наказания / КПЗ.",
-        "category":"Общие"
+        "descr":" Find out the sentence/pretrial detention facility.",
+        "category":"General"
     },
     {
-        "cmd":"/dice [id] [сумма]",
-        "descr":"Предложить игру в кости.",
-        "category":"Общие"
+        "cmd":"/dice [id] [amount]",
+        "descr":"Suggest a game of dice.",
+        "category":"General"
     },
     {
         "cmd":"/findtrailer",
-        "descr":" Отметить трейлер (Для работы дальнобойщика).",
-        "category":"Общие"
+        "descr":" Mark a trailer (For truck driver work).",
+        "category":"General"
     },
     {
         "cmd":"/q",
-        "descr":" Быстрое отключение от сервера.",
-        "category":"Общие"
+        "descr":" Quick disconnect from the server.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'G'",
-        "descr":" Меню взаимодействий",
-        "category":"Общие"
+        "cmd":"Pressing 'G'",
+        "descr":" Interaction menu",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'N'",
-        "descr":" Микрофон.",
-        "category":"Общие"
+        "cmd":"Pressing 'N'",
+        "descr":" Microphone.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'I'",
-        "descr":"Открывает инвентарь и статистику персонажа.",
-        "category":"Общие"
+        "cmd":"Pressing 'I'",
+        "descr":"Opens the character's inventory and statistics.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'M'",
-        "descr":"Телефон.",
-        "category":"Общие"
+        "cmd":"Pressing 'M'",
+        "descr":"Phone.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'L'",
-        "descr":"Открыть / Закрыть авто.",
-        "category":"Общие"
+        "cmd":"Pressing 'L'",
+        "descr":"Open / Close car.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'B'",
-        "descr":"Завести / Заглушить авто.",
-        "category":"Общие"
+        "cmd":"Pressing 'B'",
+        "descr":"Start/Stop the car.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'U'",
-        "descr":" Список анимаций.",
-        "category":"Общие"
+        "cmd":"Pressing  'U'",
+        "descr":" List of animations.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие '5'",
-        "descr":"Показать / Скрыть ID игроков.",
-        "category":"Общие"
+        "cmd":"Pressing '5'",
+        "descr":"Show/Hide player IDs.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие '6'",
-        "descr":"Круиз контроль авто.",
-        "category":"Общие"
+        "cmd":"Pressing '6'",
+        "descr":"Auto cruise control.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'F10'",
-        "descr":"Помощь.",
-        "category":"Общие"
+        "cmd":"Pressing 'F10'",
+        "descr":"Help.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'F9'",
-        "descr":"Донат Панель.",
-        "category":"Общие"
+        "cmd":"Pressing 'F9'",
+        "descr":"Donate-Menu.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'F5'",
-        "descr":"Вкл/Выкл интерфейс.",
-        "category":"Общие"
+        "cmd":"Pressing 'F5'",
+        "descr":"On/Off interface.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'F1'",
-        "descr":"Открыть меню Rage.",
-        "category":"Общие"
+        "cmd":"Pressing 'F1'",
+        "descr":"Open the Rage menu.",
+        "category":"General"
     },
     {
-        "cmd":"Нажатие 'T'",
-        "descr":"Открыть чат.",
-        "category":"Чат"
+        "cmd":"Pressing 'T'",
+        "descr":"Open chat.",
+        "category":"Chat"
     },
     {
         "cmd":"/b",
-        "descr":"ООС чат.",
-        "category":"Чат"
+        "descr":"OOC CHAT.",
+        "category":"Chat"
     },
     {
         "cmd":"/me",
-        "descr":"Отыгровка действия от первого лица.",
-        "category":"Чат"
+        "descr":"First-person action role-playing.",
+        "category":"Chat"
     },
     {
         "cmd":"/do",
-        "descr":"Отыгровка от 3-го лица.",
-        "category":"Чат"
+        "descr":"3rd person play.",
+        "category":"Chat"
     },
     {
         "cmd":"/try",
-        "descr":"Отыгровка действия со случайным исходом.",
-        "category":"Чат"
+        "descr":"Playing out an action with a random outcome.",
+        "category":"Chat"
     },
     {
         "cmd":"/todo",
-        "descr":"Отыгровка слов + действий.",
-        "category":"Чат"
+        "descr":"Role-playing words + actions.",
+        "category":"Chat"
     },
     {
         "cmd":"/s",
-        "descr":"Кричать.",
-        "category":"Чат"
+        "descr":"Scream.",
+        "category":"Chat"
     },
     {
         "cmd":"/f",
-        "descr":"Чат фракции.",
-        "category":"Чат"
+        "descr":"Faction chat.",
+        "category":"Chat"
     },
     {
         "cmd":"/dep",
-        "descr":"Чат департамента. (Общий чат всех гос. фракций).",
-        "category":"Чат"
+        "descr":"Department chat. (General chat of all government factions).",
+        "category":"Chat"
     },
     {
         "cmd":"/gov",
-        "descr":"Гос. волна.",
-        "category":"Чат"
+        "descr":"State Wave",
+        "category":"Chat"
     },
     {
         "cmd":"/m",
-        "descr":"Мегафон.",
-        "category":["Чат", "LSPD", "FIB", "Армия"]
+        "descr":"Megafon.",
+        "category":["Chat", "LSPD", "FIB", "Army"]
     },
     {
         "cmd":"/call",
         "descr":"SMS.",
-        "category":"Чат"
+        "category":"Chat"
     },
     {
         "cmd":"/fontsize",
-        "descr":"Изменить размер шрифта чата (От 10 до 20, Стандарт: 16).",
-        "category":"Чат"
+        "descr":"Change the chat font size (From 10 to 20, Standart: 16).",
+        "category":"Chat"
     },
     {
         "cmd":"/pagesize",
-        "descr":" Изменить кол-во строк чата (От 5 до 20, Стандарт 10).",
-        "category":"Чат"
+        "descr":" Change the number of chat lines (From 5 to 20, Standart 10).",
+        "category":"Chat"
     },
     {
         "cmd":"/timestamp",
-        "descr":"Отображение времени в чате.",
-        "category":"Чат"
+        "descr":"Display time in chat.",
+        "category":"Chat"
     },
     {
         "cmd":"/chatalpha",
-        "descr":"Переключить затухание чата.",
-        "category":"Чат"
+        "descr":"Toggle chat fuzzing.",
+        "category":"Chat"
     },
     {
         "cmd":"/buyfuel [кол-во]",
-        "descr":"Купить топливо на АЗС.",
-        "category":"Автомеханик"
+        "descr":"Buy fuel at a gas station.",
+        "category":"Auto mechanic"
     },
     {
-        "cmd":"/sellfuel [id] [кол-во] [цена за литр]",
-        "descr":"Продать топливо игроку.",
-        "category":"Автомеханик"
+        "cmd":"/sellfuel [id] [pcs] [price per liter]",
+        "descr":"Sell ​​fuel to a player.",
+        "category":"Auto mechanic"
     },
     {
         "cmd":"/ma",
-        "descr":"Принять вызов автомеханика.",
-        "category":"Автомеханик"
+        "descr":"Accept a call from a car mechanic.",
+        "category":"Auto mechanic"
     },
     {
-        "cmd":"/repair [id] [цена]",
-        "descr":"Починить транспорт.",
-        "category":"Автомеханик"
+        "cmd":"/repair [id] [price]",
+        "descr":"Repair the transport.",
+        "category":"Auto mechanic"
     },
     {
         "cmd":"/ta [id]",
-        "descr":"Принять вызов.",
-        "category":"Такси"
+        "descr":"Accept the challenge.",
+        "category":"Taxi"
     },
     {
-        "cmd":"/tprice [id] [цена]",
-        "descr":"Предложить оплату.",
-        "category":"Такси"
+        "cmd":"/tprice [id] [price]",
+        "descr":"Offer payment.",
+        "category":"Taxi"
     },
     {
         "cmd":"/orders",
-        "descr":"Список заказов.",
-        "category":"Дальнобойщик"
+        "descr":"List of orders.",
+        "category":"Truck driver"
     },
     {
         "cmd":"/t",
-        "descr":"Рация дальнобойщиков.",
-        "category":"Дальнобойщик"
+        "descr":"Truckers' radio.",
+        "category":"Truck driver"
     },
     {
-        "cmd":"/su [Номер паспорта] [Кол-во звезд] [Причина]",
-        "descr":"Выдать розыск игроку.",
+        "cmd":"/su [Passport number] [Number of stars] [Reason]",
+        "descr":"Issue a wanted notice to a player.",
         "category":["LSPD", "FIB"]
     },
     {
         "cmd":"/arrest [id]",
-        "descr":"Арестовать игрока. (Поместить в КПЗ)",
+        "descr":"Arrest the player. (Place in custody)",
         "category":["LSPD", "FIB"]
     },
     {
         "cmd":"/rfp [id]",
-        "descr":"Выпустить игрока из КПЗ.",
+        "descr":"Release a player from the bullpen.",
         "category":["LSPD", "FIB"]
     },
     {
         "cmd":"/pd [id]",
-        "descr":"Принять вызов.",
+        "descr":"Accept the call.",
         "category":["LSPD", "FIB"]
     },
     {
         "cmd":"/givegunlic [id] [Цена]",
-        "descr":"Выдать лицензию на оружие.",
+        "descr":"Issue a gun license.",
         "category":["LSPD", "FIB"]
     },
     {
         "cmd":"/takegunlic [id] ",
-        "descr":"Изъять лицензию на оружие.",
+        "descr":"Revoke the gun license.",
         "category":["LSPD", "FIB"]
     },
     {
         "cmd":"/pull [id]",
-        "descr":"Вытащить игрока из авто.",
-        "category":["LSPD", "FIB", "Мафия", "Армия", "Правительство"]
+        "descr":"Pull the player out of the car.",
+        "category":["LSPD", "FIB", "Mafia", "Army", "Government"]
     },
     {
         "cmd":"/incar [id]",
-        "descr":"Посадить игрока в авто.",
-        "category":["LSPD", "FIB", "Мафия", "Армия", "Правительство"]
+        "descr":"Put the player in the car.",
+        "category":["LSPD", "FIB", "Mafia", "Army", "Government"]
     },
     {
         "cmd":"/warg",
-        "descr":"Включить режим ЧП.",
+        "descr":"Enable emergency mode.",
         "category":["LSPD", "FIB"]
     },
     {
         "cmd":"/openstock /closestock ",
-        "descr":"Открыть / Закрыть склад. ",
-        "category":["LSPD", "FIB", "EMS", "Армия", "Правительство", "Банды", "Мафия"]
+        "descr":"Open/Close warehouse. ",
+        "category":["LSPD", "FIB", "EMS", "Army", "Goverment", "Gangs", "Mafia"]
     },
     {
-        "cmd":"Нажатие 'X'",
-        "descr":"Надеть наручники",
-        "category":["LSPD", "FIB", "Армия", "Правительство"]
+        "cmd":"Pressing 'X'",
+        "descr":"Put on handcuffs",
+        "category":["LSPD", "FIB", "Army", "Goverment"]
     },
     {
-        "cmd":"Нажатие 'Z'",
-        "descr":"Вести игрока за собой.",
-        "category":["LSPD", "FIB", "Армия", "Правительство"]
+        "cmd":"Pressing 'Z'",
+        "descr":"Lead the player.",
+        "category":["LSPD", "FIB", "Army", "Goverment"]
     },
     {
-        "cmd":"Нажатие 'U'",
-        "descr":"[в рабочем авто] Открытие бортового компьютера.",
+        "cmd":"Pressing 'U'",
+        "descr":"[in a working car] Opening the on-board computer.",
         "category":["LSPD", "FIB"]
     },
     {
-        "cmd":"Нажатие 'G'",
-        "descr":"Взаимодействие с игроком. (Обыскать, проверить документы, etc)",
+        "cmd":"Pressing 'G'",
+        "descr":"Interact with the player. (Search, check documents, etc.)",
         "category":["LSPD", "FIB"]
     },
     {
-        "cmd":"/heal [id] [цена]",
-        "descr":"Предложить оплату лечения.",
+        "cmd":"/heal [id] [price]",
+        "descr":"Offer to pay for treatment.",
         "category":["EMS"]
     },
     {
         "cmd":"/ems [id]",
-        "descr":"Принять вызов.",
+        "descr":"Accept the call.",
         "category":["EMS"]
     },
     {
         "cmd":"/givemedlic [id]",
-        "descr":"Выдать мед. карту.",
+        "descr":"Issue a medical card.",
         "category":["EMS"]
     },
     {
-        "cmd":"/givepmlic [id] [цена]",
-        "descr":"Продать лицензию парамедика.",
+        "cmd":"/givepmlic [id] [price]",
+        "descr":"Sell ​​a paramedic license.",
         "category":["EMS"]
     },
     {
-        "cmd":"Нажатие 'F7'",
-        "descr":"Открыть редактирование объявлений",
+        "cmd":"Pressing 'F7'",
+        "descr":"Open ad editing",
         "category":"LSNEWS"
     },
     {
         "cmd":"/capture",
-        "descr":"Начать захват территории.",
-        "category":"Банды"
+        "descr":"Start capturing territory.",
+        "category":"Gangs"
     },
     {
-        "cmd":"Нажатие 'G'",
-        "descr":"Взаимодействие с игроком. (Грабить, надеть стяжки/мешок)",
-        "category":["Мафия", "Банды"]
+        "cmd":"Pressing 'G'",
+        "descr":"Interact with the player. (Rob, put on zip ties/bag)",
+        "category":["Mafia", "Gangs"]
     },
     {
         "cmd":"/bizwar",
-        "descr":"Начать захват бизнеса.",
-        "category":"Мафия"
+        "descr":"Start taking over a business.",
+        "category":"Mafia"
     },
     {
         "cmd":"/takebiz",
-        "descr":"Забрать бизнес под свой контроль.",
-        "category":"Мафия"
+        "descr":"Take control of the business.",
+        "category":"Mafia"
     },
     {
         "cmd":"/respawn",
-        "descr":"Респавн всего транспорта фракции",
-        "category":"Лидерские"
+        "descr":"Respawn of all faction vehicles",
+        "category":"Leadership"
     },
     {
         "cmd":"/setrank [id] [rank]",
-        "descr":"Изменить ранг игроку",
-        "category":"Лидерские"
+        "descr":"Change a player's rank",
+        "category":"Leadership"
     },
     {
         "cmd":"/invite [ID]",
-        "descr":"Принять игрока во фракцию",
-        "category":"Лидерские"
+        "descr":"Accept a player into a faction",
+        "category":"Leadership"
     },
     {
         "cmd":"/uninvite [ID]",
-        "descr":"Уволить игрока из фракции",
-        "category":"Лидерские"
+        "descr":"Dismiss a player from a faction",
+        "category":"Leadership"
     }
 ]
