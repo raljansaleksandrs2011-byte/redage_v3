@@ -2449,34 +2449,34 @@ let isQuestOpen = false;
 let conversationPed = false;
 
 const actorData = {
-    npc_tracy:translateText("Трейси"),
-    npc_doctor:translateText("Доктором Шульцем"),
-    npc_granny:translateText("Бабушкой Granny"),
-    npc_fd_dada:translateText("Дядюшкой"),
-    npc_fd_edward:translateText("Эдвардом"),
-    npc_fd_zak:translateText("Заком Цукербергом"),
-    npc_airdrop:translateText("Хуаном Де Картелем"),
-    npc_oressale:"Марком",
-    npc_fracpolic:translateText("Работником полиции"),
-    npc_fracsheriff:translateText("Шерифом"),
-    npc_fracnews:translateText("Дженнифер"),
-    npc_fracems:translateText("Эммануэлем"),
-    npc_premium:translateText("Вовчиком"),
-    npc_stock:translateText("Александром"),
-    npc_huntingshop:translateText("Беаром Гриллсом"),
-    npc_treessell:"Дмитрием",
-    npc_donateautoroom:translateText("Донатой Редбаксовной"),
-    npc_cityhall:translateText("Эльнарой Каримовой"),
-    npc_wedding:translateText("Отцом Никитой"),
-    npc_pet:translateText("Михаилом"),
-    npc_petshop:translateText("Продавцом питомцев"),
-    npc_zdobich:translateText("Виталием Дебичем"),
-    npc_rieltor:translateText("Илоном Таском"),
-    npc_furniture:"Иваном",
-    npc_org:"Полли",
-    npc_carevac:translateText("Робертом"),
-    npc_airshop:translateText("Продавцом воздушного транспорта"),
-    npc_eliteroom: translateText("Продавцом элитного транспорта")
+    npc_tracy:translateText("Tracy"),
+    npc_doctor:translateText("Dr. Schultz"),
+    npc_granny:translateText("Granny"),
+    npc_fd_dada:translateText("Uncle"),
+    npc_fd_edward:translateText("Edward"),
+    npc_fd_zak:translateText("Zack Zuckerberg"),
+    npc_airdrop:translateText("Juan de Cartel"),
+    npc_oressale:"Mark",
+    npc_fracpolic:translateText("Police officer"),
+    npc_fracsheriff:translateText("Sheriff"),
+    npc_fracnews:translateText("Jennifer"),
+    npc_fracems:translateText("Emmanuel"),
+    npc_premium:translateText("Wolf"),
+    npc_stock:translateText("Alexander"),
+    npc_huntingshop:translateText("Bear Grills"),
+    npc_treessell:"Dmitry",
+    npc_donateautoroom:translateText("Donata Redbaksovna"),
+    npc_cityhall:translateText("Elnara Karimova"),
+    npc_wedding:translateText("Father Nikita"),
+    npc_pet:translateText("Mihail"),
+    npc_petshop:translateText("Pet seller"),
+    npc_zdobich:translateText("Vitaly Debich"),
+    npc_rieltor:translateText("Ilon Taskom"),
+    npc_furniture:"Ivan",
+    npc_org:"Polly",
+    npc_carevac:translateText("Robert"),
+    npc_airshop:translateText("Air transport seller"),
+    npc_eliteroom: translateText("Elite transport seller")
 }
 
 gm.events.add('client.quest.open', (pedId, questName, qId, status, compility, speed) => {
@@ -2603,7 +2603,7 @@ gm.events.add('client.quest.router', (ActorName) => {
     try {
         const ped = getNearestPed (ActorName);
         if (ped != null && mp.peds.exists (ped)) {
-            mp.events.call('notify', 2, 9, translateText("Вы поставили метку на карте!"), 3000);
+            mp.events.call('notify', 2, 9, translateText("You set up marker on map!"), 3000);
             mp.events.call('createWaypoint', ped.position.x, ped.position.y);
         }
     }
@@ -2709,17 +2709,17 @@ gm.events.add('client.take_quest_item', () => {
     clearCollectingItemsInfo();
 
     if ((collecting_items.collected + 1) >= 5) {
-        mp.gui.chat.push(translateText("Вы собрали всех Мишек, отдайте их Бабушке Granny!"));
-        mp.events.call('notify', 2, 9, translateText("Вы собрали всех Мишек, отдайте их Бабушке Granny!"), 3000);
+        mp.gui.chat.push(translateText("You've collected all the Teddy Bears, give them to Granny!"));
+        mp.events.call('notify', 2, 9, translateText("You've collected all the Teddy Bears, give them to Granny!"), 3000);
         // необходимый запрос на сервер
     } else {
         collecting_items.collected += 1;
 
         if (collecting_items.collected == 4) {
-            mp.gui.chat.push(translateText("Вы собрали 4/5 Мишек. Остался последний Мишка. На карте отмечено следующее примерное расположение последнего Мишки!"));
-            mp.events.call('notify', 2, 9, translateText("Вы собрали 4/5 Мишек. Остался последний Мишка. На карте отмечено следующее примерное расположение последнего Мишки!"), 3000);
+            mp.gui.chat.push(translateText("You've collected 4/5 Teddy Bears. There's only one Teddy Bear left. The map shows the approximate location of the last Teddy Bear!"));
+            mp.events.call('notify', 2, 9, translateText("You've collected 4/5 Teddy Bears. There's only one Teddy Bear left. The map shows the approximate location of the last Teddy Bear!"), 3000);
         } else {
-            mp.gui.chat.push(translateText("Вы собрали {0}/5 Мишек, на карте отмечено следующее примерное расположение Мишки!"));
+            mp.gui.chat.push(translateText("You have collected {0}/5 Teddy Bears, the following approximate Teddy Bear location is marked on the map!"));
             mp.events.call('notify', 2, 9, translateText("Вы собрали {0}/5 Мишек, на карте отмечено следующее примерное расположение Мишки!"), 3000);
         }
 
@@ -2762,8 +2762,8 @@ gm.events.add('playerEnterColshape', (shape) => {
 	try
 	{
         if (shape && shape === collecting_items.area_shape) {
-            mp.gui.chat.push(translateText("Где то в этой местности есть Плюшевый Мишка, найди и забери его."));
-            mp.events.call('notify', 2, 9, translateText("Где то в этой местности есть Плюшевый Мишка, найди и забери его."), 3000);
+            mp.gui.chat.push(translateText("There is a Teddy Bear somewhere in this area, find it and take it."));
+            mp.events.call('notify', 2, 9, translateText("There is a Teddy Bear somewhere in this area, find it and take it."), 3000);
         }
 
         if (shape && shape === collecting_items.item_shape) {
@@ -2843,7 +2843,7 @@ gm.events.add('client.create.npc_dfday_mission', (mission_type) => {
             dimension: 0,
             color: [255, 255, 255, 220] 
         });
-        mp.events.call('notify', 1, 9, translateText("На карте отмечены документы, которые ты должен собрать."), 3000);
+        mp.events.call('notify', 1, 9, translateText("The map shows the documents you need to collect.."), 3000);
     }
 });
 
@@ -2851,7 +2851,7 @@ gm.events.add('client.update.npc_dfday_mission', () => {
     try {
         if (npc_dfday_mission.type == 1) {
             if (npc_dfday_mission.collected > 0) {
-                mp.events.call('notify', 0, 9, translateText("Вы уже начали чинить машину."), 3000);
+                mp.events.call('notify', 0, 9, translateText("You already started repairing car."), 3000);
                 return;
             }
     
@@ -2866,14 +2866,14 @@ gm.events.add('client.update.npc_dfday_mission', () => {
                 clearDFDayMissionInfo();
                 global.localplayer.clearTasksImmediately();
                 mp.events.call('freeze', false);
-                mp.events.call('notify', 2, 9, translateText("Ты починил машину, поговори с Дядюшкой."), 3000);
+                mp.events.call('notify', 2, 9, translateText("You fixed the car, talk to Uncle."), 3000);
                 mp.events.callRemote('server.update.npc_dfday_mission');
             }, 10000);
         }
         else if (npc_dfday_mission.type == 2) {
             if ((npc_dfday_mission.collected + 1) >= 5) {
                 clearDFDayMissionInfo();
-                mp.events.call('notify', 2, 9, translateText("Вы развезли все документы, поговорите с Эдвардом снова."), 3000);
+                mp.events.call('notify', 2, 9, translateText("You've delivered all the documents, talk to Edward again."), 3000);
                 mp.events.call('createWaypoint', 2.710338, -708.8864);
                 mp.events.callRemote('server.update.npc_fd_edward');
                 return;
@@ -2905,7 +2905,7 @@ gm.events.add('client.update.npc_dfday_mission', () => {
                 color: [255, 255, 255, 220] 
             });
     
-            mp.events.call('notify', 2, 9, translateText("Вы привезли документы. Двигайтесь к следующему месту!"), 3000);
+            mp.events.call('notify', 2, 9, translateText("You've brought the documents. Move on to the next location!"), 3000);
         }
     }
     catch (e) 
