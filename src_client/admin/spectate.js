@@ -1,9 +1,9 @@
 let spcam = null;
 const spmenu = new global.NativeMenu("Spectate", "Spectate Menu", new Point(30, 500)); // Мы не выключаем чат, чтобы видеть переписку тех, за кем следим, поэтому двигаем саму табличку вниз
 spmenu.Close();
-spmenu.AddItem(new global.UIMenuListItem("Spectate", translateText("Переключение игрока по ID"),  new global.ItemsCollection(["Previous", "Next"])));
-spmenu.AddItem(new global.UIMenuItem("Refresh", translateText("Обновить слежение за текущим игроком")));
-spmenu.AddItem(new global.UIMenuItem("Unspectate", translateText("Выключить режим наблюдателя")));
+spmenu.AddItem(new global.UIMenuListItem("Spectate", translateText("Switch player by ID"),  new global.ItemsCollection(["Previous", "Next"])));
+spmenu.AddItem(new global.UIMenuItem("Refresh", translateText("Update tracking of the current player")));
+spmenu.AddItem(new global.UIMenuItem("Unspectate", translateText("Turn off spectator mode")));
 
 var lastflystate = false;
 
