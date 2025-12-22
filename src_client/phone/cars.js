@@ -14,10 +14,10 @@ gm.events.add(clientName + "load", () => {
 
 const headerName = (isSell) => {
     if (typeof isSell !== "number" && !isSell) {
-        return isOwner ? translateText("Подселённого") : translateText("Домовладельца");
+        return isOwner ? translateText("The inhabited") : translateText("Homeowner");
     }
 
-    return translateText("Личный");
+    return translateText("Private");
 }
 
 let filterData = [];
@@ -44,8 +44,8 @@ gm.events.add(clientName + "init", (vehiclesJson, _inGarage, _isOwner) => {
                 header: translateText("Аренда"),
             })
 
-            if (!filterData.includes(translateText("Аренда")))
-                filterData.push(translateText("Аренда"))
+            if (!filterData.includes(translateText("Rental")))
+                filterData.push(translateText("Rental"))
         } else {
             vehiclesList.push({
                 sqlId: item[0],
