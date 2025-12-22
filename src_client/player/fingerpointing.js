@@ -18,7 +18,7 @@ let pointing =
 			global.localplayer.taskMoveNetwork("task_mp_pointing", 0.5, false, "anim@mp_point", 24);
 			mp.game.streaming.removeAnimDict("anim@mp_point");
 			mp.gui.emmit(`window.hudStore.isHint (true)`);
-			gm.discord(translateText("Тыкает куда-то пальцем"));
+			gm.discord(translateText("Points his finger somewhere"));
 
 			this.interval = setInterval(this.process.bind(this), 0);
 		}
