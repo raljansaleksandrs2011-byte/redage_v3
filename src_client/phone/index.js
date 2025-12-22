@@ -113,24 +113,24 @@ gm.events.add(clientName + "close", () => {
 
 const defaultContacts = {
     112: {
-        Name: translateText("Полиция"),
+        Name: translateText("Police"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/police.jpg",
         IsSystem: true
     },
     911: {
-        Name: translateText("Больница"),
+        Name: translateText("Hospital"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/ems.jpg",
         IsSystem: true
     },
     333: {
-        Name: translateText("Механик"),
+        Name: translateText("Mechanic"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/mech.jpg",
         IsSystem: true,
         IsNotShow: true,
         NoSend: true
     },
     228: {
-        Name: translateText("Такси"),
+        Name: translateText("Taxi"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/taxi.jpg",
         IsSystem: true,
         IsNotShow: true,
@@ -138,14 +138,14 @@ const defaultContacts = {
     },
 
     101: {
-        Name: "RedAge",
+        Name: "Harbo Roleplay",
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/ra.jpg",
         IsSystem: true,
-        DefaultMessage: translateText("Привет! :cowboy_hat_face: Сюда ты можешь отправить найденный бонус-код или промо-код и сразу получить свои бонусы. Просто пришли его в ответном сообщении! :gift: :gift: :gift:")
+        DefaultMessage: translateText("Hi! :cowboy_hat_face: You can send the bonus code or promo code you find here and get your bonuses right away. Just send it in a reply message.! :gift: :gift: :gift:")
     },
 
     4386: {
-        Name: translateText("Банк"),
+        Name: translateText("Bank"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/bank.jpg",
         IsSystem: true,
         IsNotShow: true,
@@ -153,7 +153,7 @@ const defaultContacts = {
     },
 
     99999999: {
-        Name: translateText("Информатор"),
+        Name: translateText("Informant"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/inform.png",
         IsSystem: true,
         IsNotShow: true,
@@ -161,7 +161,7 @@ const defaultContacts = {
     },
 
     99999998: {
-        Name: translateText("Склад"),
+        Name: translateText("Warehouse"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/sklad.png",
         IsSystem: true,
         IsNotShow: true,
@@ -169,7 +169,7 @@ const defaultContacts = {
     },
 
     99999997: {
-        Name: translateText("Аукцион"),
+        Name: translateText("Auction"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/auc.png",
         IsSystem: true,
         IsNotShow: true,
@@ -185,7 +185,7 @@ const defaultContacts = {
     },
 
     99999995: {
-        Name: translateText("Арендатор"),
+        Name: translateText("Tenant"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/rent.png",
         IsSystem: true,
         IsNotShow: true,
@@ -193,7 +193,7 @@ const defaultContacts = {
     },
 
     99999994: {
-        Name: translateText("Палатка"),
+        Name: translateText("Tent"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/tent.png",
         IsSystem: true,
         IsNotShow: true,
@@ -201,7 +201,7 @@ const defaultContacts = {
     },
 
     99999993: {
-        Name: translateText("Подсказки"),
+        Name: translateText("Tips"),
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/help.png",
         IsSystem: true,
         IsNotShow: true,
@@ -216,7 +216,7 @@ const defaultContacts = {
         NoSend: true
     },
     99999991: {
-        Name: "Прямой эфир",
+        Name: "Live",
         Avatar: "https://cdn-ra3.ragemp.su/cloud/img/iphone/efir.png",
         IsSystem: true,
         IsNotShow: false,
