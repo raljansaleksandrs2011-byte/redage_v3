@@ -19,7 +19,7 @@ gm.events.add(clientName + "open", async (jsonStats, jsonStock, jsonOrders) => {
     mp.gui.emmit(
         `window.router.setView("BusinessManage")`
     );
-    gm.discord(translateText("Управляет своим бизнесом"));
+    gm.discord(translateText("Runs his own business"));
 });
 
 rpc.register(rpcName + "getStats", () => {
