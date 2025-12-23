@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using GTANetworkAPI;
 using NeptuneEvo.Accounts.Registration.Models;
 using NeptuneEvo.Handles;
@@ -26,32 +26,32 @@ namespace NeptuneEvo.Accounts.Email.Registration
                     
                     var result = await Accounts.Registration.Repository.Register(player, login_, pass_, email_, promo_, "");
                         
-                    if (result == RegistrationEnum.Error) Accounts.Registration.Repository.MessageError(player,  "Непредвиденная ошибка!");
-                    else if (result == RegistrationEnum.LoadingError) Accounts.Registration.Repository.MessageError(player,  "Подождите несколько секунд и попробуйте еще раз...");
-                    else if (result == RegistrationEnum.SocialReg) Accounts.Registration.Repository.MessageError(player,  "На этот SocialClub уже зарегистрирован игровой аккаунт!");
-                    else if (result == RegistrationEnum.UserReg) Accounts.Registration.Repository.MessageError(player,  "Данное имя пользователя уже занято!");
-                    else if (result == RegistrationEnum.EmailReg) Accounts.Registration.Repository.MessageError(player,  "Данный email уже занят!");
-                    else if (result == RegistrationEnum.DataError) Accounts.Registration.Repository.MessageError(player,  "Ошибка в заполнении полей!");
-                    else if (result == RegistrationEnum.PromoError) Accounts.Registration.Repository.MessageError(player,  "Такого промокода на данный момент не существует, введите верный или очистите поле!");
-                    else if (result == RegistrationEnum.ReffError) Accounts.Registration.Repository.MessageError(player,  "Мы видим, что Вы ввели реф.код друга заместо промокода стримера, поэтому просим Вас сейчас оставить поле промокода пустым, а после создания персонажа найти нужное меню в телефоне.");
-                    else if (result == RegistrationEnum.PromoLimitError) Accounts.Registration.Repository.MessageError(player,  "Сожалеем, но промокод превысил лимит активаций, введите другой!");
-                    else if (result == RegistrationEnum.ABError) Accounts.Registration.Repository.MessageError(player,  "Ошибка регистрации, используйте Ваш основной SocialClub для входа в игру.");
+                    if (result == RegistrationEnum.Error) Accounts.Registration.Repository.MessageError(player,  "Unexpected error!");
+                    else if (result == RegistrationEnum.LoadingError) Accounts.Registration.Repository.MessageError(player,  "Please wait a few seconds and try again....");
+                    else if (result == RegistrationEnum.SocialReg) Accounts.Registration.Repository.MessageError(player,  "A account has already been registered for this SocialClub.!");
+                    else if (result == RegistrationEnum.UserReg) Accounts.Registration.Repository.MessageError(player,  "This username is already taken!");
+                    else if (result == RegistrationEnum.EmailReg) Accounts.Registration.Repository.MessageError(player,  "This email is already taken!");
+                    else if (result == RegistrationEnum.DataError) Accounts.Registration.Repository.MessageError(player,  "Error in filling in fields!");
+                    else if (result == RegistrationEnum.PromoError) Accounts.Registration.Repository.MessageError(player,  "This promo code does not exist at the moment, please enter a valid one or clear the field.!");
+                    else if (result == RegistrationEnum.ReffError) Accounts.Registration.Repository.MessageError(player,  "We see that you entered a friend's referral code instead of a streamer promo code, so we ask you to leave the promo code field blank for now, and after creating a character, find the required menu on your phone..");
+                    else if (result == RegistrationEnum.PromoLimitError) Accounts.Registration.Repository.MessageError(player,  "We're sorry, but the promo code has exceeded its activation limit. Please enter another one.!");
+                    else if (result == RegistrationEnum.ABError) Accounts.Registration.Repository.MessageError(player,  "Registration error, please use your main SocialClub to log in to the game.");
                     Log.Write($"{sessionData.Name} ({sessionData.SocialClubName} | {sessionData.RealSocialClub}) tryed to signup.");
                 }
                 else
                 {
                     var result = await Repository.Verification(player, login_, pass_, email_, promo_);
                 
-                    if (result == RegistrationEnum.Error) Accounts.Registration.Repository.MessageError(player, "Непредвиденная ошибка!");
-                    else if (result == RegistrationEnum.LoadingError) Accounts.Registration.Repository.MessageError(player, "Подождите несколько секунд и попробуйте еще раз...");
-                    else if (result == RegistrationEnum.SocialReg) Accounts.Registration.Repository.MessageError(player, "На этот SocialClub уже зарегистрирован игровой аккаунт!");
-                    else if (result == RegistrationEnum.UserReg) Accounts.Registration.Repository.MessageError(player, "Данное имя пользователя уже занято!");
-                    else if (result == RegistrationEnum.EmailReg) Accounts.Registration.Repository.MessageError(player, "Данный email уже занят!");
-                    else if (result == RegistrationEnum.DataError) Accounts.Registration.Repository.MessageError(player, "Ошибка в заполнении полей!");
-                    else if (result == RegistrationEnum.PromoError) Accounts.Registration.Repository.MessageError(player, "Такого промокода на данный момент не существует, введите верный или очистите поле!");
-                    else if (result == RegistrationEnum.ReffError) Accounts.Registration.Repository.MessageError(player, "Мы видим, что Вы ввели реф.код друга заместо промокода стримера, поэтому просим Вас сейчас оставить поле промокода пустым, а после создания персонажа найти нужное меню в телефоне.");
-                    else if (result == RegistrationEnum.PromoLimitError) Accounts.Registration.Repository.MessageError(player, "Сожалеем, но промокод превысил лимит активаций, введите другой!");
-                    else if (result == RegistrationEnum.ABError) Accounts.Registration.Repository.MessageError(player, "Ошибка регистрации, используйте Ваш основной SocialClub для входа в игру.");
+                    if (result == RegistrationEnum.Error) Accounts.Registration.Repository.MessageError(player, "Unexpected error!");
+                    else if (result == RegistrationEnum.LoadingError) Accounts.Registration.Repository.MessageError(player, "Please wait a few seconds and try again....");
+                    else if (result == RegistrationEnum.SocialReg) Accounts.Registration.Repository.MessageError(player, "A account has already been registered for this SocialClub!");
+                    else if (result == RegistrationEnum.UserReg) Accounts.Registration.Repository.MessageError(player, "This username is already taken!");
+                    else if (result == RegistrationEnum.EmailReg) Accounts.Registration.Repository.MessageError(player, "This email is already taken!");
+                    else if (result == RegistrationEnum.DataError) Accounts.Registration.Repository.MessageError(player, "Error in filling in fields!");
+                    else if (result == RegistrationEnum.PromoError) Accounts.Registration.Repository.MessageError(player, "This promo code does not exist at the moment, please enter the correct one or clear the field!");
+                    else if (result == RegistrationEnum.ReffError) Accounts.Registration.Repository.MessageError(player, "We see that you entered a friend's referral code instead of a streamer promo code, so we ask that you leave the promo code field blank for now and, after creating your character, find the appropriate menu on your phone.");
+                    else if (result == RegistrationEnum.PromoLimitError) Accounts.Registration.Repository.MessageError(player, "We're sorry, but the promo code has exceeded its activation limit. Please enter another one!");
+                    else if (result == RegistrationEnum.ABError) Accounts.Registration.Repository.MessageError(player, "Registration error, please use your main SocialClub to log in to the game.");
                 }
             });
         }
