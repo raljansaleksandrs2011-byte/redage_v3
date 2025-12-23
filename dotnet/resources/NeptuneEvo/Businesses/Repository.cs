@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Database;
@@ -87,23 +87,23 @@ namespace NeptuneEvo.Businesses
             var historyList = new List<List<object>>();
             historyList.Add(new List<object>
             {
-                1, 0, "2021-12-22 18:23:57", 1018322, "Монтировка", 45
+                1, 0, "2021-12-22 18:23:57", 1018322, "Repair kit", 45
             });
             historyList.Add(new List<object>
             {
-                2, 0, "2021-12-22 18:23:57", 1018322, "Пиво", 45
+                2, 0, "2021-12-22 18:23:57", 1018322, "Beer", 45
             });
             historyList.Add(new List<object>
             {
-                3, 0, "2021-12-22 18:23:57", 1018322, "Пицца", 45
+                3, 0, "2021-12-22 18:23:57", 1018322, "Pizza", 45
             });
             historyList.Add(new List<object>
             {
-                4, 0, "2021-12-21 18:23:57", 1018322, "Круглая", 45
+                4, 0, "2021-12-21 18:23:57", 1018322, "Round", 45
             });
             historyList.Add(new List<object>
             {
-                5, 0, "2021-12-22 18:23:57", 1018321, "Крыса", 45
+                5, 0, "2021-12-22 18:23:57", 1018321, "Rat", 45
             });
             
             Trigger.ClientEvent(player, "client.businessmanage.sethistory", JsonConvert.SerializeObject(historyList));
@@ -129,7 +129,7 @@ namespace NeptuneEvo.Businesses
         }*/
         private static int GetPriceMin(string productName, int bizType, int price)
         {
-            if (productName == "Лотерейный билет")
+            if (productName == "Lottery ticket")
                 return price;
             
             var minPrice = price * Main.BusinessMinPrice;
@@ -142,7 +142,7 @@ namespace NeptuneEvo.Businesses
 
         private static int GetPriceMax(string productName, int bizType, int price)
         {
-            if (productName == "Лотерейный билет")
+            if (productName == "Lottery ticket")
                 return price;
 
             var maxPrice = price * Main.BusinessMaxPrice;
