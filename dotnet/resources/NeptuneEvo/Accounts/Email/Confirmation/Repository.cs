@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -81,8 +81,8 @@ namespace NeptuneEvo.Accounts.Email.Confirmation
                 Trigger.ClientEvent(player, "client.accountStore.Ga", accountData.Ga); 
                 
                 Chars.Repository.AddNewItemWarehouse(player, ItemId.Case4, 1);
-                //Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Почта подтверждена успешно. Приз отправлен на склад. (M->GPS - > Склад)", 5000);
-                Players.Phone.Messages.Repository.AddSystemMessage(player, (int)DefaultNumber.RedAge, $"Почта подтверждена успешно. Приз отправлен на склад. (M->GPS - > Склад)", DateTime.Now);
+                //Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Email confirmed successfully. Prize shipped to warehouse. (M->GPS - > Warehouse)", 5000);
+                Players.Phone.Messages.Repository.AddSystemMessage(player, (int)DefaultNumber.RedAge, $"Email confirmed successfully. Prize shipped to warehouse. (M->GPS - > Warehouse)", DateTime.Now);
                 
                 Trigger.SetTask(async () =>
                 {
