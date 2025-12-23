@@ -1,4 +1,4 @@
-﻿using Database;
+using Database;
 using GTANetworkAPI;
 using NeptuneEvo.Handles;
 using LinqToDB;
@@ -154,7 +154,7 @@ namespace NeptuneEvo.Character.Create
                                                 
                         player.Name = fullname;
                         player.SetName(fullname);
-                        GameLog.AccountLog(accountData.Login, accountData.HWID, accountData.IP, accountData.SocialClub, $"Создан персонаж {characterData.FirstName} {characterData.LastName}");
+                        GameLog.AccountLog(accountData.Login, accountData.HWID, accountData.IP, accountData.SocialClub, $"Character created {characterData.FirstName} {characterData.LastName}");
                         
                         player.SetSharedData("NewUser", true);
                         
