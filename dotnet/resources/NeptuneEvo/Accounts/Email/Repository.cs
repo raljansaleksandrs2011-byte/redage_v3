@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -145,9 +145,9 @@ namespace NeptuneEvo.Accounts.Email
                         if (emailVerification != null && emailVerification.Player != null)
                         {
                             if (!emailVerification.IsRegistered) 
-                                Notify.Send(emailVerification.Player, NotifyType.Success, NotifyPosition.BottomCenter, "Истекло время на подтверждение почты. Попробуйте еще раз!", 5000);
+                                Notify.Send(emailVerification.Player, NotifyType.Success, NotifyPosition.BottomCenter, "Email verification timed out. Please try again!", 5000);
                             else 
-                                Accounts.Registration.Repository.MessageError(emailVerification.Player, "Истекло время на подтверждение почты. Попробуйте еще раз!");
+                                Accounts.Registration.Repository.MessageError(emailVerification.Player, "Email verification timed out. Please try again.!");
                         }
                     }
                 });
