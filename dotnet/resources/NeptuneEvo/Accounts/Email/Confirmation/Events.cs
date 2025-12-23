@@ -1,4 +1,4 @@
-﻿using System.Text.RegularExpressions;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using GTANetworkAPI;
 using NeptuneEvo.Accounts.Email.Confirmation.Models;
@@ -27,7 +27,7 @@ namespace NeptuneEvo.Accounts.Email.Confirmation
             
             if (rg.IsMatch(accountData.Ga))
             {
-                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Вы уже подтвердили почту!", 3000);
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "You have already confirmed your email.!", 3000);
                 return;
             }
 
@@ -36,18 +36,18 @@ namespace NeptuneEvo.Accounts.Email.Confirmation
                 var result = await Repository.Confirm(player, email);
 
                 if (result == EmailConfirmEnum.Error)
-                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Непредвиденная ошибка!", 5000);
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Unexpected error!", 5000);
                 else if (result == EmailConfirmEnum.LoadingError)
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter,
-                        "Подождите несколько секунд и попробуйте еще раз...", 5000);
+                        "Please wait a few seconds and try again...", 5000);
                 else if (result == EmailConfirmEnum.EmailReg)
-                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Данный email уже занят!", 5000);
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "This email is already taken!", 5000);
                 else if (result == EmailConfirmEnum.DataError)
-                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Ошибка в заполнении полей!",
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Error in filling in fields!",
                         5000);
                 else if (result == EmailConfirmEnum.Success)
                     Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter,
-                        "На почту отправлено письмо со ссылкой для подтверждения аккаунта, которая будет действительна 15 минут.",
+                        "An email containing a link to confirm your account has been sent to your email address. The link will be valid for 15 minutes.",
                         5000);
             });
         }
