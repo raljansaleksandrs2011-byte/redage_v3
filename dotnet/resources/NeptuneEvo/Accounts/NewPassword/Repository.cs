@@ -1,4 +1,4 @@
-﻿using GTANetworkAPI;
+using GTANetworkAPI;
 using NeptuneEvo.Handles;
 using NeptuneEvo.Core;
 using System;
@@ -14,7 +14,7 @@ namespace NeptuneEvo.Accounts.NewPassword
             var accountData = player.GetAccountData();
             if (accountData == null) return;
             accountData.Password = Accounts.Repository.GetSha256(newPass);
-            GameLog.AccountLog(accountData.Login, accountData.HWID, accountData.IP, accountData.SocialClub, "Смена пароля");
+            GameLog.AccountLog(accountData.Login, accountData.HWID, accountData.IP, accountData.SocialClub, "Change password");
         }
     }
 }
