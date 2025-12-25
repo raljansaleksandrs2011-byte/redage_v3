@@ -125,7 +125,7 @@
 
     const swapChannel = (state) => {
         if (isGovFactionPlayer === false) {
-			window.notificationAdd(4, 9, 'Общая волна доступна только для гос. фракций', 1500);
+			window.notificationAdd(4, 9, 'The General Wave is only available to state factions.', 1500);
             return;
         }
 
@@ -149,11 +149,11 @@
 
     const cancelSettings = (isGos = false) => {
         if (isGos && isGovFactionPlayer === false) {
-			window.notificationAdd(4, 9, 'Общая волна доступна только для гос. фракций', 1500);
+			window.notificationAdd(4, 9, 'The General Wave is only available to state factions.', 1500);
             return;
         }
         if (new Date().getTime() - eventsRefresh < 1000) {
-			window.notificationAdd(4, 9, 'Слишком быстро', 1500);
+			window.notificationAdd(4, 9, 'Too fast', 1500);
 			return;
 		}
 		
