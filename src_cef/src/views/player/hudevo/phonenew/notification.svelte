@@ -11,7 +11,7 @@
             <div class="newphone__maps_headerimage radio small" style={phoneNotification.Avatar ? `background-image: url(${phoneNotification.Avatar})` : ""}></div>
             <div>{phoneNotification.Name}</div>
         </div>
-        <div class="gray">сейчас</div>
+        <div class="gray">now</div>
     </div>
     <div class="mt-5 fw-bold">{@html formatMessage (phoneNotification.Text)}</div>
 </div>
