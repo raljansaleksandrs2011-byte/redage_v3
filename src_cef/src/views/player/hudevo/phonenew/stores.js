@@ -53,7 +53,7 @@ export const currentWeather = writable("thunder");
 
 export const categoriesList = writable([
     {
-        name: "Гос. структуры",
+        name: "Government structures",
         icon: "gos",
         content: [
             "City Hall",
@@ -61,13 +61,13 @@ export const categoriesList = writable([
             "EMS",
             "FIB",
             "NEWS",
-            "Центр управления",
+            "Control Center",
             "SHERIFF 1",
             "SHERIFF 2",
         ]
     },
     {
-        name: "Банды",
+        name: "Gangs",
         icon: "weapons",
         content: [
             "Marabunta Grande",
@@ -78,74 +78,74 @@ export const categoriesList = writable([
         ]
     },
     {
-        name: "Мафии",
+        name: "Mafia",
         icon: "mafia",
         content: [
             "La Cosa Nostra",
-            "Русская мафия",
+            "Russian Mafia",
             "Yakuza",
-            "Армянская мафия",
+            "Armanian Mafia",
         ]
     },
     {
-        name: "Работы",
+        name: "Jobs",
         icon: "licenses",
         content: [
-            "Электростанция",
-            "Отделение почты",
-            "Таксопарк",
-            "Автобусный парк",
-            "Стоянка газонокосилок",
-            "Стоянка дальнобойщиков",
-            "Стоянка инкассаторов",
-            "Стоянка автомехаников",
+            "Eectrostation",
+            "Postam",
+            "Taxipark",
+            "Bus park",
+            "Lawn mower parking",
+            "Truckers' parking lot",
+            "Cash collection station",
+            "Auto mechanics' parking lot",
         ]
     },
     {
-        name: "Подработка",
+        name: "Part-time job",
         icon: "jobs",
         content: [
-            "Гражданская шахта 1",
-            "Гражданская шахта 2",
-            "Гражданская шахта 3",
-            "Гражданская шахта 4",
-            "Государственная шахта",
-            "Лесоруб 1",
-            "Лесоруб 2",
-            "Лесоруб 3",
-            "Лесоруб 4",
-            "Лесоруб 5",
+            "Civil Mine 1",
+            "Civil Mine 2",
+            "Civil Mine 3",
+            "Civil Mine 4",
+            "Goverment Mine",
+            "Lumberjack 1",
+            "Lumberjack 2",
+            "Lumberjack 3",
+            "Lumberjack 4",
+            "Lumberjack 5",
         ]
     },
     {
-        name: "Ближайшие места",
+        name: "Closest places",
         icon: "recent",
         content: [
 
-            "Ближайшая аренда мотоциклов",
-            "Ближайшая аренда велосипеда",
-            "Ближайшая аренда лодки",
+            "Nearest motorcycle rental",
+            "The nearest bike rental",
+            "Nearest boat rental",
            /* "Ближайшая аренда самолета",
             "Ближайшая аренда вертолета",*/
         ]
     },
     {
-        name: "Прочее",
+        name: "Others",
         icon: "clubs",
         content: [
-            "Автошкола",
-            "Казино",
-            "Семьи",
-            "Арена",
-            "Амфитеатр",
+            "Autoschool",
+            "Casino",
+            "Family",
+            "Arena",
+            "Amphitheater",
             "Humane Labs",
-            "Маяк",
-            "Охотничий магазин",
-            "Главный рынок",
-            "Черный рынок",
-            "Церковь",
-            "Продавец питомцев",
-            "Суд",
+            "Lighthouse",
+            "Hunting store",
+            "Main Market",
+            "Black Market",
+            "Church",
+            "Pet seller",
+            "Court",
         ]
     }
 ])
